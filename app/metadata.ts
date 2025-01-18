@@ -1,0 +1,83 @@
+import { Metadata } from "next";
+
+interface MetadataProps {
+    title: string;
+    description: string;
+    url?: string;
+}
+
+export function generateMetadata({
+    title = "KtechHub | Empowering Businesses with Tailored Tech Solutions",
+    description = "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+    url = "/",
+}: MetadataProps): Metadata {
+    const defaultUrl = process.env.WEBAPP_URL || 'https://www.ktechhub.com';
+    return {
+        title: { default: title, template: "%s | Empowering Businesses with Tailored Tech Solutions" },
+        description: description,
+        applicationName: "KtechHub",
+        authors: [{ name: "KtechHub Team", url: process.env.WEBAPP_URL || 'https://www.ktechhub.com' }],
+        generator: "Next.js",
+        keywords: ["software development", "API integration", "cloud technologies", "UI/UX design", "DevOps", "business solutions", "technology services", "tailored tech solutions"],
+        referrer: "origin",
+        creator: "KtechHub Team",
+        publisher: "KtechHub",
+        robots: "index, follow",
+        alternates: {
+            canonical: `${defaultUrl}${url}`,
+            types: {
+                "application/rss+xml": [{ url: "/feed/rss.xml", title: "RSS Feed" }]
+            }
+        },
+        icons: {
+            icon: "/icon-192x192.png",
+            apple: "/apple-touch-icon.png",
+        },
+        manifest: "/manifest.json",
+        openGraph: {
+            type: "website",
+            url: process.env.WEBAPP_URL || 'https://www.ktechhub.com',
+            title: title,
+            description: description,
+            siteName: "KtechHub",
+            images: [
+                {
+                    url: `${process.env.WEBAPP_URL}/logo.png`,
+                    width: 1200,
+                    height: 630,
+                    alt: "KtechHub - Empowering Businesses with Tailored Tech Solutions",
+                }
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            site: "@KtechHub",
+            creator: "@ktechhub",
+            title: title,
+            description: description,
+            images: "https://www.ktechhub.com/twitter-image.png"
+        },
+        verification: {
+            google: "9skpBpwKDtj0DYmqZppulq6euNwztgaLg6JZc4_RZ-g",
+            yandex: "73ac4b10761bb219"
+        },
+        appleWebApp: {
+            capable: true,
+            title: "KtechHub",
+            statusBarStyle: "black-translucent",
+        },
+        formatDetection: {
+            telephone: false
+        },
+        abstract: "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
+        archives: ["https://www.ktechhub.com/archives"],
+        assets: ["https://www.ktechhub.com/assets"],
+        bookmarks: ["https://www.ktechhub.com/bookmarks"],
+        category: "Technology, Business Solutions",
+        classification: "Digital Transformation Services",
+        // other: {
+        //   "msapplication-TileColor": "#2b5797",
+        //   "msapplication-config": "/icons/browserconfig.xml"
+        // }
+    }
+}

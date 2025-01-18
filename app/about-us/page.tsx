@@ -1,22 +1,19 @@
 
 import Navbar from "@/components/shared/Navbar"
 import FooterSection from "@/components/shared/Footer";
-import Hero from "@/components/home/Hero";
-import Features from "@/components/home/Features";
 
-
-
-export default function Home() {
+const AboutUsPage = () => {
   return (
     <>
       <Navbar />
       <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
         <main className="max-w-container mx-auto">
-          <Hero />
-          <Features />
+          About Us Page
         </main>
       </div>
       <FooterSection />
     </>
   );
 }
+
+export default AboutUsPage
