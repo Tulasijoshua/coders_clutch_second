@@ -27,21 +27,21 @@ export default function Navbar() {
             <div className="relative mx-auto max-w-container">
                 <NavbarComponent>
                     <NavbarLeft>
-                        <a
+                        <Link
                             href="/"
                             className="flex items-center gap-2 text-xl font-bold"
                         >
                             <LaunchUI />
                             KtechHub
-                        </a>
+                        </Link>
                         <Navigation />
                     </NavbarLeft>
                     <NavbarRight>
-                        <a href="/" className="hidden text-sm md:block">
+                        <Link href="/" className="hidden text-sm md:block">
                             Sign in
-                        </a>
+                        </Link>
                         <Button variant="default" asChild>
-                            <a href="/">Get Started</a>
+                            <Link href="/">Get Started</Link>
                         </Button>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>

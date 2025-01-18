@@ -1,0 +1,72 @@
+name: Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [21.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        id: install
+        run: npm install
+
+      - name: Generate build
+        run: |
+          # npx update-browserslist-db@latest
+          npm run build
+      
+      # - name: Deploy to Production
+      #   id: prod-deploy
+      #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     username: ${{ secrets.USERNAME }}
+      #     host: ${{ secrets.HOST }}
+      #     port: ${{ secrets.PORT }}
+      #     key: ${{ secrets.KEY }}
+      #     script: "cd /home/kalkulus/netwave_digital && make deploy"
+
+      # - name: Notify Telegram on-Prod-Success
+      #   if: steps.prod-deploy.outcome == 'success' && github.ref == 'refs/heads/main' && github.event_name == 'push'
+      #   uses: appleboy/telegram-action@master
+      #   with:
+      #     to: ${{ secrets.TELEGRAM_TO }}
+      #     token: ${{ secrets.TELEGRAM_TOKEN }}
+      #     message: |
+      #       Hello ${{ github.actor }},
+      #       Platform: Frontend
+      #       Status: SUCCESS
+      #       URL: https://dev.ktechhub.com
+      #       Commit: ${{ github.sha }}
+      #               ${{ github.event.head_commit.message }}
+      #       Message: Code deployed successfully!
+
+      # - name: Notify Telegram on-Prod-Failure
+      #   if: failure()
+      #   uses: appleboy/telegram-action@master
+      #   with:
+      #     to: ${{ secrets.TELEGRAM_TO }}
+      #     token: ${{ secrets.TELEGRAM_TOKEN }}
+      #     message: |
+      #       Hello ${{ github.actor }},
+      #       Platform: Frontend
+      #       Status: FAILED
+      #       URL: https://dev.ktechhub.com
+      #       Commit: ${{ github.sha }}
+      #               ${{ github.event.head_commit.message }}
+      #       Message: Code deployment FAILED!
