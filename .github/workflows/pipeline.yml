@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         id: install
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Generate build
         run: |
