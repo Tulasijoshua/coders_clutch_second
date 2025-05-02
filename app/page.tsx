@@ -1,10 +1,10 @@
 import Navbar from "@/components/shared/Navbar"
 import FooterSection from "@/components/shared/Footer";
-import Hero from "@/components/home/hero";
-import Features from "@/components/home/features";
-import Stats from "@/components/home/stats";
-import Testimonials from "@/components/home/testimonials";
-import CTA from "@/components/home/cta";
+import Hero from "@/components/home/Hero";
+import Features from "@/components/home/Features";
+import Stats from "@/components/home/Stats";
+import Testimonials from "@/components/home/Testimonials";
+import CTA from "@/components/home/CTA";
 
 export default function Home() {
   return (
