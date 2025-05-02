@@ -61,6 +61,12 @@ const links: { title: string; href: string; description: string, links?: { title
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
+  {
+    title: "Contact Us",
+    href: "/contact-us",
+    description:
+      "Get in touch with our team for any questions or inquiries.",
+  },
 ];
 
 export default function Navigation() {

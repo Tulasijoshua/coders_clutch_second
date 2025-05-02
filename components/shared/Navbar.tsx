@@ -74,7 +74,7 @@ export default function Navbar() {
                                         href="/"
                                         className="flex items-center gap-2 text-xl font-bold"
                                     >
-                                        <span>Launch UI</span>
+                                        <span>KtechHub</span>
                                     </Link>
                                     <Link
                                         href="/"
@@ -89,10 +89,10 @@ export default function Navbar() {
                                         Components
                                     </Link>
                                     <Link
-                                        href="/"
+                                        href="/contact-us"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
-                                        Documentation
+                                        Contact Us
                                     </Link>
                                 </nav>
                             </SheetContent>
