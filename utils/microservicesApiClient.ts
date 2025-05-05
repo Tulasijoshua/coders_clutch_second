@@ -56,3 +56,25 @@ export const microservicesRequest = async (config: any) => {
 
 // Export the axios instance for direct use if needed
 export default microservicesClient; 
+
+
+// Example usage
+// // For auth service
+// await microservicesRequest({
+//     method: 'POST',
+//     url: '/auth/login',
+//     data: { /* login data */ }
+//   });
+
+// // For properties service
+// await microservicesRequest({
+//     method: 'GET',
+//     url: '/properties/list'
+//   });
+
+// // For users service with auth
+// await microservicesRequest({
+//     method: 'GET',
+//     url: '/users/list',
+//     auth: true
+//   });
