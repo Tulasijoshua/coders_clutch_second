@@ -1,7 +1,6 @@
 import axios from "axios";
 
-// Define the base URL once to avoid repetition
-const baseURL = process.env.NEXT_PUBLIC_BE_URL;
+const baseURL = process.env.NEXT_PUBLIC_API_GATEWAY_SERVICE_URL;
 
 // Default headers for different content types
 const defaultHeaders = {
@@ -15,14 +14,21 @@ const defaultHeaders = {
     }
 };
 
-// Create a single axios instance
-const apiClient = axios.create({
-    baseURL,
+// Create axios instance for microservices
+const microservicesClient = axios.create({
     timeout: 200000,
 });
 
 // Request interceptor
-apiClient.interceptors.request.use(async (request) => {
+microservicesClient.interceptors.request.use(async (request) => {
+    // Extract the service name from the URL (e.g., /auth/login -> auth)
+    const service = request.url?.split('/')[1];
+    
+    if (service) {
+        // Construct the base URL for the specific microservice
+        request.baseURL = `${baseURL}/${service}/api/v1`;
+    }
+
     // Add authentication headers if auth is true
     if (request.auth) {
         const accessToken = "Bearer Access Token";
@@ -43,10 +49,10 @@ apiClient.interceptors.request.use(async (request) => {
     return request;
 });
 
-// Helper function to make requests
-export const request = async (config: any) => {
-    return apiClient.request(config);
+// Helper function to make requests to microservices
+export const microservicesRequest = async (config: any) => {
+    return microservicesClient.request(config);
 };
 
 // Export the axios instance for direct use if needed
-export default apiClient;
+export default microservicesClient; 

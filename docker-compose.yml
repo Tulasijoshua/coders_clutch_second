@@ -4,9 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: wawaba_frontend
+    container_name: app
     ports:
-      - "5000:3000"
+      - "3000:3000"
     env_file:
       - .env
     restart: always
