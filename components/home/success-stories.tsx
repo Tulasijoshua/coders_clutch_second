@@ -57,7 +57,7 @@ function SuccessStories() {
 
                     <div className='w-full md:py-10 grid md:grid-cols-3'>
                         {success_stories.slice(3, 6).map((story, index) => (
-                            <div key={story.id} className={`xl:px-10 lg:px-8 px-4 py-6 flex flex-col justify-between gap-6 ${story.id === "2" || story.id === "5" ? "md:border-l-2 md:border-r-2 border-dashed" : ""} md:border-none border-b-2 border-dashed`}>
+                            <div key={story.id} className={`xl:px-10 lg:px-8 md:px-4 py-6 flex flex-col justify-between gap-6 ${story.id === "2" || story.id === "5" ? "md:border-l-2 md:border-r-2 border-dashed" : ""} md:border-none border-b-2 border-dashed`}>
                                 <div className='h-6 w-fit'>
                                     <Image
                                         src={story.icon}

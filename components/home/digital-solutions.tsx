@@ -8,7 +8,7 @@ import { Check } from 'lucide-react';
 function DigitalSolutions() {
   return (
     <div className='w-full py-12 bg-gray-100'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto space-y-8'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto space-y-8'>
             <div className='pb-8 flex flex-col gap-'>
                 <Typography
                     typo="header-3-light"

@@ -10,7 +10,7 @@ import { ArrowRight } from 'lucide-react';
 function AlliancesSection() {
   return (
     <div className='inter w-full py-16'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex md:flex-row flex-col justify-between items-center lg:gap-20 md:gap-5 gap-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between items-center lg:gap-20 md:gap-5 gap-12'>
             <div className='flex-1 flex flex-col gap-3'>
                 <Typography
                     className='font-[800] sm:text-5xl xs:text-4xl text-3xl xs:text-left text-center leading-tight'
