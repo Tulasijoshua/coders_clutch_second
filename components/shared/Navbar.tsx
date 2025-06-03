@@ -42,6 +42,21 @@ export default function Navbar() {
                         <Navigation />
                     </div>
                     <NavbarRight>
+                        <Button
+                            variant="primary"
+                        >
+                            Get In Touch
+                            {/* <ArrowRight /> */}
+                        </Button>
+                        
+                        <Button
+                            variant="outline"
+                            className="sm:flex hidden items-center gap-1"
+                        >
+                            <ArrowRight />
+                            Login
+                        </Button>
+
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <div className="flex items-center">
@@ -80,22 +95,6 @@ export default function Navbar() {
                                 </DropdownMenuRadioGroup>
                             </DropdownMenuContent>
                         </DropdownMenu>
-                        
-                        <Button
-                            variant="ghost"
-                            className="sm:flex hidden items-center gap-1"
-                        >
-                            <ArrowRight />
-                            Login
-                        </Button>
-                        <Button
-                            variant="ghost"
-                            className="sm:flex hidden items-center gap-1"
-                        >
-                            <Mail />
-                            Contact
-                        </Button>
-
                         <Sheet>
                             <SheetTrigger asChild>
                                 <Button
