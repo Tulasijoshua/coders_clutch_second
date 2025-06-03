@@ -21,12 +21,27 @@ function AwardsRecognition() {
                 </Typography>
             </div>
 
-            <div className='w-full h-fit'>
+            <div className='xl:block hidden w-full h-fit'>
                 <Image 
                     src={awardsImg}
                     alt='Awards Image'
                     className='w-full h-full'
                 />
+            </div>
+
+            <div className='xl:hidden w-full overflow-hidden relative'>
+                <div className='flex animate-slide whitespace-nowrap'>
+                    {[...Array(1)].map((_, i) => (
+                        <div key={i} className='inline-block px-2'>
+                            <Image 
+                                src={awardsImg}
+                                alt={`Awards Image ${i+1}`}
+                                className='w-auto h-full max-h-[200px]'
+                                priority
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     </div>

@@ -44,12 +44,20 @@ function AlliancesSection() {
                         className='w-full h-full'
                     />
                 </div>
-                <div className='md:hidden block w-full mx-auto h-fit'>
-                    <Image
-                        src={techScroll}
-                        alt='Image'
-                        className='w-full h-full'
-                    />
+                
+                <div className='md:hidden w-full overflow-hidden relative'>
+                    <div className='flex animate-slide whitespace-nowrap'>
+                        {[...Array(1)].map((_, i) => (
+                            <div key={i} className='inline-block px-2'>
+                                <Image 
+                                src={techScroll}
+                                alt={`Awards Image ${i+1}`}
+                                className='w-auto h-full max-h-[200px]'
+                                priority
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

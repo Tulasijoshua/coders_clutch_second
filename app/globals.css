@@ -122,6 +122,17 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.animate-slide {
+  animation: 15s slide infinite linear;
+}
+.animate-slide:hover {
+  animation-play-state: paused;
+}
+
 @layer base {
   * {
     @apply border-border;

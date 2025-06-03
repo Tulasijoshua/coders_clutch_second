@@ -79,7 +79,7 @@ function ServicesSection() {
 
         <section className='xl:hidden max-container 2xl:w-[85%] w-[95%] mx-auto flex-wrap'>    
             {currentService?.contents.filter(data => data.id === "1").map((data) => (
-                <div key={data.id} className='pops w-full border h-full py-12 flex flex-col justify-center gap-2'>
+                <div key={data.id} className='pops w-full h-full py-12 flex flex-col justify-center gap-2'>
                     <Typography
                         typo="header-3-light"
                     >
