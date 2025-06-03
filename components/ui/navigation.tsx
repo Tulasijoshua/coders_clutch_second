@@ -576,7 +576,7 @@ export default function Navigation() {
                     
                     {link.main_contents ? (
                       <div className="w-[750px] grid grid-cols-2 ">
-                        {currentSubLink?.contents?.map((link: any) => (
+                        {currentSubLink?.contents?.map((link) => (
                         <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
                           <ListItem href="/" title={link.title}>
                             {link.description}

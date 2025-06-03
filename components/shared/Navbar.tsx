@@ -6,7 +6,7 @@ import {
     NavbarLeft,
     NavbarRight,
 } from "@/components/ui/navbar";
-import { ArrowRight, Globe, Mail, Menu } from "lucide-react";
+import { ArrowRight, Globe, Menu } from "lucide-react";
 import Link from "next/link";
 import codersLogo from "@/public/assets/images/coders_logo.png"
 import Image from "next/image";
