@@ -11,7 +11,7 @@ import { social_icons } from '@/constant';
 function Hereforyou() {
   return (
     <div className='w-full pb-12 pt-20 bg-app-primary-medium'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex md:flex-row flex-col justify-between items-center gap-16'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between items-center gap-16'>
             <div className='flex-1 flex flex-col gap-4'>
                 <Typography
                     typo="header-6-semibold"

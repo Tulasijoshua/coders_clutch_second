@@ -8,7 +8,7 @@ function SeeResults() {
   return (
     <Card className='w-full py-12 bg-app-primary '> 
         <CardContent className='md:w-[90%] mx-auto flex md:flex-row flex-col justify-between items-center gap-8'>
-            <div className='flex flex-col text-white'>
+            <div className='md:flex hidden flex-col text-white'>
                 <Typography
                     typo="header-2-semibold"
                 >
@@ -16,6 +16,18 @@ function SeeResults() {
                 </Typography>
                 <Typography
                     typo="header-2-semibold"
+                >
+                    Start Your PoC Now!
+                </Typography>
+            </div>
+            <div className='md:hidden text-white text-center'>
+                <Typography
+                    className='!text-3xl font-bold'
+                >
+                    Ready to See the Results? {""}
+                </Typography>
+                <Typography
+                    className='!text-3xl text-center font-bold'
                 >
                     Start Your PoC Now!
                 </Typography>

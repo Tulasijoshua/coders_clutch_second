@@ -7,7 +7,7 @@ import Image from 'next/image';
 function TopTierSection() {
   return (
     <div className='w-full pt-16 pb-20'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='xs:pb-16 pb-8 flex flex-col gap-'>
                 <Typography
                     typo="header-3-light"
@@ -23,7 +23,7 @@ function TopTierSection() {
 
             <div className='w-full flex md:flex-row flex-col justify-between'>
                 {top_tier_products.map((data, index) => (
-                    <div key={data.id} className={`px-6 py-8 flex flex-col md:gap-10 gap-6 ${data.id === "2" ? "md:border-l-2 md:border-r-2 border-dashed" : ""} border-b-2 border-dashed`}>
+                    <div key={data.id} className={`md:px-6 py-8 flex flex-col md:gap-10 gap-6 ${data.id === "2" ? "md:border-l-2 md:border-r-2 border-dashed" : ""} border-b-2 border-dashed`}>
                         <div className='h-8 w-fit'>
                             <Image
                                 src={data.img}

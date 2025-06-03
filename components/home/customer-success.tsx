@@ -67,10 +67,10 @@ function CustomerSuccess() {
                             className={`h-full mb-3 ${growth.id === 3 ? "md:w-[100%] " : "md:w-[49%]"} ${growth.id % 2 !== 0 ? "bg-[#FAE1B6] text-[#1F0802]" : "bg-[#1F0802] text-[#FAE1B6]"} flex flex-col gap-2 `}
                         >
                             <CardContent
-                                className={`py-6  flex flex-col gap-2 ${growth.id === 5 ? "px-10" : "2xl:px-8 px-7"} `}
+                                className={`md:py-6 pb-3 pt-6  flex md:flex-col flex-row md:items-start items-center gap-2 ${growth.id === 5 ? "px-10" : "2xl:px-8 px-7"} `}
                             >
                                 <div
-                                    className='text-5xl font-normal'
+                                    className='md:text-5xl text-3xl font-normal'
                                 >{growth.rate}</div>
                                 <Typography
                                     typo="body-large-regular"

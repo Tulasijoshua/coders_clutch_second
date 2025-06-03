@@ -20,6 +20,12 @@ import deutschFlag from "@/public/assets/images/countries/Deutsch-flag.png";
 import franceFlag from "@/public/assets/images/countries/france-flag.png";
 import japanFlag from "@/public/assets/images/countries/japan-flag.png";
 import nederlandFlag from "@/public/assets/images/countries/nederlands-flag.png";
+import fasterIcon from "@/public/assets/icons/home_icons/faster.svg"
+import cloudIcon from "@/public/assets/icons/home_icons/cloud.svg"
+import storageIcon from "@/public/assets/icons/home_icons/storage.svg"
+import securedIcon from "@/public/assets/icons/home_icons/secured.svg"
+import stampIcon from "@/public/assets/icons/home_icons/stamp.svg"
+import developerIcon from "@/public/assets/icons/home_icons/developers.svg"
 
 export const languages = [
     {
@@ -64,33 +70,33 @@ export const home_services = [
     {
         id: "1",
         title: "Faster Time to Market",
-        icon: Rocket
+        icon: fasterIcon
     },
     {
         id: "2",
         title: " Private Cloud",
-        icon: CloudSunRain
+        icon: cloudIcon
 
     },
     {
         id: "3",
         title: "On Premise",
-        icon: DatabaseZap
+        icon: storageIcon
     },
     {
         id: "4",
         title: "100% Secured",
-        icon: ShieldCheck
+        icon: securedIcon
     },
     {
         id: "5",
         title: "Own Your Data and IP",
-        icon: HardDriveDownload
+        icon: stampIcon
     },
     {
         id: "6",
         title: "Our Full Stack Team",
-        icon: Rocket
+        icon: developerIcon
     },
 ]
 

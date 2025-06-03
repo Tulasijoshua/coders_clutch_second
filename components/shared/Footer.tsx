@@ -10,8 +10,8 @@ export default function FooterSection() {
     return (
         <div className="w-full ">
             <div className="w-full py-12  bg-[#003B38]">
-                <section className="max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between gap-8 ">
-                    <div className="xl:w-[35%] flex flex-col gap-8">
+                <section className="max-container 2xl:w-[85%] md:w-[95%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between gap-8 ">
+                    <div className="xl:w-[35%] w-[95%] mx-auto flex flex-col gap-8">
                         <div className="flex flex-col gap-3 text-white">
                             <Typography
                                 typo="body-large-medium"
@@ -45,7 +45,7 @@ export default function FooterSection() {
                             </Button>
                         </div>
                     </div>
-                    <div className="pl-6 flex-1 grid md:grid-cols-4 xs:grid-cols-2 gap-8 lg:border-l-2 border-gray-500">
+                    <div className="md:pl-6 pl-4 flex-1 grid md:grid-cols-4 xs:grid-cols-2 gap-8 lg:border-l-2 border-gray-500">
                         <div className="flex flex-col gap-4">
                             <Typography
                                 className="uppercase text-white"
@@ -116,7 +116,7 @@ export default function FooterSection() {
                 </section>
             </div>
             <section className="w-full py-4 bg-app-primary-medium">
-                <div className="max-container 2xl:w-[85%] w-[95%] mx-auto flex justify-between items-center text-white">
+                <div className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between items-center text-white">
                     <Typography>© Copyrights 2025 by CODERS CLUTCH.</Typography>
                     <div className="h-12 w-fit">
                         <Image 

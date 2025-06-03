@@ -8,7 +8,7 @@ import Image from 'next/image';
 function SuccessStories() {
   return (
     <div className='w-full py-12'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto space-y-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto space-y-12'>
             <SeeResults />
             <div className='w-full py-8'>
                 <div className='pb-8 flex flex-col gap-'>
@@ -26,8 +26,8 @@ function SuccessStories() {
                 <div className='w-full space-y-6'>
                     <div className='w-full md:py-10 grid md:grid-cols-3'>
                         {success_stories.slice(0, 3).map((story, index) => (
-                            <div key={story.id} className={`xl:px-10 lg:px-8 px-4 py-6 flex flex-col justify-between gap-6 ${story.id === "2" || story.id === "5" ? "md:border-l-2 md:border-r-2 border-dashed" : ""} md:border-none border-b-2 border-dashed`}>
-                                <div className='h-6 w-fit'>
+                            <div key={story.id} className={`xl:px-10 lg:px-8 md:px-4 py-6 flex flex-col justify-between gap-6 ${story.id === "2" || story.id === "5" ? "md:border-l-2 md:border-r-2 border-dashed" : ""} md:border-none border-b-2 border-dashed`}>
+                                <div className='h-8 w-fit'>
                                     <Image
                                         src={story.icon}
                                         alt={`Success ${index+1}`}

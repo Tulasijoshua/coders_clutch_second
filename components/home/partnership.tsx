@@ -8,7 +8,7 @@ import Image from 'next/image';
 function Partnership() {
   return (
     <div className='w-full py-16 bg-app-yellow-light'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex md:flex-row flex-col justify-between items-center md:gap-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between md:items-center md:gap-12'>
             <div className='w-fit md:pb-16 pb-4 flex flex-col gap-2'>
                 <Typography
                     typo="header-3-light"

@@ -32,11 +32,14 @@ const Hero = () => {
                     </Typography>
 
                     <div className="xl:w-[80%] mx-auto py-5 flex justify-center items-center lg:gap-6 gap-4  flex-wrap">
-                        {home_services.map((service) => {
-                            const Icon = service.icon;
+                        {home_services.map((service, index) => {
                             return (
-                                <div key={service.id} className="md:w-fit w-[45%] lg:px-6 sm:px-4 py-3.5 flex justify-center items-center gap-2 bg-app-primary-light rounded-md">
-                                    <Icon color="#fff" size="26" />
+                                <div key={service.id} className="md:w-fit w-[45%] lg:px-6 px-3 py-3.5 flex justify-center items-center sm:gap-2 gap-3 bg-app-primary-light rounded-md">
+                                    <Image 
+                                        src={service.icon}
+                                        alt={`Service ${index+1}`}
+                                        className="w-7 h-fit"
+                                    />
                                     <Typography 
                                         className="text-white"
                                         typo="body-medium-semibold"
