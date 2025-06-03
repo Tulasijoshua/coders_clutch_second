@@ -9,21 +9,23 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "bg-primary text-primary-foreground shadow hover:bg-primary/90",
-        destructive:
-          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
-        outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        default: "bg-white text-app-primary-light hover:bg-white/90",
+        primary: "bg-app-secondary text-white hover:bg-app-secondary/80",
+        secondary: "bg-secondary-300 text-white hover:bg-secondary-300/80",
+        accent: "bg-accent-300 text-white hover:bg-accent-300/80",
+        outline: "border border-app-primary text-app-primary bg-transparent",
+        link: "",
+        ghost: "",
+        destructive: "",
+        table: "min-w-0 h-10 max-h-10 border border-neutral-light",
+        pagination: "min-w-0",
+        transparent: "",
+        date: "min-w-0",
       },
       size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
+        default: "w-fit px-6 py-3 text-base font-medium rounded-sm",
+        sm: "w-fit h-8 rounded-sm px-3 text-xs",
+        lg: "w-fit lg:py-3 py-2 text-lg rounded-sm px-10",
         icon: "h-9 w-9",
       },
     },

@@ -11,134 +11,384 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "./navigation-menu";
-import LaunchUI from "../logos/launch-ui";
+import Typography from "../shared/typography";
 
-
-const links: { title: string; href: string; description: string, links?: { title: string; href: string; description: string }[] }[] = [
+const nav_links = [
   {
-    title: "Home",
-    href: "/",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "About Us",
-    href: "/about-us",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Product",
-    href: "/product",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    links: [
+    id: "1",
+    title: "Who we are",
+    href: "/we-are",
+    contents: [
       {
-        title: "Introduction",
-        href: "/docs",
-        description:
-          "Re-usable components built using Radix UI and Tailwind CSS.",
+        id: "1",
+        title: "About US",
+        subTitle: "Know our story",
+        description: "A collective of innovation-driven tech specialists",
       },
       {
-        title: "Installation",
-        href: "/docs/installation",
-        description:
-          "How to install dependencies and structure your app.",
+        id: "2",
+        contents: [
+          {
+            id: "1",
+            title: "Overview",
+            description: "Core and supplemental courses for language development",
+          },
+          {
+            id: "2",
+            title: "Careers",
+            description: "Visually or semantically separates content.",
+          },
+        ],
       },
       {
-        title: "Typography",
-        href: "/doc/typography",
-        description:
-          "Styles for headings, paragraphs, lists...etc",
+        id: "3",
+        contents: [
+          {
+            id: "1",
+            title: "The Board",
+            description: "For sighted users to preview content available behind a link.",
+          },
+          {
+            id: "2",
+            title: "Social Responsibilities",
+            description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+          },
+        ],
+      },
+      {
+        id: "4",
+        contents: [
+          {
+            id: "1",
+            title: "Management",
+            description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+          },
+          {
+            id: "2",
+            title: "Global Networks",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
       },
     ]
   },
   {
-    title: "Blog",
-    href: "/blog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    id: "2",
+    title: "What we do",
+    href: "/we-do",
+    contents: [
+      {
+        id: "1",
+        title: "Solutions",
+        subTitle: "Products by Grade Level",
+        description: "Teaching solutions to drive better student outcomes",
+      },
+      {
+        id: "2",
+        contents: [
+          {
+            id: "1",
+            title: "Fintech",
+            description: "A modal dialog that interrupts the user with important content and expects a response.",
+          },
+          {
+            id: "2",
+            title: "Construction",
+            description: "Visually or semantically separates content.",
+          },
+          {
+            id: "3",
+            title: "Logistics & Transportation",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+      {
+        id: "3",
+        contents: [
+          {
+            id: "1",
+            title: "Health Care",
+            description: "For sighted users to preview content available behind a link.",
+          },
+          {
+            id: "2",
+            title: "Energy & Climate",
+            description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+          },
+          {
+            id: "3",
+            title: "Travel & Hospitality",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+      {
+        id: "4",
+        contents: [
+          {
+            id: "1",
+            title: "EdTech",
+            description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+          },
+          {
+            id: "2",
+            title: "Insurance & Mortgage",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+    ]
   },
   {
-    title: "Contact Us",
-    href: "/contact-us",
-    description:
-      "Get in touch with our team for any questions or inquiries.",
+    id: "3",
+    title: "Portfolio",
+    href: "/portfolio",
+    contents: [
+      {
+        id: "1",
+        title: "Portfolio",
+        subTitle: "Products by Grade Level",
+        description: "Teaching solutions to drive better student outcomes",
+      },
+      {
+        id: "2",
+        contents: [
+          {
+            id: "1",
+            title: "Fintech",
+            description: "A modal dialog that interrupts the user with important content and expects a response.",
+          },
+          {
+            id: "2",
+            title: "Construction",
+            description: "Visually or semantically separates content.",
+          },
+          {
+            id: "3",
+            title: "Logistics & Transportation",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+      {
+        id: "3",
+        contents: [
+          {
+            id: "1",
+            title: "Health Care",
+            description: "For sighted users to preview content available behind a link.",
+          },
+          {
+            id: "2",
+            title: "Energy & Climate",
+            description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+          },
+          {
+            id: "3",
+            title: "Travel & Hospitality",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+      {
+        id: "4",
+        contents: [
+          {
+            id: "1",
+            title: "EdTech",
+            description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+          },
+          {
+            id: "2",
+            title: "Insurance & Mortgage",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+    ]
   },
-];
+  {
+    id: "4",
+    title: "Product",
+    href: "/product",
+    contents: [
+      {
+        id: "1",
+        title: "Product",
+        subTitle: "Products by Grade Level",
+        description: "Innovative solutions tailored for you",
+      },
+      {
+        id: "2",
+        contents: [
+          {
+            id: "1",
+            title: "Overview",
+            description: "Core and supplemental courses for language development",
+          },
+          {
+            id: "2",
+            title: "Careers",
+            description: "Visually or semantically separates content.",
+          },
+        ],
+      },
+      {
+        id: "3",
+        contents: [
+          {
+            id: "1",
+            title: "The Board",
+            description: "For sighted users to preview content available behind a link.",
+          },
+          {
+            id: "2",
+            title: "Social Responsibilities",
+            description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+          },
+        ],
+      },
+      {
+        id: "4",
+        contents: [
+          {
+            id: "1",
+            title: "Management",
+            description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+          },
+          {
+            id: "2",
+            title: "Global Networks",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+    ]
+  },
+  {
+    id: "5",
+    title: "Insight",
+    href: "/insight",
+    contents: [
+      {
+        id: "1",
+        title: "Insight",
+        subTitle: "Products by Grade Level",
+        description: "Teaching solutions to drive better student outcomes",
+      },
+      {
+        id: "2",
+        contents: [
+          {
+            id: "1",
+            title: "Overview",
+            description: "Core and supplemental courses for language development",
+          },
+          {
+            id: "2",
+            title: "Careers",
+            description: "Visually or semantically separates content.",
+          },
+        ],
+      },
+      {
+        id: "3",
+        contents: [
+          {
+            id: "1",
+            title: "The Board",
+            description: "For sighted users to preview content available behind a link.",
+          },
+          {
+            id: "2",
+            title: "Social Responsibilities",
+            description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+          },
+        ],
+      },
+      {
+        id: "4",
+        contents: [
+          {
+            id: "1",
+            title: "Management",
+            description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+          },
+          {
+            id: "2",
+            title: "Global Networks",
+            description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+          },
+        ],
+      },
+    ]
+  },
+]
+
 
 export default function Navigation() {
   return (
-    <NavigationMenu className="hidden md:flex">
+    <NavigationMenu className="hidden xl:flex">
       <NavigationMenuList>
-        {
-          links.map((link) => (
-            link.links ? (
-              <NavigationMenuItem key={link.href}>
-                <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    {link.links.map((sublink) => (
-                      <ListItem key={sublink.href} href={sublink.href} title={sublink.title}>
-                        {sublink.description}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-            ) : (
-              <NavigationMenuItem key={link.href}>
-                <Link href={link.href} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()} title={link.description}>
-                    {link.title}
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-            )
-          ))
-        }
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <LaunchUI />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Launch UI
+        
+        {nav_links.map((link) => (
+          <NavigationMenuItem key={link.id}>
+            <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="flex  gap-3 p-4 ">
+              {link.contents.map((link) => (
+                <div key={link.id}>
+                  {link.subTitle ? (
+                    <li className="w-[220px] min-h-[250px] h-full">
+                      <NavigationMenuLink asChild>
+                        <Link
+                          className="flex h-full w-full select-none flex-col gap-6 rounded-md p-3 no-underline outline-none focus:shadow-md bg-gray-100"
+                          href="/"
+                        >
+                          <div className="flex flex-col gap-4">
+                            <Typography 
+                              className="text-blue-900"
+                              typo="header-5-semibold"
+                            >
+                              {link.title}
+                            </Typography>
+                            <Typography
+                              typo="body-medium-regular"
+                              className="text-gray-600 leading-normal"
+                            >
+                              {link.description}
+                            </Typography>
+                          </div>
+                          <Typography
+                            typo="body-medium-semibold"
+                            className=""
+                          >{link.subTitle}</Typography>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                  ) : (
+                    <div className="flex flex-col justify-between gap-3">
+                      {link.contents?.map((link) => (
+                      <div key={link.id} className="w-[250px] h-full flex gap-16 border-l">
+                        <ListItem href="/" title={link.title}>
+                          {link.description}
+                        </ListItem>
+                        
+                      </div>
+                      ))}
+                    
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Landing page template built with React, Shadcn/ui and
-                      Tailwind that you can copy/paste into your project.
-                    </p>
-                  </Link>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+                  )}
+                  
+                </div>
+
+            ))}
             </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        ))}
       </NavigationMenuList>
     </NavigationMenu>
   );
@@ -159,8 +409,8 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <div className="pb-2 text-base text-blue-800 font-semibold leading-none">{title}</div>
+          <p className="text-sm leading-snug text-muted-foreground">
             {children}
           </p>
         </a>

@@ -1,99 +1,132 @@
-import {
-    Footer,
-    FooterColumn,
-    FooterBottom,
-    FooterContent,
-} from "@/components/ui/footer";
-import LaunchUI from "@/components/logos/launch-ui";
-import Link from "next/link";
-import { Github, Linkedin, Instagram } from "lucide-react";
+'use client';
+
+import Typography from "./typography";
+import { Button } from "../ui/button";
+import codersLogo from "@/public/assets/images/coders_logo.png"
+import Image from "next/image";
+
 
 export default function FooterSection() {
     return (
-        <footer className="w-full bg-background px-4">
-            <div className="mx-auto max-w-container">
-                <Footer className="border-t pt-8">
-                    <FooterContent className="sm:grid-cols-2 md:grid-cols-3">
-                        <FooterColumn className="col-span-2 flex-row items-center justify-between gap-8 border-b pb-8 md:col-span-1 md:flex-col md:items-start md:justify-start md:border-b-0">
-                            <div className="flex items-center gap-2">
-                                <LaunchUI />
-                                <h3 className="text-xl font-bold">KtechHub</h3>
-                            </div>
-                            <div className="ml-2.5 flex gap-4 sm:ml-0">
-                                <Link
-                                    href="/"
-                                    className="text-muted-foreground"
-                                >
-                                    <span className="sr-only">GitHub</span>
-                                    <Github className="h-5 w-5" />
-                                </Link>
-                                <Link
-                                    href="/"
-                                    className="text-muted-foreground"
-                                >
-                                    <span className="sr-only">Twitter</span>
-                                    <Linkedin className="h-5 w-5" />
-                                </Link>
-                                <Link href="/" className="text-muted-foreground">
-                                    <span className="sr-only">Discord</span>
-                                    <Instagram className="h-5 w-5" />
-                                </Link>
-                            </div>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Product</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Changelog
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Documentation
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Company</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                About
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Careers
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Blog
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Contact</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Discord
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Twitter
-                            </Link>
-                            <Link
-                                href="/"
-                                className="text-sm text-muted-foreground"
+        <div className="w-full ">
+            <div className="w-full py-12  bg-[#003B38]">
+                <section className="max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between gap-8 ">
+                    <div className="xl:w-[35%] flex flex-col gap-8">
+                        <div className="flex flex-col gap-3 text-white">
+                            <Typography
+                                typo="body-large-medium"
+                                className="uppercase "
+                            >About Coders Clutch</Typography>
+                            <Typography 
+                                className="text-gray-300 leading-normal"
+                                typo="body-medium-regular"
                             >
-                                Github
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Legal</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Privacy Policy
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Terms of Service
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Cookie Policy
-                            </Link>
-                        </FooterColumn>
-                    </FooterContent>
-                    <FooterBottom className="border-0">
-                        <div>© 2024 KtechHub. All rights reserved</div>
-                    </FooterBottom>
-                </Footer>
+                                CONTUS Tech is a turnkey partner for product development, design, and strategy. As a full-stack 
+                                software product development company, We engineer high-performance tech products developed for rapid 
+                                market launch.
+                            </Typography>
+                        </div>
+                        <div className="flex flex-col gap-2 text-white">
+                            <Typography
+                                className="text-lg font-medium"
+                            >
+                                Want to build next-gen digital solutions?
+                            </Typography>
+                            <Typography
+                                className="pb-3"
+                            >
+                                Let&apos;s create something extraordinary together!
+                            </Typography>
+                            <Button
+                                variant="primary"
+                                className="w-fit px-6 py-3"
+                            >
+                                Contact Sales
+                            </Button>
+                        </div>
+                    </div>
+                    <div className="pl-6 flex-1 grid md:grid-cols-4 xs:grid-cols-2 gap-8 lg:border-l-2 border-gray-500">
+                        <div className="flex flex-col gap-4">
+                            <Typography
+                                className="uppercase text-white"
+                                typo="body-medium-medium"
+                            >
+                                Services
+                            </Typography>
+                            <ul className="flex flex-col gap-2 text-gray-300 text-sm">
+                                <li>Digital Transformation</li>
+                                <li>Product Development</li>
+                                <li>Full Stack Development</li>
+                                <li>DevOps Engineering</li>
+                                <li>SaaS Product Development</li>
+                                <li>AI Agent Development</li>
+                                <li>UI/UX Design</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <Typography
+                                className="uppercase text-white"
+                                typo="body-medium-medium"
+                            >
+                                Services
+                            </Typography>
+                            <ul className="flex flex-col gap-2 text-gray-300 text-sm">
+                                <li>Offshore Development</li>
+                                <li>Software Outsourcing</li>
+                                <li>OTT Development</li>
+                                <li>Chat App Development</li>
+                                <li>Hire Remote Developers</li>
+                                <li>AI Software Development</li>
+                                <li>IoT & Connected Vehicles</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <Typography
+                                className="uppercase text-white"
+                                typo="body-medium-medium"
+                            >
+                                Technologies
+                            </Typography>
+                            <ul className="flex flex-col gap-2 text-gray-300 text-sm">
+                                <li>Flutter</li>
+                                <li>React Native</li>
+                                <li>Full Stack Development</li>
+                                <li>React.js</li>
+                                <li>Angular.js</li>
+                                <li>Python</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <Typography
+                                className="uppercase text-white"
+                                typo="body-medium-medium"
+                            >
+                                Company
+                            </Typography>
+                            <ul className="flex flex-col gap-2 text-sm text-gray-300">
+                                <li>Our Blog</li>
+                                <li>Case Studies</li>
+                                <li>Newsroom</li>
+                                <li>We&apos;re Hiring</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </footer>
+            <section className="w-full py-4 bg-app-primary-medium">
+                <div className="max-container 2xl:w-[85%] w-[95%] mx-auto flex justify-between items-center text-white">
+                    <Typography>© Copyrights 2025 by CODERS CLUTCH.</Typography>
+                    <div className="h-12 w-fit">
+                        <Image 
+                            src={codersLogo}
+                            alt="Coders Logo"
+                            className="w-full h-full"
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }

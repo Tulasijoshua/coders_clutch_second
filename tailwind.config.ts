@@ -10,6 +10,11 @@ export default {
   theme: {
   	extend: {
   		colors: {
+			"app-primary": "#003B38",
+			"app-primary-medium": "#01403D",
+			"app-primary-light": "#1D646D",
+			"app-secondary": "#FF6900",
+			"app-yellow-light": "#FFF6E7",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -55,6 +60,15 @@ export default {
   				foreground: 'hsl(var(--brand-foreground))'
   			}
   		},
+		  screens: {
+			'xm': '350px',  // Custom extra-small screen size
+			'xs': '475px',  // Custom extra-small screen size
+			'sm': '640px',
+			'md': '768px',
+			'lg': '1024px',
+			'xl': '1280px',
+			'2xl': '1530px', // Custom double-extra-large screen size
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

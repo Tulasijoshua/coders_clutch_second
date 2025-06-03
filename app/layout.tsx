@@ -2,7 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
-import { generateMetadata } from "./metadata";
+import Navbar from "@/components/shared/Navbar";
+import FooterSection from "@/components/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,25 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = generateMetadata({
-  title: "KtechHub | Empowering Businesses with Tailored Tech Solutions",
-  description: "KtechHub delivers cutting-edge digital solutions to empower businesses, offering expertise in software development, API integration, and cloud technologies.",
-  url: "/",
-});
 
-const OrganizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "KtechHub",
-  "url": "https://www.ktechhub.com",
-  "logo": "https://ktechhub.s3.amazonaws.com/images/KtechHub.png",
-  "sameAs": [
-    "https://www.instagram.com/ktechhub",
-    "https://www.facebook.com/ktechhub",
-    "https://twitter.com/ktechhub",
-    "https://www.linkedin.com/company/ktechhub"
-  ]
-};
 
 export default function RootLayout({
   children,
@@ -44,7 +27,6 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(OrganizationSchema) }}
         />
       </head>
       <body
@@ -56,7 +38,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
+          <FooterSection />
           <Toaster />
         </ThemeProvider>
       </body>

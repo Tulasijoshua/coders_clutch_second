@@ -6,63 +6,102 @@ import {
     NavbarLeft,
     NavbarRight,
 } from "@/components/ui/navbar";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import LaunchUI from "@/components/logos/launch-ui";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { ArrowRight, Globe, Mail, Menu } from "lucide-react";
 import Link from "next/link";
+import codersLogo from "@/public/assets/images/coders_logo.png"
+import Image from "next/image";
+import { NavigationMenuLink } from "../ui/navigation-menu";
+import React from "react";
+import { cn } from "@/lib/utils";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
+import { languages } from "@/constant";
+import Typography from "./typography";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+
 
 export default function Navbar() {
-    const { setTheme } = useTheme();
+    const [position, setPosition] = React.useState("EN")
     return (
-        <header className="sticky top-0 z-50 -mb-4 px-4 pb-4">
-            <div className="fade-bottom absolute left-0 h-24 w-full bg-background/15 backdrop-blur-lg"></div>
-            <div className="relative mx-auto max-w-container">
+        <header className="sticky top-0 z-50 px-4 py-2 border-b border-gray-300 bg-white">
+            <div className="fade-bottom absolute left-0 w-full bg-background/15 backdrop-blur-lg"></div>
+            <div className="max-container relative 2xl:w-[85%] w-[95%] mx-auto">
                 <NavbarComponent>
                     <NavbarLeft>
                         <Link
                             href="/"
-                            className="flex items-center gap-2 text-xl font-bold"
+                            className="w-36 h-fit flex items-center gap-2 text-xl font-bold"
                         >
-                            <LaunchUI />
-                            KtechHub
+                            <Image 
+                                src={codersLogo}
+                                alt="Coders Clutch"
+                                className="w-full h-full object-cover"
+                            />
                         </Link>
-                        <Navigation />
                     </NavbarLeft>
+                    <div>
+                        <Navigation />
+                    </div>
                     <NavbarRight>
-                        <Link href="/" className="hidden text-sm md:block">
-                            Sign in
-                        </Link>
-                        <Button variant="default" asChild>
-                            <Link href="/">Get Started</Link>
-                        </Button>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
-                                <Button variant="outline" size="icon">
-                                    <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                                    <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                                    <span className="sr-only">Toggle theme</span>
-                                </Button>
+                                <div className="flex items-center">
+                                    <Globe size={18} color="#6B6B6D" />
+                                    <Button 
+                                        variant="default"
+                                        className="w-fit px-2 text-[#6B6B6D]"
+                                    >{position}</Button>
+                                </div>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end">
-                                <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
+                            <DropdownMenuContent className="w-fit">
+                                <DropdownMenuRadioGroup 
+                                    value={position} 
+                                    onValueChange={setPosition}
+                                    className="p-4 grid grid-cols-2 gap-8"
+                                >
+                                    {languages.map((lang, index) => (
+                                        <DropdownMenuRadioItem 
+                                            key={lang.id}
+                                            value={lang.label}
+                                            className="flex items-center gap-2"
+                                        >
+                                            <div className="w-8 h-full">
+                                                <Image
+                                                    src={lang.flag}
+                                                    alt={`Language ${index+1}`}
+                                                    className="w-full h-full"
+                                                />
+                                            </div>
+                                            <Typography>
+                                                {lang.name}
+                                            </Typography>
+                                        </DropdownMenuRadioItem>
+
+                                    ))}
+                                </DropdownMenuRadioGroup>
                             </DropdownMenuContent>
                         </DropdownMenu>
+                        
+                        <Button
+                            variant="ghost"
+                            className="sm:flex hidden items-center gap-1"
+                        >
+                            <ArrowRight />
+                            Login
+                        </Button>
+                        <Button
+                            variant="ghost"
+                            className="sm:flex hidden items-center gap-1"
+                        >
+                            <Mail />
+                            Contact
+                        </Button>
+
                         <Sheet>
                             <SheetTrigger asChild>
                                 <Button
                                     variant="ghost"
                                     size="icon"
-                                    className="shrink-0 md:hidden"
+                                    className="shrink-0 xl:hidden"
                                 >
                                     <Menu className="h-5 w-5" />
                                     <span className="sr-only">Toggle navigation menu</span>
@@ -72,21 +111,19 @@ export default function Navbar() {
                                 <nav className="grid gap-6 text-lg font-medium">
                                     <Link
                                         href="/"
-                                        className="flex items-center gap-2 text-xl font-bold"
+                                        className="w-36 h-fit flex items-center gap-2 text-xl font-bold"
                                     >
-                                        <span>KtechHub</span>
+                                        <Image 
+                                            src={codersLogo}
+                                            alt="Coders Clutch"
+                                            className="w-full h-full object-cover"
+                                        />
                                     </Link>
                                     <Link
                                         href="/"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
                                         Getting Started
-                                    </Link>
-                                    <Link
-                                        href="/"
-                                        className="text-muted-foreground hover:text-foreground"
-                                    >
-                                        Components
                                     </Link>
                                     <Link
                                         href="/contact-us"
@@ -103,3 +140,29 @@ export default function Navbar() {
         </header>
     );
 }
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className,
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";
