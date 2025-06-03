@@ -7,7 +7,7 @@ import Image from 'next/image';
 function AwardsRecognition() {
   return (
     <div className='award-bg w-full h-full xl:py-20 py-12'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto '>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto '>
             <div className='xl:pb-16 pb-10 flex flex-col'>
                 <Typography
                     typo="header-3-light"

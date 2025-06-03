@@ -17,15 +17,15 @@ const Hero = () => {
                 <div className="max-container 2xl:w-[80%] w-[90%] mx-auto flex flex-col justify-center items-center gap-6">
                     <div className="pb-4 flex flex-col justify-center items-center md:gap-3 gap-1">
                         <Typography
-                            className="inter xl:text-5xl lg:text-4xl xs:text-3xl text-2xl text-center text-app-primary-light"
+                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl text-center text-app-primary-light"
                         >Build Hi-Tech Products & Enterprise Apps</Typography>
                         <Typography
-                            className="inter xl:text-5xl lg:text-4xl xs:text-3xl text-2xl text-center text-black"
+                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl text-center text-black"
                         >With Instant Agentic AI & AI Agents</Typography>
                     </div>
                     <Typography
                         typo="body-large-medium"
-                        className="max-w-2xl mx-auto text-center"
+                        className="max-w-2xl mx-auto text-center dark:text-black"
                     >
                         Join our global enterprise customers to build your AI-powered B2B, B2C and
                         D2C products and platforms.
@@ -34,11 +34,11 @@ const Hero = () => {
                     <div className="xl:w-[80%] mx-auto py-5 flex justify-center items-center lg:gap-6 gap-4  flex-wrap">
                         {home_services.map((service, index) => {
                             return (
-                                <div key={service.id} className="md:w-fit w-[45%] lg:px-6 px-3 py-3.5 flex justify-center items-center sm:gap-2 gap-3 bg-app-primary-light rounded-md">
+                                <div key={service.id} className="md:w-fit w-[45%] lg:px-6 px-3 py-3.5 flex lg:justify-center  items-center sm:gap-2 gap-3 bg-app-primary-light rounded-md">
                                     <Image 
                                         src={service.icon}
                                         alt={`Service ${index+1}`}
-                                        className="w-7 h-fit"
+                                        className="lg:w-7 mdw-5 w-6 h-fit"
                                     />
                                     <Typography 
                                         className="text-white"

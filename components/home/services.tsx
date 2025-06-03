@@ -13,7 +13,7 @@ function ServicesSection() {
   const currentService = services.find(service => service.id === selectedService);
   return (
     <div className=' service-bg w-full py-10'> 
-        <div className='max-container 2xl:w-[85%] w-[95%] mx-auto mb-6'>
+        <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto mb-6'>
             <Select value={selectedService} onValueChange={setSelectedService}>
                 <SelectTrigger className="w-[300px] bg-white">
                     <SelectValue placeholder="Select a service" />
@@ -27,7 +27,7 @@ function ServicesSection() {
                 </SelectContent>
             </Select>
         </div>
-        <section className='hidden max-container 2xl:w-[85%] w-[95%] mx-auto xl:flex justify-between items-stretch gap-2 flex-wrap'>
+        <section className='hidden max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto xl:flex justify-between items-stretch gap-2 flex-wrap'>
             {currentService?.contents.map((data) => (
                 <div key={data.id}>
                     {data.id === "1" ? (
@@ -77,7 +77,7 @@ function ServicesSection() {
                 ))}
         </section>
 
-        <section className='xl:hidden max-container 2xl:w-[85%] w-[95%] mx-auto flex-wrap'>    
+        <section className='xl:hidden max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex-wrap'>    
             {currentService?.contents.filter(data => data.id === "1").map((data) => (
                 <div key={data.id} className='pops w-full h-full py-12 flex flex-col justify-center gap-2'>
                     <Typography
@@ -95,7 +95,7 @@ function ServicesSection() {
             ))}
            
         </section>
-        <section className='xl:hidden max-container 2xl:w-[85%] w-[95%] mx-auto grid lg:grid-cols-3 sm:grid-cols-2 gap-2 flex-wrap'>    
+        <section className='xl:hidden max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto grid lg:grid-cols-3 sm:grid-cols-2 gap-2 flex-wrap'>    
            
             {currentService?.contents.filter(data => data.id !== "1").map((data) => (
                 <div key={data.id}>

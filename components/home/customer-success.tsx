@@ -10,7 +10,7 @@ import { customer_growth, reasons_global } from '@/constant';
 function CustomerSuccess() {
   return (
     <div className='inter w-full py-12 bg-app-primary-light'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex xl:flex-row flex-col justify-between items-center 2xl:gap-24 gap-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex xl:flex-row flex-col justify-between items-center 2xl:gap-24 gap-12'>
             <Card className='flex-1 sm:p-8 xs:p-4 p-2 bg-white rounded-none'>
                 <CardHeader className='flex flex-col'>
                     <Typography
