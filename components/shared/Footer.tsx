@@ -21,7 +21,7 @@ export default function FooterSection() {
                                 className="text-gray-300 leading-normal"
                                 typo="body-medium-regular"
                             >
-                                CONTUS Tech is a turnkey partner for product development, design, and strategy. As a full-stack 
+                                CODERS CLUTCH is a turnkey partner for product development, design, and strategy. As a full-stack 
                                 software product development company, We engineer high-performance tech products developed for rapid 
                                 market launch.
                             </Typography>

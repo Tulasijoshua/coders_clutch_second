@@ -28,33 +28,39 @@ const nav_links = [
         id: "1",
         title: "Overview",
         description: "Core and supplemental courses for language development",
+        href: "/about/overview"
       },
       {
         id: "2",
         title: "The Board",
         description: "For sighted users to preview content available behind a link.",
+        href: "/"
       },
       {
         id: "3",
         title: "Management",
         description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        href: "/"
       },
       {
         id: "4",
         title: "Careers",
         description: "Visually or semantically separates content.",
+        href: "/about/careers"
       },
       
       {
         id: "5",
         title: "Social Responsibilities",
         description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        href: "/"
       },
       
       {
         id: "6",
         title: "Global Networks",
         description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/"
       },
     ]
   },
@@ -70,31 +76,37 @@ const nav_links = [
         id: "1",
         title: "Overview",
         description: "Core and supplemental courses for language development",
+        href: "/"
       },
       {
         id: "2",
         title: "Careers",
         description: "Visually or semantically separates content.",
+        href: "/insight"
       },
       {
         id: "3",
         title: "The Board",
         description: "For sighted users to preview content available behind a link.",
+        href: "/"
       },
       {
         id: "4",
         title: "Social Responsibilities",
         description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        href: "/"
       },
       {
         id: "5",
         title: "Management",
         description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        href: "/"
       },
       {
         id: "6",
         title: "Global Networks",
         description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/"
       },
     ],
     main_contents: [
@@ -105,27 +117,32 @@ const nav_links = [
           {
             id: "1",
             title: "UI/UX Design",
-            description: "Beautiful, functional digital experiences that convert"
+            description: "Beautiful, functional digital experiences that convert",
+            href: "/"
           },
           {
             id: "2",
             title: "Website Design",
-            description: "Beautiful, functional digital experiences that convert"
+            description: "Beautiful, functional digital experiences that convert",
+            href: "/"
           },
           {
             id: "3",
             title: "Ecommerce solutions",
-            description: "Complete online store solutions for all business sizes"
+            description: "Complete online store solutions for all business sizes",
+            href: "/"
           },
           {
             id: "4",
             title: "Digital Marketing",
-            description: "Data-driven strategies to grow your online presence."
+            description: "Data-driven strategies to grow your online presence.",
+            href: "/"
           },
           {
             id: "5",
             title: "Branding lab & PR",
-            description: "Crafting compelling brand narratives across channels."
+            description: "Crafting compelling brand narratives across channels.",
+            href: "/"
           },
         ]
       },
@@ -136,22 +153,26 @@ const nav_links = [
           {
             id: "1",
             title: "iOS Apps",
-            description: "Premium native applications for Apple ecosystem"
+            description: "Premium native applications for Apple ecosystem",
+            href: "/"
           },
           {
             id: "2",
             title: "Android Apps",
-            description: "High-performance Android applications"
+            description: "High-performance Android applications",
+            href: "/"
           },
           {
             id: "3",
             title: "Natives Apps",
-            description: "Platform-specific apps with maximum performance."
+            description: "Platform-specific apps with maximum performance.",
+            href: "/"
           },
           {
             id: "4",
             title: "Hybrid Apps",
-            description: "Cross-platform solutions with native feel."
+            description: "Cross-platform solutions with native feel.",
+            href: "/"
           },
         ]
       },
@@ -162,27 +183,32 @@ const nav_links = [
           {
             id: "1",
             title: "ERP Solutions",
-            description: "Enterprise resource planning with integrated AI"
+            description: "Enterprise resource planning with integrated AI",
+            href: "/"
           },
           {
             id: "2",
             title: "DLT Solutions",
-            description: "Blockchain and web3 distributed ledger technology"
+            description: "Blockchain and web3 distributed ledger technology",
+            href: "/"
           },
           {
             id: "3",
             title: "Digital Twins",
-            description: "Virtual replicas for automotive, property and more."
+            description: "Virtual replicas for automotive, property and more.",
+            href: "/"
           },
           {
             id: "4",
             title: "Web Applications",
-            description: "Complex platforms and digital brand destinations."
+            description: "Complex platforms and digital brand destinations.",
+            href: "/"
           },
           {
             id: "5",
             title: "AI agent and Chatbot",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning."
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/"
           },
         ]
       },
@@ -193,47 +219,56 @@ const nav_links = [
           {
             id: "1",
             title: "Business Continuity",
-            description: "Ensure uninterrupted operations during disruptions"
+            description: "Ensure uninterrupted operations during disruptions",
+            href: "/"
           },
           {
             id: "2",
             title: "Cloud Monitoring",
-            description: "Comprehensive protection for cloud environments"
+            description: "Comprehensive protection for cloud environments",
+            href: "/"
           },
           {
             id: "3",
             title: "Penetration Testing",
-            description: "Identify vulnerabilities before attackers do."
+            description: "Identify vulnerabilities before attackers do.",
+            href: "/"
           },
           {
             id: "4",
             title: "Digital Forensics",
-            description: "Investigate and analyze digital evidence."
+            description: "Investigate and analyze digital evidence.",
+            href: "/"
           },
           {
             id: "5",
             title: "Infrastructure and configuration management",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning."
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/"
           },
           {
             id: "6",
             title: "DevOps consulting services",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning."
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/"
           },
           {
             id: "7",
             title: "DevOps implementation and containerization",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning."
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/"
           },
           {
             id: "8",
             title: "DevOps CI/CD services",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning."
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/"
           },
           {
             id: "9",
             title: "DevOps release management and orchestration.",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning."
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/"
           },
         ]
       },
@@ -244,47 +279,56 @@ const nav_links = [
           {
             id: "1",
             title: "IT Strategy Development",
-            description: "Align technology with business objectives"
+            description: "Align technology with business objectives",
+            href: "/"
           },
           {
             id: "2",
             title: "IT Infrastructure Modernization",
-            description: "Upgrade legacy systems for the digital age"
+            description: "Upgrade legacy systems for the digital age",
+            href: "/"
           },
           {
             id: "3",
             title: "Business Process Automation",
-            description: "Streamline operations with intelligent automation"
+            description: "Streamline operations with intelligent automation",
+            href: "/"
           },
           {
             id: "4",
             title: "Customer Experience Transformation",
-            description: "Redesign customer journeys for digital channels"
+            description: "Redesign customer journeys for digital channels",
+            href: "/"
           },
           {
             id: "5",
             title: "Data Driven Decision Making",
-            description: "Leverage analytics for strategic insights"
+            description: "Leverage analytics for strategic insights",
+            href: "/"
           },
           {
             id: "6",
             title: "Enterprise Resource Planning",
-            description: "Integrated management of core business processes"
+            description: "Integrated management of core business processes",
+            href: "/"
           },
           {
             id: "7",
             title: "Proactive Monitoring",
-            description: "Real-time system health and performance tracking"
+            description: "Real-time system health and performance tracking",
+            href: "/"
           },
           {
             id: "8",
             title: "Training & Upskilling",
-            description: "Develop digital capabilities across your organization"
+            description: "Develop digital capabilities across your organization",
+            href: "/"
           },
           {
             id: "9",
             title: "Industry Specific Solutions",
-            description: "Tailored digital transformation for your sector"
+            description: "Tailored digital transformation for your sector",
+            href: "/"
           },
         ]
       },
@@ -415,41 +459,49 @@ const nav_links = [
         id: "1",
         title: "Fintech",
         description: "A modal dialog that interrupts the user with important content and expects a response.",
+        href: "/"
       },
       {
         id: "2",
         title: "Health Care",
         description: "For sighted users to preview content available behind a link.",
+        href: "/"
       },
       {
         id: "3",
         title: "EdTech",
         description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        href: "/"
       },
       {
         id: "4",
         title: "Construction",
         description: "Visually or semantically separates content.",
+        href: "/"
       },
       {
         id: "5",
         title: "Energy & Climate",
         description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        href: "/"
       },
       {
         id: "6",
         title: "Insurance & Mortgage",
         description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/"
       },
       {
         id: "7",
         title: "Logistics & Transportation",
         description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/"
       },
       {
         id: "8",
         title: "Travel & Hospitality",
         description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/"
       },
     ]
   },
@@ -465,21 +517,25 @@ const nav_links = [
         id: "1",
         title: "Emiri Pay",
         description: "The future of cross-border remittance and utility payment solutions for everyone",
+        href: "/"
       },
       {
         id: "2",
         title: "Verified 360",
         description: "For sighted users to preview content available behind a link.",
+        href: "/"
       },
       {
         id: "3",
         title: "Ricia Care",
         description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+        href: "/"
       },
       {
         id: "4",
         title: "Tour Mate",
         description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/"
       },
     ]
   },
@@ -495,21 +551,25 @@ const nav_links = [
         id: "1",
         title: "Blog",
         description: "A modal dialog that interrupts the user with important content and expects a response.",
+        href: "/"
       },
       {
         id: "2",
         title: "Events",
         description: "For sighted users to preview content available behind a link.",
+        href: "/"
       },
       {
         id: "3",
         title: "Case Studies",
         description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        href: "/"
       },
       {
         id: "4",
         title: "Report",
         description: "Visually or semantically separates content.",
+        href: "/"
       },
     ]
   },
@@ -593,7 +653,7 @@ export default function Navigation() {
                       <div className="w-[750px] grid grid-cols-3 ">
                         {link.contents?.map((link) => (
                         <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
-                          <ListItem href="/" title={link.title}>
+                          <ListItem href={link.href} title={link.title}>
                             {link.description}
                           </ListItem>
                           

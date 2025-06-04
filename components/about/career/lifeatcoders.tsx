@@ -33,7 +33,7 @@ const life_ats = [
     },
 ]
 
-function Lifatcoders() {
+function Lifeatcoders() {
   return (
     <div className='w-full py-12 flex md:flex-row flex-col items-center justify-between gap-6'>
         <div className='md:hidden w-fit pb-4 flex flex-col gap-2'>
@@ -86,4 +86,4 @@ function Lifatcoders() {
   )
 }
 
-export default Lifatcoders
+export default Lifeatcoders

@@ -17,7 +17,7 @@ function CustomerSuccess() {
                         typo="header-3-light"
                     >Top 6 Reasons</Typography>
                     <Typography typo="header-3-semibold">
-                        Why Global Companies Choose CONTUS Tech
+                        Why Global Companies Choose CODERS CLUTCH
                     </Typography>
                 </CardHeader>
                 <CardContent className=''>

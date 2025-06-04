@@ -3,9 +3,9 @@ import Typography from '@/components/shared/typography'
 import React from 'react';
 import devopsIcon from "@/public/assets/icons/career_icons/devops_icon.png"
 import assuranceIcon from "@/public/assets/icons/career_icons/assurance_icon.png"
-import fullstackImg from "@/public/assets/images/career/fullstack.jpg";
-import iotImg from "@/public/assets/images/career/iot.jpg";
-import devopsImg from "@/public/assets/images/career/devops.jpg";
+import fullstackImg from "@/public/assets/images/about/fullstack.jpg";
+import iotImg from "@/public/assets/images/about/iot.jpg";
+import devopsImg from "@/public/assets/images/about/devops.jpg";
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -60,7 +60,7 @@ const career_areas = [
         icon: assuranceIcon,
         title: "Product Marketing",
         category: "marketing",
-        content: `Our Product Marketers work closely within an organization to bring the CONTUS TECH brand alive with 
+        content: `Our Product Marketers work closely within an organization to bring the CODERS CLUTCH brand alive with 
                     stakeholders, employees and customers.
 
 `
