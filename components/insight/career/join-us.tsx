@@ -47,7 +47,7 @@ const careers = [
 function JoinUs() {
   return (
     <div className='w-full py-12 bg-[#F6FAFD]'>
-        <section className='max-container sm:w-[85%] w-[70%] mx-auto'>
+        <section className='max-container sm:w-[85%] xs:w-[70%] w-[90%] mx-auto'>
             <div className='w-fit mx-auto text-center pb-4 flex flex-col gap-2'>
                 <Typography
                     typo="header-4-semibold"
@@ -63,7 +63,7 @@ function JoinUs() {
                     className='text-center'
                 >Current Openings</Typography>
 
-                <div className='w-full grid grid-cols-3 gap-6'>
+                <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 gap-6'>
                     {careers.map((data) => (
                         <Card 
                             key={data.id}
