@@ -4,7 +4,7 @@ import React from 'react';
 import devopsIcon from "@/public/assets/icons/career_icons/devops_icon.png"
 import assuranceIcon from "@/public/assets/icons/career_icons/assurance_icon.png"
 import fullstackImg from "@/public/assets/images/career/fullstack.jpg";
-import iotImg from "@/public/assets/images/career/IoT.jpg";
+// import iotImg from "@/public/assets/images/career/IoT.jpg";
 import devopsImg from "@/public/assets/images/career/devops.jpg";
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
@@ -104,13 +104,13 @@ function CareerAreas() {
                             )
                         ))}
                     </div>
-                    <div className='w-full h-fit'>
+                    {/* <div className='w-full h-fit'>
                         <Image 
                             src={iotImg}
                             alt='Fullstack Image'
                             className='w-full h-full rounded-xl'
                         />
-                    </div>
+                    </div> */}
                     <div className='w-full'>
                         {career_areas.map((data, index) => (
                             data.category === 'marketing' && (
