@@ -125,6 +125,12 @@ export default function Navbar() {
                                         Getting Started
                                     </Link>
                                     <Link
+                                        href="/insight"
+                                        className="text-muted-foreground hover:text-foreground"
+                                    >
+                                        Career
+                                    </Link>
+                                    <Link
                                         href="/contact-us"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
