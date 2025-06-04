@@ -23,7 +23,7 @@ const buttonVariants = cva(
         date: "min-w-0",
       },
       size: {
-        default: "w-fit xs:px-6 px-3 xs:py-3 py-2 xs:text-base text-sm font-medium rounded-sm",
+        default: "w-fit sm:px-6 px-3 sm:py-3 py-2 sm:text-base text-sm font-medium rounded-sm",
         sm: "w-fit h-8 rounded-sm px-3 text-xs",
         lg: "w-fit lg:py-3 py-2 text-lg rounded-sm px-10",
         icon: "h-9 w-9",

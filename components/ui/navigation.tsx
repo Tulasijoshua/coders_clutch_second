@@ -531,13 +531,16 @@ export default function Navigation() {
             <NavigationMenuTrigger>{link.nav_name}</NavigationMenuTrigger>
             <NavigationMenuContent>
                 <ul className="w-fit h-full pb-4 flex items-stretch gap-3 p-4 ">
-                    <li className="w-[220px] min-h-full bg-gray-50">
+                    <li className="w-[230px] min-h-full bg-gray-50">
                       <NavigationMenuLink asChild>
-                        <Link
+                        <div
                           className="flex h-full w-full select-none flex-col gap-6 rounded-md p-3 no-underline outline-none focus:shadow-md "
-                          href="/"
+                          
                         >
-                          <div className="flex flex-col gap-4">
+                          <Link 
+                            className="flex flex-col gap-4"
+                            href={link.href}
+                          >
                             <Typography 
                               className="text-blue-900"
                               typo="header-5-semibold"
@@ -550,7 +553,7 @@ export default function Navigation() {
                             >
                               {link.description}
                             </Typography>
-                          </div>
+                          </Link>
                           <div
                             className="space-y-2"
                           >
@@ -560,7 +563,7 @@ export default function Navigation() {
                                   variant="outline"
                                   key={sub_link.id}
                                   onMouseEnter={() => setSelectedSubLink(sub_link.id)}
-                                  className="w-full px-2 py-2 text-sm justify-start text-wrap text-left hover:!text-blue-900 border-gray-300 hover:bg-blue-100 rounded-lg"
+                                  className={`w-full px-1 !py-2 text-sm justify-start text-wrap text-left !leading-5 ${selectedSubLink === sub_link.id ? "!text-blue-900 bg-blue-100" : ""} hover:!text-blue-900 border-gray-300 hover:bg-blue-100 rounded-lg`}
                                 >{sub_link.title}</Button>
                               ))
                             ) : (
@@ -570,7 +573,7 @@ export default function Navigation() {
                               >{link.sub_title}</Typography>
                             )}
                           </div>
-                        </Link>
+                        </div>
                       </NavigationMenuLink>
                     </li>
                     

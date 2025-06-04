@@ -33,6 +33,46 @@ import documentary from "@/public/assets/images/projects/documentary-warehouse-2
 import mohisola from "@/public/assets/images/projects/mojisola-1-uai-840x560.png";
 import woodentools from "@/public/assets/images/projects/woodentods-1-uai-840x560.png";
 import { ProjectProp } from "@/type";
+import loyaltyIcon from "@/public/assets/icons/career_icons/loyalty_icon.png";
+
+export const values = [
+    {
+        id: "1",
+        title: "Loyalty",
+        icon: loyaltyIcon,
+        description: "With the right attitude and dedication, the right rewards fall into place automatically",
+    },
+    {
+        id: "2",
+        title: "Ownership",
+        icon: loyaltyIcon,
+        description: "Making employees take ownership of the job & provide constructive feedback to nourish an autonomy culture",
+    },
+    {
+        id: "3",
+        title: "Consistency",
+        icon: loyaltyIcon,
+        description: "We at CODERS CLUTCH consistently deliver each product as well as services on time, every time",
+    },
+    {
+        id: "4",
+        title: "Resilience",
+        icon: loyaltyIcon,
+        description: "We think & act, look at the bigger picture when the going gets tough. No room for stressed environment",
+    },
+    {
+        id: "5",
+        title: "Transparency",
+        icon: loyaltyIcon,
+        description: "Embracing a fair, transparent and ethical integrity environment. We take open & honest communication from Upward to downward level",
+    },
+    {
+        id: "6",
+        title: "Client Value Creation",
+        icon: loyaltyIcon,
+        description: "We measure our success through our client’s impact. We deliver what we promise leading to long-term relationships",
+    },
+]
 
 export const languages = [
     {
@@ -599,5 +639,6 @@ export const culture_cards = [
         content: "We prioritize a healthy work-life balance, helping employees grow personally and professionally.",
     },
 ]
+
 
 export const social_icons = [facebookIcon, instagramIcon, xIcon, youtubeIcon, linkedInIcon]

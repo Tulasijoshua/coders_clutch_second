@@ -29,7 +29,7 @@ export default function Navbar() {
                     <NavbarLeft>
                         <Link
                             href="/"
-                            className="xs:w-36 w-24 h-fit flex items-center gap-2 text-xl font-bold"
+                            className="sm:w-36 xs:w-28 w-24 h-fit flex items-center gap-2 text-xl font-bold"
                         >
                             <Image 
                                 src={codersLogo}
