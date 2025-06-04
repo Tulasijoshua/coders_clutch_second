@@ -29,7 +29,7 @@ export default function Navbar() {
                     <NavbarLeft>
                         <Link
                             href="/"
-                            className="w-36 h-fit flex items-center gap-2 text-xl font-bold"
+                            className="xs:w-36 w-24 h-fit flex items-center gap-2 text-xl font-bold"
                         >
                             <Image 
                                 src={codersLogo}
@@ -46,7 +46,6 @@ export default function Navbar() {
                             variant="primary"
                         >
                             Get In Touch
-                            {/* <ArrowRight /> */}
                         </Button>
                         
                         <Button
@@ -56,45 +55,46 @@ export default function Navbar() {
                             <ArrowRight />
                             Login
                         </Button>
+                        <div className="">
+                            <DropdownMenu>
+                                <DropdownMenuTrigger asChild>
+                                    <div className="flex items-center">
+                                        <Globe size={18} color="#6B6B6D" />
+                                        <Button 
+                                            variant="default"
+                                            className="w-fit px-2 text-[#6B6B6D]"
+                                        >{position}</Button>
+                                    </div>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent className="w-fit">
+                                    <DropdownMenuRadioGroup 
+                                        value={position} 
+                                        onValueChange={setPosition}
+                                        className="p-4 grid grid-cols-2 gap-8"
+                                    >
+                                        {languages.map((lang, index) => (
+                                            <DropdownMenuRadioItem 
+                                                key={lang.id}
+                                                value={lang.label}
+                                                className="flex items-center gap-2"
+                                            >
+                                                <div className="w-8 h-full">
+                                                    <Image
+                                                        src={lang.flag}
+                                                        alt={`Language ${index+1}`}
+                                                        className="w-full h-full"
+                                                    />
+                                                </div>
+                                                <Typography>
+                                                    {lang.name}
+                                                </Typography>
+                                            </DropdownMenuRadioItem>
 
-                        <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <div className="flex items-center">
-                                    <Globe size={18} color="#6B6B6D" />
-                                    <Button 
-                                        variant="default"
-                                        className="w-fit px-2 text-[#6B6B6D]"
-                                    >{position}</Button>
-                                </div>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-fit">
-                                <DropdownMenuRadioGroup 
-                                    value={position} 
-                                    onValueChange={setPosition}
-                                    className="p-4 grid grid-cols-2 gap-8"
-                                >
-                                    {languages.map((lang, index) => (
-                                        <DropdownMenuRadioItem 
-                                            key={lang.id}
-                                            value={lang.label}
-                                            className="flex items-center gap-2"
-                                        >
-                                            <div className="w-8 h-full">
-                                                <Image
-                                                    src={lang.flag}
-                                                    alt={`Language ${index+1}`}
-                                                    className="w-full h-full"
-                                                />
-                                            </div>
-                                            <Typography>
-                                                {lang.name}
-                                            </Typography>
-                                        </DropdownMenuRadioItem>
-
-                                    ))}
-                                </DropdownMenuRadioGroup>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
+                                        ))}
+                                    </DropdownMenuRadioGroup>
+                                </DropdownMenuContent>
+                            </DropdownMenu>
+                        </div>
                         <Sheet>
                             <SheetTrigger asChild>
                                 <Button

@@ -26,6 +26,13 @@ import storageIcon from "@/public/assets/icons/home_icons/storage.svg"
 import securedIcon from "@/public/assets/icons/home_icons/secured.svg"
 import stampIcon from "@/public/assets/icons/home_icons/stamp.svg"
 import developerIcon from "@/public/assets/icons/home_icons/developers.svg"
+import senaHomes from "@/public/assets/images/projects/SenaHomes-Portfolio-1-uai-1400x933.png";
+import savingBox from "@/public/assets/images/projects/SavingsBox-Portolifo-1-uai-1400x933.png";
+import missluShopify from "@/public/assets/images/projects/Misslu-shopify-website-page-1-uai-1800x1200.png";
+import documentary from "@/public/assets/images/projects/documentary-warehouse-2-uai-840x560.png";
+import mohisola from "@/public/assets/images/projects/mojisola-1-uai-840x560.png";
+import woodentools from "@/public/assets/images/projects/woodentods-1-uai-840x560.png";
+import { ProjectProp } from "@/type";
 
 export const languages = [
     {
@@ -364,6 +371,59 @@ export const services = [
             },
         ]
     }
+]
+
+export const clients_project: ProjectProp[] = [
+    {
+        id: "1",
+        img: senaHomes,
+        title: "Sena Homes",
+        category: "E-commerce",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "2",
+        img: savingBox,
+        title: "Saving Box",
+        category: "Mobile App Development",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "3",
+        img: mohisola,
+        title: "RCC",
+        category: "Mobile App Development",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "4",
+        img: missluShopify,
+        title: "Vibes",
+        category: "Branding",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "5",
+        img: documentary,
+        title: "SlakWorld",
+        category: "Web App",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+
+    },
+    {
+        id: "6",
+        img: woodentools,
+        title: "SlakWorld",
+        category: "Website Design",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+
+    },
 ]
 
 export const success_stories = [
