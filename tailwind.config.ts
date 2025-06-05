@@ -15,6 +15,8 @@ export default {
 			"app-primary-light": "#1D646D",
 			"app-secondary": "#FF6900",
 			"app-yellow-light": "#FFF6E7",
+			"app-yellow": "#FFCB40",
+			"app-blue": "#2E76F6",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

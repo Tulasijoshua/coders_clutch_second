@@ -1,0 +1,35 @@
+
+'use client';
+import Typography from '@/components/shared/typography'
+import React from 'react'
+
+function OverviewHero() {
+  return (
+    <div className='overviewbanner-bg w-full py-32'>
+        <section className='max-container w-[70%] flex flex-col gap-20 text-center'>
+            <div>
+                <Typography
+                    typo="header-1-semibold"
+                    className='!text-7xl'
+                >
+                    We are <span className='bg-gradient-to-r from-[#F25E20] to-[#E426A0] bg-clip-text text-transparent'>Coders Clutch. </span>
+                </Typography>
+                <Typography
+                    typo="header-1-semibold"
+                    className='text-7xl !leading-snug'
+                >
+                    We Deliver Memorable Digital Experiences for Top Brands.
+                </Typography>
+            </div>
+            <Typography
+                className=''
+                typo="body-large-regular"
+            >
+                <span className='font-semibold'>Coders Clutch</span> builds mission-critical technology solutions for many Fortune 500 firms.
+            </Typography>
+        </section>
+    </div>
+  )
+}
+
+export default OverviewHero

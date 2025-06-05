@@ -108,22 +108,73 @@ body {
   /* background-attachment: fixed; */
 }
 
+.overviewbanner-bg {
+  background: url('/assets/images/about/overview-banner-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.ceobg {
+  background: url('/assets/images/about/ceo-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.peak-bg {
+  background: url('/assets/images/about/grid-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
+}
+
+.plusJak {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
 }
 
 .pops {
   font-family: "Poppins", sans-serif;
 }
 
-.inter {
-  font-family: "Inter", sans-serif;
-  font-weight: 900; 
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.robot {
+  font-family: "Roboto", sans-serif;
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.public {
+  font-family: "Public Sans", sans-serif;
 }
 
 .times {
   font-family: "Times New Roman", Times, serif;
+}
+
+.arial {
+  font-family: "Arial Black", Arial Black, serif;
 }
 
 @keyframes slide {

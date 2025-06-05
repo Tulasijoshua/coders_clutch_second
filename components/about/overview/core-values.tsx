@@ -1,0 +1,105 @@
+'use client';
+import Typography from '@/components/shared/typography';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
+import React from 'react';
+
+const core_values = [
+    {
+        id: "01",
+        color: "#2A0D8D",
+        title: "People-First Culture",
+        description: `We prioritize the well-being, growth, and development of our employees, placing their needs and 
+                        interests at the forefront of organizational decisions.`
+    },
+    {
+        id: "02",
+        color: "#FF9DAF",
+        title: "Diversity and Inclusion",
+        description: `Ours is a workplace that values individuals from all backgrounds, perspectives, and experiences. 
+                        We foster a culture of belonging and equality for all.`
+    },
+    {
+        id: "03",
+        color: "#FADE68",
+        title: "Sense of Ownership",
+        description: `We cultivate a sense of ownership among our employees. They take responsibility for their work and 
+                        contribute to the company's success as if it were their own.`
+    },
+    {
+        id: "04",
+        color: "#6FC9F5",
+        title: "Transparent Decisions",
+        description: `Transparency is at the core of our actions. We practice open communication where all team members feel 
+                        comfortable sharing ideas, feedback, and concerns..`
+    },
+    {
+        id: "05",
+        color: "#73EDB0",
+        title: "Continuous Improvement",
+        description: `We strive for ongoing growth and development, both individually and as a company, through continuous 
+                        learning, innovation, and adaptation to change.`
+    },
+    {
+        id: "06",
+        color: "#3B5EEF",
+        title: "Customer Value Creation",
+        description: `Our success mantra is simple. Focus on creating value for clients with exceptional products, and 
+                        services that consistently exceed their expectations.`
+    },
+]
+
+function CoreValues() {
+  return (
+    <div className='w-full py-16 '>
+        <section className='w-[85%] mx-auto'>
+            <div className='w-[70%] flex flex-col gap-4'>
+                <Button
+                    variant="secondary"
+                    className='!px-8 !text-lg font-medium bg-app-blue rounded-full'
+                >
+                    Our Core Values
+                </Button>
+                <Typography
+                    typo="header-3-semibold"
+                    className='!leading-normal'
+                >
+                    Values we cherish and nurture
+                </Typography>
+            </div>
+
+            <section className='w-full py-16 grid grid-cols-3 gap-8'>
+                {core_values.map((data, index) => (
+                    <Card 
+                        key={data.id}
+                        className='py-4 border-y-0 border-r-0 border-l-4 shadow-md hover:shadow-lg transition-shadow rounded-[1rem]'
+                        style={{borderColor: data.color}}
+                    >
+                        <CardHeader className='pb-0 flex flex-col gap-2'>
+                            <Typography
+                                typo="header-5-semibold"
+                                style={{color: data.color}}
+                            >
+                                {data.id}
+                            </Typography>
+                            <Typography
+                                typo="header-6-semibold"
+                            >
+                                {data.title}
+                            </Typography>
+                        </CardHeader>
+                        <CardContent className='pt-2'>
+                            <Typography
+                                typo="body-medium-medium"
+                                className='!leading-relaxed'
+                            >{data.description}</Typography>
+                        </CardContent>
+                    </Card>
+                ))}
+            </section>
+        </section>
+    </div>
+  )
+}
+
+export default CoreValues
