@@ -10,13 +10,16 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			"app-primary": "#003B38",
-			"app-primary-medium": "#01403D",
-			"app-primary-light": "#1D646D",
-			"app-secondary": "#FF6900",
-			"app-yellow-light": "#FFF6E7",
-			"app-yellow": "#FFCB40",
-			"app-blue": "#2E76F6",
+  			'app-primary-deep': '#00312F',
+  			'app-primary': '#003B38',
+  			'app-primary-medium': '#01403D',
+  			'app-primary-light': '#1D646D',
+  			'app-secondary': '#FF6900',
+  			'app-yellow-light': '#FFF6E7',
+  			'app-yellow': '#FFCB40',
+  			'app-blue': '#2E76F6',
+  			'app-green': '#3EFF7A',
+  			'app-gray-bg': '#F8F8F8',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -62,15 +65,15 @@ export default {
   				foreground: 'hsl(var(--brand-foreground))'
   			}
   		},
-		  screens: {
-			'xm': '350px',  // Custom extra-small screen size
-			'xs': '475px',  // Custom extra-small screen size
-			'sm': '640px',
-			'md': '768px',
-			'lg': '1024px',
-			'xl': '1280px',
-			'2xl': '1530px', // Custom double-extra-large screen size
-		},
+  		screens: {
+  			xm: '350px',
+  			xs: '475px',
+  			sm: '640px',
+  			md: '768px',
+  			lg: '1024px',
+  			xl: '1280px',
+  			'2xl': '1530px'
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

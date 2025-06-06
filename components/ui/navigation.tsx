@@ -118,7 +118,7 @@ const nav_links = [
             id: "1",
             title: "UI/UX Design",
             description: "Beautiful, functional digital experiences that convert",
-            href: "/"
+            href: "/solutions/digital-solutions/ui-ux-design"
           },
           {
             id: "2",
@@ -339,26 +339,31 @@ const nav_links = [
           {
             id: "1",
             title: "IT Infrastructure Management",
+            href: "/",
             description: "End-to-end management of your IT environment"
           },
           {
             id: "2",
             title: "Cloud Management Services",
+            href: "/",
             description: "Optimized cloud operations and cost management"
           },
           {
             id: "3",
             title: "Institutional Cyber Security",
+            href: "/",
             description: "Enterprise-grade security protection"
           },
           {
             id: "4",
             title: "Data and Application Management",
+            href: "/",
             description: "Secure, compliant data handling and app management"
           },
           {
             id: "5",
             title: "End-user Support",
+            href: "/",
             description: "24/7 technical assistance for your workforce"
           },
         ]
@@ -370,31 +375,37 @@ const nav_links = [
           {
             id: "1",
             title: "License Procurement",
+            href: "/",
             description: "Strategic software acquisition and management"
           },
           {
             id: "2",
             title: "Renewals Management",
+            href: "/",
             description: "Automated tracking and renewal processing"
           },
           {
             id: "3",
             title: "Compliance Support",
+            href: "/",
             description: "Ensure adherence to licensing agreements"
           },
           {
             id: "4",
             title: "Software Asset Management",
+            href: "/",
             description: "Optimize software investments and usage"
           },
           {
             id: "5",
             title: "Tillering Operations",
+            href: "/",
             description: "Specialized financial operations management"
           },
           {
             id: "6",
             title: "Advisory Services",
+            href: "/",
             description: "Expert guidance on licensing strategies"
           },
         ]
@@ -406,41 +417,49 @@ const nav_links = [
           {
             id: "1",
             title: "Digital Health",
+            href: "/",
             description: "Telemedicine and healthcare digitization"
           },
           {
             id: "2",
             title: "Smart Governance",
+            href: "/",
             description: "E-government and digital public services"
           },
           {
             id: "3",
             title: "Smart Infrastructure",
+            href: "/",
             description: "IoT-enabled urban infrastructure solutions"
           },
           {
             id: "4",
             title: "Smart Education",
+            href: "/",
             description: "Digital learning platforms and tools"
           },
           {
             id: "5",
             title: "Smart Mobility",
+            href: "/",
             description: "Intelligent transportation systems"
           },
           {
             id: "6",
             title: "Public Safety",
+            href: "/",
             description: "Emergency response and surveillance systems"
           },
           {
             id: "7",
             title: "Environmental Sustainability",
+            href: "/",
             description: "Smart environmental monitoring solutions"
           },
           {
             id: "8",
             title: "Data & AI Management",
+            href: "/",
             description: "City-wide data analytics and AI implementation"
           },
         ]
@@ -641,7 +660,7 @@ export default function Navigation() {
                       <div className="w-[750px] grid grid-cols-2 ">
                         {currentSubLink?.contents?.map((link) => (
                         <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
-                          <ListItem href="/" title={link.title}>
+                          <ListItem href={link?.href} title={link.title}>
                             {link.description}
                           </ListItem>
                           

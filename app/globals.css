@@ -132,6 +132,30 @@ body {
   /* background-attachment: fixed; */
 }
 
+.maskbg {
+  background: url('/assets/images/mask-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.outcome-bg {
+  background: url('/assets/images/solutions/business-outcome.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.design-touch-bg {
+  background: url('/assets/images/solutions/touch-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
