@@ -1,5 +1,4 @@
 'use client';
-import Typography from '@/components/shared/typography'
 import React from 'react'
 
 function HighPerforming() {
