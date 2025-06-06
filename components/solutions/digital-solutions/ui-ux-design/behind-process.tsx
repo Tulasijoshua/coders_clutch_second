@@ -239,7 +239,7 @@ function BehindProcess() {
                                         className='z-[10]'
                                     >{data.name}</Typography>
                                     <Separator 
-                                        className='absolute right-0 w-full border-b-2 border-dashed border-black z-[1]'
+                                        className='absolute right-0 left-0 w-full border-b-2 border-dashed border-black z-[1]'
                                     />
                                 </div>
                                 ))}

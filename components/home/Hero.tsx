@@ -17,10 +17,10 @@ const Hero = () => {
                 <div className="max-container 2xl:w-[80%] w-[90%] mx-auto flex flex-col justify-center items-center gap-6">
                     <div className="pb-4 flex flex-col justify-center items-center md:gap-3 gap-1">
                         <Typography
-                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl text-center text-app-primary-light"
+                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl font-extrabold xs:text-3xl text-2xl text-center text-app-primary-light"
                         >Build Hi-Tech Products & Enterprise Apps</Typography>
                         <Typography
-                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl text-center text-black"
+                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl font-extrabold text-center text-black"
                         >With Instant Agentic AI & AI Agents</Typography>
                     </div>
                     <Typography
