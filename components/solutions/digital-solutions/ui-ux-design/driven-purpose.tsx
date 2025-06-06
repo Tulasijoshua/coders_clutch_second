@@ -32,7 +32,7 @@ const clients_served = [
 function DrivenPurpose() {
   return (
     <div className='maskbg w-full py-16 '>
-        <section className='max-container w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col'>
                 <Typography
                     typo="header-3-light"
@@ -46,7 +46,7 @@ function DrivenPurpose() {
                     Product Design Services That Feel Right and Work Better
                 </Typography>
             </div>
-            <div className='w-full grid grid-cols-4 gap-2'>
+            <div className='w-full grid md:grid-cols-4 xs:grid-cols-2 gap-2'>
                 {clients_served.map((data) => (
                     <div key={data.id} className='px-3 flex flex-col border-l-[3px] border-black'>
                         <Typography

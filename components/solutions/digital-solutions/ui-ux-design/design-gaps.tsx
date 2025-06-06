@@ -51,7 +51,7 @@ const design_gaps = [
 function DesignGaps() {
   return (
     <div className='w-full py-12 bg-[#F8F8F8]'>
-        <section className='max-container w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col'>
                 <Typography
                     typo="header-3-light"
@@ -65,10 +65,10 @@ function DesignGaps() {
                     Fixing Design Hiccups Before They Become Real Problems
                 </Typography>
             </div>
-            <div className='w-full mx-auto grid grid-cols-3 gap-12'>
+            <div className='w-full mx-auto grid md:grid-cols-3 sm:grid-cols-2 lg:gap-12 gap-4'>
                 {design_gaps.map((data, index) => (
-                    <div key={data.id} className='pr-16 flex flex-col gap-4'>
-                        <div className='w-16 h-16 rounded-md'>
+                    <div key={data.id} className='lg:pr-16 md:p-0 sm:p-3 p-4 flex flex-col gap-4 md:shadow-none shadow-md md:rounded-none rounded-md'>
+                        <div className='sm:w-16 w-12 sm:h-16 h-12 rounded-md'>
                             <Image 
                                 src={data.icon}
                                 alt={`Design ${index+1}`}

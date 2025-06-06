@@ -146,7 +146,7 @@ function DevelopmentServices() {
     const currentService = dev_services.find(service => service.id === selectedService)
   return (
     <div className='w-full py-12 bg-app-gray-bg'>
-        <section className='max-container w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-12 pb-10 flex flex-col'>
                 <Typography
                     typo="header-3-light"
@@ -161,7 +161,7 @@ function DevelopmentServices() {
                 </Typography>
             </div>
             <div className='w-full pb-10 space-y-6 bg-[#F5FFF5]'>
-                <div className='w-full grid grid-cols-8'>
+                <div className='w-full grid lg:grid-cols-8 xs:grid-cols-4 grid-cols-2'>
                     {dev_services.map(data => (
                         <Button
                             variant="default"
@@ -172,8 +172,8 @@ function DevelopmentServices() {
                         >{data.title}</Button>
                     ))}
                 </div>
-                <div className='w-full pt-4 flex justify-between gap-16'>
-                    <div className='flex-1 px-12 flex flex-col gap-6'>
+                <div className='w-full pt-4 flex lg:flex-row flex-col justify-between gap-16'>
+                    <div className='flex-1 xs:px-12 px-4 flex flex-col gap-6'>
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 typo="header-5-semibold"
@@ -203,7 +203,7 @@ function DevelopmentServices() {
                             ))}
                         </ul>
                     </div>
-                    <div className='w-[500px] h-[350px]'>
+                    <div className='lg:w-[500px] xs:w-[80%] w-[90%] lg:h-[350px] md:h-[400px] xs:h-[300px] h-[200px] lg:mx-0 mx-auto'>
                         {currentService && (
                             <Image
                                 src={currentService?.img}

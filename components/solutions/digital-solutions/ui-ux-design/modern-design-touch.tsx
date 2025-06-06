@@ -6,7 +6,7 @@ import React from 'react'
 function ModernDesignTouch() {
   return (
     <div className='design-touch-bg w-full py-20'>
-        <section className='max-container w-[85%] mx-auto flex flex-col justify-center gap-8'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col justify-center gap-8'>
             <div className='flex flex-col gap-2'>
                 <Typography
                     typo="header-3-semibold"

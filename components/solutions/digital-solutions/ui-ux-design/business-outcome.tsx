@@ -6,7 +6,7 @@ import React from 'react'
 function BusinessOutcome() {
   return (
     <div className='w-full py-24 outcome-bg'>
-        <section className='max-container w-[85%] mx-auto flex flex-col justify-center gap-3'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col justify-center gap-3'>
             <Typography
                 typo="header-3-semibold"
                 className='text-[#F9DF91] text-center'

@@ -22,8 +22,8 @@ const design_services = [
     },
     {
         id: "3",
-        title: "User Experience (UX)",
-        sub_title: "Design",
+        title: "User Experience ",
+        sub_title: "(UX) Design",
         description: "Create intuitive user journeys that make navigating your product smooth and highly enjoyable.",
     },
     {
@@ -58,8 +58,8 @@ const design_services = [
     },
     {
         id: "9",
-        title: "Accessibility & Inclusion",
-        sub_title: "Design",
+        title: "Accessibility & ",
+        sub_title: "Inclusion Design",
         description: "Design inclusive digital products that are easy for everyone to understand and navigate.",
     },
 ]
@@ -67,7 +67,7 @@ const design_services = [
 function SmartInterfaces() {
   return (
     <div className='w-full py-16'>
-        <section className='max-container w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-12 pb-10 flex flex-col'>
                 <Typography
                     typo="header-3-light"
@@ -82,11 +82,13 @@ function SmartInterfaces() {
                 </Typography>
             </div>
             <div className='w-full flex justify-between gap-6'>
-                <section className='flex-1 grid grid-cols-3 gap-3'>
+                <section className='flex-1 grid md:grid-cols-3 sm:grid-cols-2 gap-3'>
                     {design_services.map((data) => (
-                        <Card key={data.id} className='rounded-[1.3rem] bg-[#F8F8F8] border-l-[3px] border-t-[3px] border-r-0 border-b-0 border-green-500'>
-                            <CardHeader className='pb-3 flex flex-row items-center gap-4'>
-                                <MousePointer2 className='rotate-90' fill='#FFB22B' />
+                        <Card key={data.id} className=' rounded-[1.3rem] bg-[#F8F8F8] border-l-[3px] border-t-[3px] border-r-0 border-b-0 border-green-500'>
+                            <CardHeader className=' pb-3 flex flex-row items-center gap-2'>
+                                <div className='xl:flex sm:hidden'>
+                                    <MousePointer2 className='rotate-90' fill='#FFB22B' />
+                                </div>
                                 <div className=''>
                                     <CardTitle
                                         className='flex-1 text-xl inter'
@@ -97,7 +99,7 @@ function SmartInterfaces() {
                                 </div>
 
                             </CardHeader>
-                            <CardContent className=''>
+                            <CardContent className='pb-6'>
                                 <CardDescription
                                     className='text-base text-black'
                                 >{data.description}</CardDescription>
@@ -105,7 +107,7 @@ function SmartInterfaces() {
                         </Card>
                     ))}
                 </section>
-                <section className='w-[300px] min-h-full relative flex flex-col justify-end'>
+                <section className='w-[300px] min-h-full relative lg:flex hidden flex-col justify-end'>
                     <div className='w-full h-full'>
                         <Image
                             src={smartImg}

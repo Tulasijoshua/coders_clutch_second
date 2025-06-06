@@ -58,8 +58,8 @@ const upsides = [
 function UpsidesCodersClutch() {
   return (
     <div className='w-full py-12 '>
-        <section className='max-container w-[85%] mx-auto'>
-            <div className='w-full flex justify-between items-center gap-8'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
+            <div className='w-full flex lg:flex-row flex-col justify-between items-center gap-8'>
                 <div className='inter w-fit pr-10 xl:pb-10 pb-10 flex flex-col'>
                     <Typography
                         typo="header-3-light"
@@ -73,11 +73,11 @@ function UpsidesCodersClutch() {
                         For UI/UX Design Services
                     </Typography>
                 </div>
-                <div className='flex-1 grid grid-cols-2 gap-4'>
+                <div className='flex-1 grid sm:grid-cols-2 gap-4'>
                     {upsides.slice(0, 2).map((data, index) => (
                             <Card 
                                 key={data.id}
-                                className='px-2 py-5 bg-app-primary-deep'
+                                className='px-2 md:py-5 py-3 bg-app-primary-deep'
                             >
                                 <CardHeader>
                                     <div className='w-10 h-fit'>
@@ -87,7 +87,7 @@ function UpsidesCodersClutch() {
                                             className='w-full h-full'
                                         />
                                     </div>
-                                    <div className='pt-12 text-white flex flex-col'>
+                                    <div className='md:pt-12 sm:pt-6 pt-3 text-white flex flex-col'>
                                         <Typography
                                             typo="header-5-semibold"
                                         >
@@ -113,11 +113,11 @@ function UpsidesCodersClutch() {
                     )}
                 </div>
             </div>
-            <div className='w-full pt-6 grid grid-cols-4 gap-4'>
+            <div className='w-full pt-6 grid lg:grid-cols-4 sm:grid-cols-2 gap-4'>
                 {upsides.slice(2, 6).map((data, index) => (
                         <Card 
                             key={data.id}
-                            className='px-3 py-5 bg-app-primary-deep'
+                            className='px-3 md:py-5 py-3 bg-app-primary-deep'
                         >
                             <CardHeader>
                                 <div className='w-10 h-fit'>
@@ -127,7 +127,7 @@ function UpsidesCodersClutch() {
                                         className='w-full h-full'
                                     />
                                 </div>
-                                <div className='pt-12 text-white flex flex-col '>
+                                <div className='md:pt-12 sm:pt-6 pt-3 text-white flex sm:flex-col sm:gap-0 gap-2'>
                                     <Typography
                                         typo="header-5-semibold"
                                     >

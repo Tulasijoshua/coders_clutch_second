@@ -42,8 +42,8 @@ function GreatExperience() {
   return (
     <div className='w-full flex items-stretch justify-between gap-8 bg-black'>
         <section className='flex-1 py-8 bg-black'>
-            <div className='w-full flex justify-end border '>
-                <div className='max-w-[55rem] w-[85%] border flex flex-col justify-between h-full'>
+            <div className='w-full flex lg:justify-end justify-center border '>
+                <div className='max-w-[55rem] 2xl:w-[85%] md:w-[95%] w-[90%] border flex flex-col justify-between h-full'>
                     <div className='inter xl:pb-6 pb-4 flex flex-col gap-3 text-white'>
                         <Typography
                             typo="header-3-light"
@@ -84,7 +84,7 @@ function GreatExperience() {
                 </div>
             </div>
         </section>
-        <section className='w-[45%] relative'>
+        <section className='lg:block hidden w-[45%] relative'>
             <div className='absolute inset-0'>
                 <Image 
                     src={experienceImg}

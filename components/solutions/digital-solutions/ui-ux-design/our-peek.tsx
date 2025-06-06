@@ -40,7 +40,7 @@ const successful_designs = [
 function OurPeek() {
   return (
     <div className='w-full py-12'>
-        <section className='inter max-container w-[85%] mx-auto xl:pb-12 pb-10 flex flex-col gap-2'>
+        <section className='inter max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto xl:pb-12 pb-10 flex flex-col gap-2'>
             <Typography
                 typo="header-3-light"
             >
@@ -53,43 +53,59 @@ function OurPeek() {
                 Tried-and-Tested Methods for Successful Product Design
             </Typography>
         </section>
+        <section className='md:hidden block max-container w-[90%] mx-auto'>
+            <div className='lg:w-[70%] grid md:grid-cols-3 sm:grid-cols-2 lg:gap-0 gap-5 lg:pr-8'>
+                    {successful_designs.map(data => (
+                    <div key={data.id} className=' flex flex-col sm:justify-center sm:gap-4 gap-2'>
+                        <Typography
+                            typo="body-large-semibold"
+                            className={`${data.id === "3" ? "lg:text-left sm:text-center" : "sm:text-center"}`}
+                        >{data.title}</Typography>
+                        <Typography
+                            typo="body-medium-regular"
+                            className={`${data.id === "3" ? "lg:text-left sm:text-center" : "sm:text-center"} !leading-normal`}
+                        >{data.description}</Typography>
 
-        <section className='max-container w-full '>
-            <div className='w-[90%] pb-6 flex justify-end'>
-                <div className='w-[70%] grid grid-cols-3 gap- pr-8'>
+                    </div>
+                ))}
+            </div>
+        </section>
+        <section className='max-container md:block hidden w-full '>
+            <div className='w-[90%] lg:mx-0 mx-auto pb-6 flex justify-end'>
+                <div className='lg:w-[70%] grid grid-cols-3 lg:gap-0 gap-5 lg:pr-8'>
                     {successful_designs.slice(0, 3).map(data => (
                         <div key={data.id} className='max-w-[270px] flex flex-col justify-center gap-4'>
                             <Typography
                                 typo="body-large-semibold"
-                                className={`${data.id === "3" ? "text-left" : "text-center"}`}
+                                className={`${data.id === "3" ? "lg:text-left text-center" : "text-center"}`}
                             >{data.title}</Typography>
                             <Typography
                                 typo="body-medium-regular"
-                                className={`${data.id === "3" ? "text-left" : "text-center"} !leading-normal`}
+                                className={`${data.id === "3" ? "lg:text-left text-center" : "text-center"} !leading-normal`}
                             >{data.description}</Typography>
 
                         </div>
                     ))}
                 </div>
             </div>
-            <div className='w-full h-fit'>
+            <div className='w-full h-fit lg:block hidden'>
                 <Image 
                     src={processImg}
                     alt='Process image'
                     className='w-full h-full'
                 />
             </div>
-            <div className='w-[70%] pt-8 mx-auto grid grid-cols-3 gap-3 pr-8'>
+            <div className='lg:w-[70%] w-[90%] lg:pt-8 pt-3 mx-auto grid grid-cols-3 gap-3 pr-8'>
                 {successful_designs.slice(3, 6).map(data => (
                     <div key={data.id} className='max-w-[270px] flex flex-col justify-center gap-4'>
                         <Typography
                             typo="body-large-semibold"
-                            className={`${data.id === "6" ? "text-left" : "text-center"}`}
+                            className={`${data.id === "6" ? "lg:text-left text-center" : "text-center"}`}
 
                         >{data.title}</Typography>
                         <Typography
                             typo="body-medium-regular"
-                            className={`${data.id === "6" ? "text-left" : "text-center"} !leading-normal`}
+                            className={`${data.id === "6" ? "lg:text-left text-center" : "text-center"} !leading-normal`}
                         >{data.description}</Typography>
 
                     </div>
