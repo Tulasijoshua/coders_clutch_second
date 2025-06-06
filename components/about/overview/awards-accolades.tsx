@@ -7,7 +7,7 @@ import awardImg from "@/public/assets/images/about/awards.png"
 function AwardsAccolades() {
   return (
     <div className='w-full py-20 bg-[#070A27]'>
-        <section className='w-[85%] mx-auto flex jusity-between items-center gap-4'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex jusity-between items-center gap-4'>
             <div className='max-w-[400px] flex flex-col gap-3 text-white'>
                 <Typography
                     className=''

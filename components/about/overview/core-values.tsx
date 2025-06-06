@@ -52,7 +52,7 @@ const core_values = [
 function CoreValues() {
   return (
     <div className='w-full py-16 '>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
             <div className='w-[70%] flex flex-col gap-4'>
                 <Button
                     variant="secondary"
@@ -69,10 +69,10 @@ function CoreValues() {
             </div>
 
             <section className='w-full py-16 grid grid-cols-3 gap-8'>
-                {core_values.map((data, index) => (
+                {core_values.map((data) => (
                     <Card 
                         key={data.id}
-                        className='py-4 border-y-0 border-r-0 border-l-4 shadow-md hover:shadow-lg transition-shadow rounded-[1rem]'
+                        className='xl:py-4 py-2 border-y-0 border-r-0 border-l-4 shadow-md hover:shadow-lg transition-shadow rounded-[1rem]'
                         style={{borderColor: data.color}}
                     >
                         <CardHeader className='pb-0 flex flex-col gap-2'>

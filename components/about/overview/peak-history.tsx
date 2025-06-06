@@ -56,8 +56,8 @@ const peak_history = [
 
 function PeakHistory() {
   return (
-    <div className='w-full py-12 peak-bg'>
-        <section className='w-[85%] mx-auto'>
+    <div className='w-full xl:py-12 py-6 peak-bg'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
             <div className='w-[70%] flex flex-col gap-4'>
                 <Button
                     variant="secondary"

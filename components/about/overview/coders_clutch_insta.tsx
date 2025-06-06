@@ -29,7 +29,7 @@ const coders_insta = [
 function CodersClutchInsta() {
   return (
     <div className='w-full py-20'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
             <div className='flex flex-col gap-5'>
                 <div className='flex items-center gap-3 '>
                     <Typography
@@ -55,7 +55,7 @@ function CodersClutchInsta() {
                 {coders_insta.map((data, index) => (
                     <Card
                         key={data.id}
-                        className='w-full h-[500px]'
+                        className='w-full xl:h-[500px] h-[450px]'
                     >
                         <Image 
                             src={data.img}
