@@ -9,7 +9,6 @@ import OverviewHero from '@/components/about/overview/overview-hero'
 import PeakHistory from '@/components/about/overview/peak-history'
 import ReshapeTrajectory from '@/components/about/overview/reshape-trajectory'
 import TeamSection from '@/components/about/overview/team'
-import Timeline from '@/components/about/overview/test'
 import React from 'react'
 
 function OverviewPage() {
@@ -26,7 +25,6 @@ function OverviewPage() {
         <AwardsAccolades />
         <CodersClutchInsta />
         <ReshapeTrajectory />
-        {/* <Timeline /> */}
     </div>
   )
 }

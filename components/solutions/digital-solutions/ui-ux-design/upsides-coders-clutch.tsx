@@ -6,7 +6,7 @@ import seamlessIcon from "@/public/assets/icons/upside/seamless-integration.svg"
 import directIcon from "@/public/assets/icons/upside/direct-revenue.svg"
 import informedIcon from "@/public/assets/icons/upside/informed.svg"
 import reducingIcon from "@/public/assets/icons/upside/reducing.svg"
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import Typography from '@/components/shared/typography'
 import Image from 'next/image';
 

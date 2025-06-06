@@ -24,7 +24,7 @@ function CeoSection() {
                         className='xl:!leading-relaxed !leading-snug'
                     >
                         The secret to running a profitable, successful, bootstrapped business for 16+ years is quite simple: 
-                        it's the mutual trust that binds employees and leadership team together. 
+                        it&apos;s the mutual trust that binds employees and leadership team together. 
                     </Typography>
                 </div>
                 <div className='flex flex-col xs:gap-1'>

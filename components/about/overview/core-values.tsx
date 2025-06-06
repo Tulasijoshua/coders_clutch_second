@@ -1,7 +1,7 @@
 'use client';
 import Typography from '@/components/shared/typography';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import React from 'react';
 
 const core_values = [

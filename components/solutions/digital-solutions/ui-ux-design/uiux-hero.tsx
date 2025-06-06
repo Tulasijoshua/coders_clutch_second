@@ -70,7 +70,7 @@ function UiuxHero() {
             <section className='sm:hidden w-[90%] mx-auto pt-4 flex flex-col gap-8'>
                 <ul className='flex flex-col gap-4'>
                     {work_rate.map(rate => (
-                        <li className='w-fit h-fit flex gap-2'>
+                        <li key={rate} className='w-fit h-fit flex gap-2'>
                             <div className='p-1 rounded-full bg-white'>
                                 <Check color='#002523' size={12} />
                             </div>

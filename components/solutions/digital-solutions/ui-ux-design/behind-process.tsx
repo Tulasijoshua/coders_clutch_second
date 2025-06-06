@@ -205,7 +205,7 @@ function BehindProcess() {
         <section className='w-full relative py-8'>
             <div className='max-container 2xl:w-[85%] w-[95%] mx-auto lg:grid hidden grid-cols-3 gap-6 z-[10]'>
                 {
-                    user_centrics.map((data, index) => (
+                    user_centrics.map((data) => (
                         <div  
                             className='flex flex-col gap-6'
                             key={data.id}

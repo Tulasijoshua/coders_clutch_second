@@ -25,7 +25,7 @@ const dev_services: devServiceProp[] = [
     {
         id: "1",
         title: "Entertainment",
-        img: enterpriseImg,
+        img: entertainmentImg,
         description: `Grabbing eyeballs is tough, but not when your platform’s design steals the show. Our UI/UX design and 
                         development service ensures viewers binge, share, and return for more.`,
         contents: [
