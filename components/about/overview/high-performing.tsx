@@ -5,7 +5,7 @@ import React from 'react'
 function HighPerforming() {
   return (
     <div className='w-full py-24 bg-black'>
-        <section className='lg:max-w-[900px] max-w-[700px] mx-auto text-center'>
+        <section className='lg:max-w-[900px] md:max-w-[700px] w-[95%] mx-auto text-center'>
             <Typography
                 typo="header-3-semibold"
                 className='plusJak lg:!text-4xl !text-2xl text-white !font-bold !leading-relaxed'

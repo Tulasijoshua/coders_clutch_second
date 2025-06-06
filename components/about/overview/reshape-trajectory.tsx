@@ -7,7 +7,7 @@ function ReshapeTrajectory() {
   return (
     <div className='w-full py-20 bg-app-yellow'>
       <section className='max-container xl:w-[85%] w-[90%] mx-auto flex flex-col gap-6'>
-        <div className='md:w-[80%] w-[90%] mx-auto'>
+        <div className='md:w-[80%] sm:w-[90%] mx-auto'>
           <div className=' flex flex-col justify-center gap-8'>
             <Typography
               // typo="header-2-semibold"

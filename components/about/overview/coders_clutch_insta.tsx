@@ -51,11 +51,11 @@ function CodersClutchInsta() {
                     <span className='bg-gradient-to-r from-[#F25E20] to-[#E426A0] bg-clip-text hover:text-transparent cursor-pointer font-semibold'> {""}See More</span>
                 </Typography>
             </div>
-            <div className='w-full pt-12 grid grid-cols-3 lg:gap-8 gap-4'>
+            <div className='w-full pt-12 grid sm:grid-cols-3 lg:gap-8 gap-4'>
                 {coders_insta.map((data, index) => (
                     <Card
                         key={data.id}
-                        className='w-full xl:h-[500px] lg:h-[450px] md:h-[350px] h-[300px]'
+                        className='w-full xl:h-[500px] lg:h-[450px] md:h-[350px] sm:h-[300px] h-[450px]'
                     >
                         <Image 
                             src={data.img}

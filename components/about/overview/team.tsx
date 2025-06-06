@@ -89,7 +89,7 @@ function TeamSection() {
                 Our Leadership Team
             </Typography>
 
-            <div className='w-full xl:pt-16 pt-4 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8'>
+            <div className='w-full xl:pt-16 xs:pt-4 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 xs:gap-8 gap-4'>
                 {team_members.map((data, index) => (
                     <div 
                         className=''
@@ -102,7 +102,7 @@ function TeamSection() {
                                 className='w-full h-full'
                             />
                         </div>
-                        <div className='w-full pt-5 flex flex-col space-y-1'>
+                        <div className='w-full xs:pt-5 pt-3 flex flex-col space-y-1'>
                             <div className='w-full flex justify-between items-center gap-3'>
                                 <Typography
                                     typo="body-large-semibold"

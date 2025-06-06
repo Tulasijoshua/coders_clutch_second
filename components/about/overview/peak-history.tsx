@@ -67,7 +67,7 @@ function PeakHistory() {
                 </Button>
                 <Typography
                     typo="header-3-semibold"
-                    className='!leading-normal'
+                    className='xs:!leading-normal'
                 >
                     A peek into our history
                 </Typography>
@@ -127,7 +127,7 @@ function PeakHistory() {
                 </div>
             </div>
 
-            <div className="relative">
+            <div className="relative md:hidden block">
                 
                 
                 {peak_history.map((item, index) => (

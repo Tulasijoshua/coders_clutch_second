@@ -27,7 +27,7 @@ function CeoSection() {
                         it's the mutual trust that binds employees and leadership team together. 
                     </Typography>
                 </div>
-                <div className='flex flex-col gap-1'>
+                <div className='flex flex-col xs:gap-1'>
                     <Typography
                         typo="header-5-semibold"
                     >

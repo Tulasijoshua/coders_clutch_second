@@ -52,14 +52,14 @@ function Mission() {
                 </Button>
                 <Typography
                     typo="header-3-semibold"
-                    className='!leading-normal'
+                    className='xs:!leading-normal'
                 >
                     A company, driven by employee satisfaction and customer success.
                 </Typography>
             </div>
 
             <div className='w-full pt-10 flex xl:flex-row flex-col justify-between gap-6'>
-                <div className='flex-1 grid grid-cols-2 gap-6'>
+                <div className='flex-1 grid xs:grid-cols-2 gap-6'>
                     {rainbowContent.map((data) => (
                         <Card key={data.id} className='2xl:pt-10 pt-6 2xl:pb-4 flex flex-col justify-center md:gap-6 gap-3 border-none rounded-3xl'
                             style={{backgroundColor: data.color}}
@@ -85,9 +85,9 @@ function Mission() {
                         </Card>
                     ))}
                 </div>
-                <Card className='flex-1 md:px-8 px-4 grid grid-cols-2 text-white bg-gradient-to-br from-[#6634F4] via-[#EF00C5] to-[#FB8E37] border-none rounded-3xl'>
+                <Card className='flex-1 md:px-8 px-4 grid xs:grid-cols-2 text-white bg-gradient-to-br from-[#6634F4] via-[#EF00C5] to-[#FB8E37] border-none rounded-3xl'>
                     {no_rainbowContent.map((data) => (
-                        <div key={data.id} className={`md:pt-10 pt-6 flex flex-col justify-center md:gap-6 gap-3 rounded-none ${data.id === "3" && "border-r-[.2px] border-gray-400"} `}
+                        <div key={data.id} className={`md:pt-10 pt-6 flex flex-col justify-center md:gap-6 gap-3 rounded-none ${data.id === "3" && "xs:border-r-[.2px] xs:border-b-0 border-b border-gray-400"} `}
                         >
                             <CardHeader>
                                 <CardTitle

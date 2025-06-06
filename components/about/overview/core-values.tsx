@@ -68,7 +68,7 @@ function CoreValues() {
                 </Typography>
             </div>
 
-            <section className='w-full lg:py-16 py-8 grid md:grid-cols-3 grid-cols-2 lg:gap-8 gap-4'>
+            <section className='w-full lg:py-16 py-8 grid md:grid-cols-3 sm:grid-cols-2 lg:gap-8 gap-4'>
                 {core_values.map((data) => (
                     <Card 
                         key={data.id}

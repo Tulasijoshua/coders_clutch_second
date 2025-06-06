@@ -23,7 +23,7 @@ function AwardsAccolades() {
             </div>
 
             <div className='flex-1 '>
-                <div className='w-[90%] h-fit'>
+                <div className='w-[90%] h-fit md:mx-0 mx-auto'>
                     <Image 
                         src={awardImg}
                         alt='Award image'

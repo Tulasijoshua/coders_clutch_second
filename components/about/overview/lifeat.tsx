@@ -35,7 +35,7 @@ function Lifeat() {
             </div>
             <div className='w-full py-12 flex items- gap-4 flex-wrap'>
                 {teams.map((team, index) => (
-                    <div key={`Team ${index+1}`} className='min-w-[230px] w-fit h-fit'>
+                    <div key={`Team ${index+1}`} className='sm:min-w-[230px] sm:w-fit w-full h-fit'>
                         <Image
                             src={team}
                             alt='Teams'
