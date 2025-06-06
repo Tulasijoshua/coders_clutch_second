@@ -52,23 +52,23 @@ const core_values = [
 function CoreValues() {
   return (
     <div className='w-full py-16 '>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='w-[70%] flex flex-col gap-4'>
                 <Button
                     variant="secondary"
-                    className='!px-8 !text-lg font-medium bg-app-blue rounded-full'
+                    className='md:!px-8 !px-4 md:!text-lg !text-base font-medium bg-app-blue rounded-full'
                 >
                     Our Core Values
                 </Button>
                 <Typography
                     typo="header-3-semibold"
-                    className='!leading-normal'
+                    // className='!leading-normal'
                 >
                     Values we cherish and nurture
                 </Typography>
             </div>
 
-            <section className='w-full py-16 grid grid-cols-3 gap-8'>
+            <section className='w-full lg:py-16 py-8 grid md:grid-cols-3 grid-cols-2 lg:gap-8 gap-4'>
                 {core_values.map((data) => (
                     <Card 
                         key={data.id}

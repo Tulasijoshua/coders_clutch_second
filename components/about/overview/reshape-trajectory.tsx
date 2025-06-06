@@ -7,15 +7,15 @@ function ReshapeTrajectory() {
   return (
     <div className='w-full py-20 bg-app-yellow'>
       <section className='max-container xl:w-[85%] w-[90%] mx-auto flex flex-col gap-6'>
-        <div className='w-[80%] mx-auto'>
+        <div className='md:w-[80%] w-[90%] mx-auto'>
           <div className=' flex flex-col justify-center gap-8'>
             <Typography
               // typo="header-2-semibold"
-              className='arial 2xl:!text-6xl xl:!text-5xl !text-4xl text-center !font-bold !leading-tight'
+              className='arial 2xl:!text-6xl xl:!text-5xl lg:!text-4xl md:!text-3xl !text-2xl text-center !font-bold !leading-tight'
             >
               Reshape your growth trajectory with Coders Clutch.
             </Typography>
-            <div className='w-[600px] mx-auto flex flex-col justify-center gap-2'>
+            <div className='md:w-[600px] mx-auto flex flex-col justify-center lg:gap-2'>
               <Typography
                 typo="body-large-regular"
                 className='text-center !leading-normal'
@@ -33,14 +33,15 @@ function ReshapeTrajectory() {
             <div className='w-fit mx-auto flex flex-col justify-center gap-8'>
               <Button
                 variant="primary"
-                className='mx-auto !py-4 !px-10 !text-lg shadow-md'
+                className='mx-auto lg:!py-4 lg:!px-10 !px-6 xl:!text-lg !text-base shadow-md'
               >
                 Connect With Us
               </Button>
               <Typography
                 typo="header-6-medium"
+                className='md:text-left text-center'
               >
-                Are you a candidate, looking for a rewarding career? <span className='font-bold underline'>Join With Us</span>
+                Are you a candidate, looking for a rewarding career? <span className='md:font-bold font-semibold underline'>Join With Us</span>
               </Typography>
             </div>
           </div>

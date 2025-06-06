@@ -18,7 +18,7 @@ const teams = [team1, team2, team3, team4, team5, team6, team7, team8, team9, te
 function Lifeat() {
   return (
     <div className='w-full py-12'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='max-w-[550px] mx-auto flex flex-col justify-center gap-3 text-center'>
                 <Typography
                     typo="header-3-semibold"

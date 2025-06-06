@@ -57,11 +57,11 @@ const peak_history = [
 function PeakHistory() {
   return (
     <div className='w-full xl:py-12 py-6 peak-bg'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='w-[70%] flex flex-col gap-4'>
                 <Button
                     variant="secondary"
-                    className='!px-8 !text-lg font-medium bg-app-blue rounded-full'
+                    className='md:!px-8 !px-5 md:!text-lg !text-base font-medium bg-app-blue rounded-full'
                 >
                     Our Mission
                 </Button>
@@ -72,7 +72,7 @@ function PeakHistory() {
                     A peek into our history
                 </Typography>
             </div>
-            <div className='w-full py-16'>
+            <div className='md:block hidden w-full md:py-16 py-8'>
                 <div className='w-full pb-3 pl-3 grid grid-cols-4 gap-8'>
                     {peak_history.slice(0, 4).map((data) => (
                         <div 
@@ -125,6 +125,27 @@ function PeakHistory() {
                         ))}
                     </div>
                 </div>
+            </div>
+
+            <div className="relative">
+                
+                
+                {peak_history.map((item, index) => (
+                    <div key={index} className="relative pl-12 pb-8">
+                        <div className="absolute left-4 top-1 h-4 w-4 rounded-full  transform -translate-x-1/2"
+                            style={{backgroundColor: item.color}}
+                        ></div>
+                        
+                        <div className="text-lg font-semibold text-blue-600 mb-1">
+                        Year{item.year.includes("-") ? "s" : ""} {item.year}
+                        </div>
+                        
+                        <div className="text-gray-700">{item.title}</div>
+                        <div className="absolute left-4 top-1 h-full w-1 border border-gray-300 transform -translate-x-1/2"
+                            style={{borderColor: item.color}}
+                        ></div>
+                    </div>
+                ))}
             </div>
         </section>
     </div>

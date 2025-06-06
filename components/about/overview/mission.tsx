@@ -41,12 +41,12 @@ function Mission() {
     const rainbowContent = archievements.filter(content => !content.is_rainbow)
     const no_rainbowContent = archievements.filter(content => content.is_rainbow)
   return (
-    <div className='w-full py-16 bg-[#FAF9F7]'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
+    <div className='w-full md:py-16 py-12 bg-[#FAF9F7]'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='xl:w-[70%] flex flex-col gap-4'>
                 <Button
                     variant="secondary"
-                    className='!px-8 !text-lg font-medium bg-app-blue rounded-full'
+                    className='!px-8 md:!text-lg !text-base font-medium bg-app-blue rounded-full'
                 >
                     Our Mission
                 </Button>
@@ -61,12 +61,12 @@ function Mission() {
             <div className='w-full pt-10 flex xl:flex-row flex-col justify-between gap-6'>
                 <div className='flex-1 grid grid-cols-2 gap-6'>
                     {rainbowContent.map((data) => (
-                        <Card key={data.id} className='2xl:pt-10 pt-6 2xl:pb-4 flex flex-col justify-center gap-6 border-none rounded-3xl'
+                        <Card key={data.id} className='2xl:pt-10 pt-6 2xl:pb-4 flex flex-col justify-center md:gap-6 gap-3 border-none rounded-3xl'
                             style={{backgroundColor: data.color}}
                         >
                             <CardHeader>
                                 <CardTitle
-                                    className='arial text-6xl'
+                                    className='arial md:text-6xl text-4xl'
                                 >{data.amount}</CardTitle>
                             </CardHeader>
                             <CardContent className='flex flex-col gap-4'>
@@ -85,13 +85,13 @@ function Mission() {
                         </Card>
                     ))}
                 </div>
-                <Card className='flex-1 px-8 grid grid-cols-2 text-white bg-gradient-to-br from-[#6634F4] via-[#EF00C5] to-[#FB8E37] border-none rounded-3xl'>
+                <Card className='flex-1 md:px-8 px-4 grid grid-cols-2 text-white bg-gradient-to-br from-[#6634F4] via-[#EF00C5] to-[#FB8E37] border-none rounded-3xl'>
                     {no_rainbowContent.map((data) => (
-                        <div key={data.id} className={`pt-10 flex flex-col justify-center gap-6 rounded-none ${data.id === "3" && "border-r-[.2px] border-gray-400"} `}
+                        <div key={data.id} className={`md:pt-10 pt-6 flex flex-col justify-center md:gap-6 gap-3 rounded-none ${data.id === "3" && "border-r-[.2px] border-gray-400"} `}
                         >
                             <CardHeader>
                                 <CardTitle
-                                    className='arial text-6xl'
+                                    className='arial md:text-6xl text-5xl'
                                 >{data.amount}</CardTitle>
                             </CardHeader>
                             <CardContent className='flex flex-col gap-4'>

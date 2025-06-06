@@ -7,16 +7,16 @@ import awardImg from "@/public/assets/images/about/awards.png"
 function AwardsAccolades() {
   return (
     <div className='w-full py-20 bg-[#070A27]'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex jusity-between items-center gap-4'>
-            <div className='max-w-[400px] flex flex-col gap-3 text-white'>
+        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex md:flex-row flex-col jusity-between items-center gap-4'>
+            <div className='md:max-w-[400px] flex flex-col gap-3 text-white'>
                 <Typography
-                    className=''
+                    className='md:text-left text-center'
                     typo="header-4-semibold"
                 >
                     Awards & Accolades
                 </Typography>
                 <Typography
-                    className='leading-relaxed'
+                    className='leading-relaxed md:text-left text-center'
                 >
                     Consistently recognized for nurturing a vibrant workplace culture and building top-tier products.
                 </Typography>

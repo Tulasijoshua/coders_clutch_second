@@ -81,7 +81,7 @@ const team_members = [
 function TeamSection() {
   return (
     <div className='w-full xl:py-16 py-10 bg-gray-50'>
-        <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col gap-5'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col md:gap-5 gap-3'>
             <Typography
                 typo="header-2-semibold"
                 className='text-center'
@@ -89,7 +89,7 @@ function TeamSection() {
                 Our Leadership Team
             </Typography>
 
-            <div className='w-full xl:pt-16 pt-4 grid grid-cols-4 gap-8'>
+            <div className='w-full xl:pt-16 pt-4 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8'>
                 {team_members.map((data, index) => (
                     <div 
                         className=''
