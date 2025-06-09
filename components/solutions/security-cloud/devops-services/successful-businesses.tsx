@@ -94,7 +94,7 @@ function SuccessfulBusinesses() {
             <div className='w-full flex justify-between gap-2 flex-wrap'>
             <Carousel
                 opts={{
-                    align: "start",
+                    align: "center",
                 }}
                 plugins={[
                     Autoplay({
@@ -107,7 +107,7 @@ function SuccessfulBusinesses() {
                     {testimonial.map((data, index) => (
                         <CarouselItem key={index} className="md:basis-1/2 xl:basis-1/3">
                             <Card 
-                                className='w-[420px]'
+                                className='lg:w-[420px] xs:w-[350px] w-[300px]'
                                 key={data.id}
                             >
                                 <CardHeader  className='pb-2'>

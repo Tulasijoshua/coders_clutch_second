@@ -65,7 +65,7 @@ function DevopsAsService() {
                     Across Verticals and Industries
                 </Typography>
             </div>
-            <div className='w-full py-8 flex justify-between'>
+            <div className='w-full py-8 flex md:flex-row flex-col justify-between'>
                 <div className='flex-1 bg-white'>
                     <Accordion
                         type="single"
@@ -79,7 +79,7 @@ function DevopsAsService() {
                                 <AccordionItem 
                                     key={data.id}
                                     value={`item-${index+1}`}
-                                    className={`px-6 py-4 border-b border-gray-200 last:border-b-0 ${
+                                    className={`xs:px-6 px-3 xs:py-4 border-b border-gray-200 last:border-b-0 ${
                                         activeItem === `item-${index+1}` ? 'bg-[#34644C] text-white' : ''
                                     }`}
                                 >
@@ -90,6 +90,14 @@ function DevopsAsService() {
                                         <p className='w-full text-base'>
                                             {data.description}
                                         </p>
+                                        <div className='w-full h-full max-h-[400px] overflow-hidden shadow-sm'>
+                                            <Image 
+                                                src={data.img}
+                                                alt='Industry Image'
+                                                className='w-full h-full object-cover'
+                                                
+                                            />
+                                        </div>
                                     </AccordionContent>
                                 </AccordionItem>
 
@@ -97,7 +105,7 @@ function DevopsAsService() {
                         }
                     </Accordion>
                 </div>
-                <div className='flex-1'>
+                <div className='md:block hidden flex-1'>
                     <div className='w-full h-full overflow-hidden shadow-sm'>
                         <Image 
                             src={accross_verticals.find(item => 

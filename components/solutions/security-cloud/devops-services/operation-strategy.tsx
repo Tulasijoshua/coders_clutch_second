@@ -47,18 +47,18 @@ function OperationStrategy() {
                     Devops Services Operations Strategy Ahead
                 </Typography>
             </div>
-            <div className='w-full pt-8 px-6 flex flex-col justify-center items-center space-y-8'>
-                <div className='w-full grid xl:grid-cols-4 grid-cols-2 gap-2'>
+            <div className='w-full md:pt-8 pt-3 px-6 flex flex-col justify-center items-center space-y-8'>
+                <div className='w-full grid xl:grid-cols-4 md:grid-cols-2 gap-2'>
                     {service_operations.map((data) => (
                         <div key={data.id} className='flex flex-col gap-3'>
-                            <div className='flex items-center'>
+                            <div className='flex md:flex-row flex-col md:items-center'>
                                 <Typography 
                                     typo="header-1-semibold"
                                     className='w-fit text-[#108D52]'
                                 >{data.id}</Typography>
-                                <div className='flex-1 border-b-2 border-dashed border-gray-400'></div>
+                                <div className='md:flex-1 border-b-2 border-dashed border-gray-400'></div>
                             </div>
-                            <div className='w-[80%] flex flex-col gap-4'>
+                            <div className='sm:w-[80%] flex flex-col gap-4'>
                                 <Typography
                                     typo="header-5-semibold"
                                 >{data.title}</Typography>

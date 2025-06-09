@@ -31,8 +31,8 @@ const devops_rating = [
 
 function DevopsHero() {
   return (
-    <div className='w-full py-12 bg-app-primary-deep'>
-        <div className='max-container w-[85%] mx-auto'>
+    <div className='w-full md:py-12 py-8 bg-app-primary-deep'>
+        <div className='max-container lg:w-[85%] w-[95%] mx-auto'>
             <section className='2xl:w-[80%] xl:w-[90%] mx-auto flex flex-col justify-center gap-3 text-white'>
                 <Typography
                     typo="header-6-semibold"
@@ -54,7 +54,13 @@ function DevopsHero() {
                         Cloud Services & Solutions
                     </Typography>
                 </div>
-                <div className='w-[85%] mx-auto py-3 text-center'>
+                <Typography
+                    typo="header-3-semibold"
+                    className='md:hidden block md:pt-4 text-center text-white md:!leading-relaxed !leading-snug'
+                >
+                    Hire #1 DevOps Development Company for Cloud Services & Solutions
+                </Typography>
+                <div className='lg:w-[85%] mx-auto py-3 text-center'>
                     <Typography
                         typo="body-large-semibold"
                         className='text-center !leading-relaxed'
@@ -62,7 +68,7 @@ function DevopsHero() {
                         Accelerate the product lifecycle with advanced DevOps services. Our company delivers faster deployments, 60% fewer failures, automated workflows, and enhanced security through CI/CD solutions.
                     </Typography>
                 </div>
-                <div className='w-full grid grid-cols-3 gap-4'>
+                <div className='w-full grid md:grid-cols-3 xs:grid-cols-2 gap-4'>
                     {
                         devops_services.map(data => (
                             <div key={data} className='flex items-center gap-3'>
@@ -76,21 +82,21 @@ function DevopsHero() {
                         ))
                     }
                 </div>
-                <div className='py-6 flex justify-center items-center gap-12'>
+                <div className='py-6 flex justify-center items-center gap-12 flex-wrap'>
                     {
                         devops_rating.map((data, index) => (
                             <div 
                                 key={data.id}
                                 className='flex items-center gap-2'
                             >
-                                <div className='w-[55px] h-fit'>
+                                <div className='lg:w-[55px] w-[45px] h-fit'>
                                     <Image 
                                         src={data.icon}
                                         alt={`Icon ${index+1}`}
                                         className='w-full h-full'
                                     />
                                 </div>
-                                <div className='flex flex-col gap-2'>
+                                <div className='flex flex-col lg:gap-2'>
                                     <StarRating rating={data.rate}  />
                                     <Typography
                                         typo="body-medium-semibold"
@@ -104,7 +110,7 @@ function DevopsHero() {
                 </div>
                 <Button
                     variant="primary"
-                    className='w-fit mx-auto 2xl:!py-4 !py-3 2xl:!px-10 !px-16 !text-lg font-semibold rounded-none'
+                    className='w-fit mx-auto 2xl:!py-4 sm:!py-3 2xl:!px-10 lg:!px-16 md:!px-10 !px-8 !text-lg font-semibold rounded-none'
                 >
                     Let&apos;s Talk
                 </Button>

@@ -52,11 +52,11 @@ function DevopsDeveloper() {
                     Onboarded in Days, Not Months
                 </Typography>
             </div>
-            <div className='w-full py-6 grid grid-cols-3 xl:gap-36 gap-16'>
+            <div className='w-full py-6 grid md:grid-cols-3 xl:gap-36 lg:gap-16 gap-6'>
                 {devops_onboard.map((data, index) => (
                     <div 
                         key={data.id}
-                        className='flex flex-col justify-between gap-4'>
+                        className='md:p-0 p-4 md:shadow-none shadow-lg md:rounded-none rounded-xl flex flex-col justify-between gap-4'>
                         <Typography
                             typo="header-5-semibold"
                         >

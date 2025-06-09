@@ -75,11 +75,11 @@ function ExpertDriven() {
                     Full Suite DevOps Development Services
                 </Typography>
             </div>
-            <div className='w-full py-2 grid grid-cols-2 -gap-6'>
+            <div className='w-full py-2 grid md:grid-cols-2 -gap-6'>
                 {expert_driven.map((data, index) => (
                     <Card 
                         key={data.id}
-                        className={`mb-8 py-5 px-6 ${index % 2 === 0 ? "rounded-none rounded-l-xl" : "rounded-xl"}  border-none`}
+                        className={`mb-8 xs:py-5 py-4 xs:px-6 px-2 ${index % 2 === 0 ? "md:rounded-none md:rounded-l-xl" : "md:rounded-xl"}  border-none`}
                         style={{ 
                             backgroundColor: data.color ? data.color : 'white' 
                         }}
@@ -96,11 +96,11 @@ function ExpertDriven() {
                             <Image 
                                 src={data.icon}
                                 alt={`Expert Icon ${index+1}`}
-                                className='w-8 h-fit'
+                                className='xs:block hidden w-8 h-fit'
                             />
                         </CardHeader>
                         <CardContent
-                            className='w-[95%]'
+                            className='xs:w-[95%]'
                         >
                             <Typography
                                 typo="body-medium-medium"

@@ -48,7 +48,7 @@ function FlexibleHiring() {
                     That Match Your DevOps Needs
                 </Typography>
             </div>
-            <div className='w-full pb-4 grid grid-cols-3 gap-6'>
+            <div className='w-full pb-4 grid lg:grid-cols-3 md:grid-cols-2 gap-6'>
                 {hiring_solutions.map((data, index) => (
                     <Card 
                         key={data.id}
@@ -66,11 +66,11 @@ function FlexibleHiring() {
                             <Typography
                                 typo="body-large-medium"
                             >{data.description}</Typography>
-                            <div className='w-full h-[250px]'>
+                            <div className='w-full md:h-[250px] sm:h-[400px] h-[300px]'>
                                 <Image 
                                     src={data.img}
                                     alt={`Hiring solution ${index+1}`}
-                                    className='w-full h-full'
+                                    className='w-full h-full object-cover rounded-t-xl'
                                 />
                             </div>
                         </CardContent>

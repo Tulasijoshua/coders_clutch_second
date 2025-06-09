@@ -62,7 +62,7 @@ function FutureReady() {
                     Cloud DevOps services for Businesses
                 </Typography>
             </div>
-            <div className='w-full h-fit'>
+            <div className='sm:block hidden w-full h-fit'>
                 <Image 
                     src={cloudComputingImg}
                     alt={`Cloud service`}
@@ -70,11 +70,11 @@ function FutureReady() {
                 />    
             </div>
 
-            <div className='w-full py-4 grid grid-cols-3 gap-8'>
+            <div className='w-full py-4 grid lg:grid-cols-3 sm:grid-cols-2 gap-8'>
                 {cloud_services.map((data) => (
                     <div 
                         key={data.id}
-                        className='flex gap-4'
+                        className='sm:p-0 px-4 py-5 flex gap-4 sm:shadow-none shadow-lg'
                     >
                         <CircleCheckBig color="#6B6B6D" size={20}/>
                         <div className='flex-1 flex flex-col gap-4'>
