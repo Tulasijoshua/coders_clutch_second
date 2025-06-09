@@ -33,7 +33,7 @@ function DevopsHero() {
   return (
     <div className='w-full py-12 bg-app-primary-deep'>
         <div className='max-container w-[85%] mx-auto'>
-            <section className='2xl:w-[80%] w-[90%] mx-auto flex flex-col justify-center gap-3 text-white'>
+            <section className='2xl:w-[80%] xl:w-[90%] mx-auto flex flex-col justify-center gap-3 text-white'>
                 <Typography
                     typo="header-6-semibold"
                     className='text-center text-app-green'
@@ -104,7 +104,7 @@ function DevopsHero() {
                 </div>
                 <Button
                     variant="primary"
-                    className='w-fit mx-auto !py-4 !px-10 !text-lg font-semibold rounded-none'
+                    className='w-fit mx-auto 2xl:!py-4 !py-3 2xl:!px-10 !px-16 !text-lg font-semibold rounded-none'
                 >
                     Let&apos;s Talk
                 </Button>

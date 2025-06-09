@@ -38,7 +38,7 @@ const devops_onboard = [
 function DevopsDeveloper() {
   return (
     <div className='w-full py-12'>
-        <section className='max-container w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-2'>
                 <Typography
                     typo="header-3-light"
@@ -52,7 +52,7 @@ function DevopsDeveloper() {
                     Onboarded in Days, Not Months
                 </Typography>
             </div>
-            <div className='w-full py-6 grid grid-cols-3 gap-36'>
+            <div className='w-full py-6 grid grid-cols-3 xl:gap-36 gap-16'>
                 {devops_onboard.map((data, index) => (
                     <div 
                         key={data.id}
@@ -62,7 +62,7 @@ function DevopsDeveloper() {
                         >
                             {data.id}. {data.title}
                         </Typography>
-                        <div className='w-[330px] h-fit'>
+                        <div className='xl:w-[330px] h-fit'>
                             <Image 
                                 src={data.img}
                                 alt={`DevOps ${index+1}`}

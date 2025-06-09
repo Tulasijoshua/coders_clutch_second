@@ -33,7 +33,7 @@ const service_operations = [
 function OperationStrategy() {
   return (
     <div className='w-full py-16'>
-        <section className='max-container w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-2'>
                 <Typography
                     typo="header-3-light"
@@ -48,7 +48,7 @@ function OperationStrategy() {
                 </Typography>
             </div>
             <div className='w-full pt-8 px-6 flex flex-col justify-center items-center space-y-8'>
-                <div className='w-full grid grid-cols-4 gap-2'>
+                <div className='w-full grid xl:grid-cols-4 grid-cols-2 gap-2'>
                     {service_operations.map((data) => (
                         <div key={data.id} className='flex flex-col gap-3'>
                             <div className='flex items-center'>
