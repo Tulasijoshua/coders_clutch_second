@@ -2,9 +2,7 @@
 import Typography from '@/components/shared/typography';
 import React from 'react'
 import myGate from "@/public/assets/images/security-cloud/mygate_logo.png"; 
-import myGate_screen from "@/public/assets/images/security-cloud/mygate_screen.png"; 
 import Image from 'next/image';
-import { Separator } from '@/components/ui/separator';
 
 
 function LeadingCompanies() {

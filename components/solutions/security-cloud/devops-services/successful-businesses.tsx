@@ -7,7 +7,7 @@ import test3 from "@/public/assets/images/security-cloud/staff-augmentation.png"
 import test4 from "@/public/assets/images/security-cloud/media.png"
 import Autoplay from "embla-carousel-autoplay"
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import Image from 'next/image';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 
@@ -28,7 +28,7 @@ const testimonial = [
         description: `We hired some 25 developers from CONTUS Tech. I must confess that their work is truly commendable, 
                         and among the finest we've encountered in a while. They incorporated unique features into our app 
                         and went above and beyond to deliver the highest quality of work possible for us.`,
-        img: test1,
+        img: test2,
         name: "Rory A Pollard",
         position: "VP of Internal Audit - Orion Engineered Carbons",
     },
@@ -38,7 +38,7 @@ const testimonial = [
         description: `We hired some 25 developers from CONTUS Tech. I must confess that their work is truly commendable, 
                         and among the finest we've encountered in a while. They incorporated unique features into our app 
                         and went above and beyond to deliver the highest quality of work possible for us.`,
-        img: test1,
+        img: test3,
         name: "Rory A Pollard",
         position: "VP of Internal Audit - Orion Engineered Carbons",
     },
@@ -48,7 +48,7 @@ const testimonial = [
         description: `We hired some 25 developers from CONTUS Tech. I must confess that their work is truly commendable, 
                         and among the finest we've encountered in a while. They incorporated unique features into our app 
                         and went above and beyond to deliver the highest quality of work possible for us.`,
-        img: test1,
+        img: test4,
         name: "Rory A Pollard",
         position: "VP of Internal Audit - Orion Engineered Carbons",
     },
@@ -68,7 +68,7 @@ const testimonial = [
         description: `We hired some 25 developers from CONTUS Tech. I must confess that their work is truly commendable, 
                         and among the finest we've encountered in a while. They incorporated unique features into our app 
                         and went above and beyond to deliver the highest quality of work possible for us.`,
-        img: test1,
+        img: test2,
         name: "Rory A Pollard",
         position: "VP of Internal Audit - Orion Engineered Carbons",
     },

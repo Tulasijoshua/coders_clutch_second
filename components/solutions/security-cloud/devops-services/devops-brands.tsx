@@ -1,4 +1,3 @@
-import Brands from '@/components/reusable/brands'
 import TrustBrands from '@/components/reusable/trust-brands'
 import React from 'react'
 

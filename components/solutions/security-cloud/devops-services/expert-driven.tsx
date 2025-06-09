@@ -7,7 +7,7 @@ import cicdIcon from "@/public/assets/icons/career_icons/loyalty_icon.png";
 import releaseIcon from "@/public/assets/icons/career_icons/referral_icon.png";
 import configurationIcon from "@/public/assets/icons/career_icons/timing_icon.png";
 import securityIcon from "@/public/assets/icons/career_icons/policy_icon.png";
-import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import Image from 'next/image';
 
 const expert_driven = [
