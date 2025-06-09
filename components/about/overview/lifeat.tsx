@@ -33,16 +33,36 @@ function Lifeat() {
                     create and sustain a happy, vibrant atmosphere.
                 </Typography>
             </div>
-            <div className='w-full py-12 flex items- gap-4 flex-wrap'>
-                {teams.map((team, index) => (
-                    <div key={`Team ${index+1}`} className='sm:min-w-[230px] sm:w-fit w-full h-fit'>
-                        <Image
-                            src={team}
-                            alt='Teams'
-                            className='w-full h-fit'
-                        />
-                    </div>
-                ))}
+            
+            {/* Masonry Layout */}
+            <div className='w-full py-12'>
+                {/* Desktop and Tablet: CSS Columns */}
+                <div className='hidden sm:block columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4'>
+                    {teams.map((team, index) => (
+                        <div key={`Team ${index+1}`} className='break-inside-avoid mb-4'>
+                            <Image
+                                src={team}
+                                alt={`Team ${index+1}`}
+                                className='w-full h-auto rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300'
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
+                    ))}
+                </div>
+                
+                {/* Mobile: Regular Grid */}
+                <div className='sm:hidden grid grid-cols-1 gap-4'>
+                    {teams.map((team, index) => (
+                        <div key={`Team ${index+1}`}>
+                            <Image
+                                src={team}
+                                alt={`Team ${index+1}`}
+                                className='w-full h-auto rounded-lg shadow-sm'
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     </div>

@@ -262,7 +262,7 @@ const nav_links = [
             id: "8",
             title: "DevOps CI/CD services",
             description: "Generative AI, Chatbot, custom LLMs and machine learning.",
-            href: "/"
+            href: "/solutions/security-cloud/devops-services"
           },
           {
             id: "9",

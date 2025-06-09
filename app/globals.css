@@ -156,6 +156,30 @@ body {
   /* background-attachment: fixed; */
 }
 
+.buildsmart-bg {
+  background: url('/assets/images/security-cloud/darkgreen.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.mobile_bg {
+  background: url('/assets/images/security-cloud/mobile-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.employ_bg {
+  background: url('/assets/images/security-cloud/employ_devops_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
