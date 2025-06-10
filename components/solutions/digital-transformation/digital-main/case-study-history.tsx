@@ -64,11 +64,11 @@ function CaseStudyHistory() {
             >
                 Case Studies Our History of Successful Transformations
             </Typography>
-            <div className='inter w-full grid grid-cols-3 gap-4'>
+            <div className='inter w-full grid lg:grid-cols-3 grid-cols-2 gap-4'>
                 {case_studies.map((data, index) => (
                     <Card
                         key={data.id}
-                        className='p-10 flex flex-col gap-6 bg-[#F8F8F8] hover:bg-yellow-50'
+                        className='lg:p-10 p-6 flex flex-col gap-6 bg-[#F8F8F8] hover:bg-yellow-50'
                     >
                         <CardHeader
                             className='p-0 w-[100px] h-fit'

@@ -6,7 +6,7 @@ import React from 'react'
 function ReadyUpgrade() {
   return (
     <div className='buildsmart-bg w-full py-16'>
-        <section className='w-[60%] mx-auto flex flex-col items-center gap-8'>
+        <section className='xl:w-[60%] lg:w-[70%] md:w-[80%] mx-auto flex flex-col items-center gap-8'>
             <div className='flex flex-col items-center gap-2'>
                 <Typography
                     typo="header-3-semibold"

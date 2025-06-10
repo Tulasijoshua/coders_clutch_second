@@ -39,8 +39,8 @@ function TechStack() {
   return (
     <div className='w-full py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto '>
-            <div className='w-full flex justify-between items-center gap-16'>
-                <div className='inter xl:pb-10 pb-10 flex flex-col gap-2'>
+            <div className='w-full flex xl:flex-row flex-col xl:justify-between xl:items-center xl:gap-16 gap-6'>
+                <div className='inter xl:pb-10 pb-2 flex flex-col gap-2'>
                     <Typography
                         typo="header-3-light"
                     >
@@ -53,22 +53,24 @@ function TechStack() {
                         Our Structure Process of Digital Transformation
                     </Typography>
                 </div>
-                <div className='flex-1 flex items-center gap-8'>
-                    {
-                        stack_languages.map(data => (
-                            <Button
-                                key={data.id}
-                                className={`px-6 py-2 font-medium ${selectedStack === data.id ? "bg-app-green-text hover:bg-app-green-text text-white " : "bg-[#BADACA] hover:bg-[#BADACA]"} rounded-full`}
-                                onClick={() => setSelectedStack(data.id)}
-                            >
-                                {data.title}
-                            </Button>
-                        ))
-                    }
+                <div className='w-full overflow-auto'>
+                    <div className='flex-1 flex items-center gap-8 flex-nowrap'>
+                        {
+                            stack_languages.map(data => (
+                                <Button
+                                    key={data.id}
+                                    className={`px-6 py-2 font-medium ${selectedStack === data.id ? "bg-app-green-text hover:bg-app-green-text text-white " : "bg-[#BADACA] hover:bg-[#BADACA]"} rounded-full`}
+                                    onClick={() => setSelectedStack(data.id)}
+                                >
+                                    {data.title}
+                                </Button>
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
 
-            <div className='w-[65%] mx-auto py-6'>
+            <div className='xl:pt-0 pt-12 md:w-[65%] mx-auto py-6'>
                 <Image 
                     src={currentStack?.img || databaseImg}
                     alt={`${currentStack?.title} Image`}

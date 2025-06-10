@@ -41,8 +41,8 @@ function DigitalProcess() {
   return (
     <div className='w-full py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between'>
-            <div className='flex-1 flex justify-between items-stretch'>
-                <div className='w-[280px] inter xl:pb-10 pb-10 flex flex-col justify-start gap-1'>
+            <div className='flex-1 md:flex hidden lg:flex-row flex-col justify-between items-stretch'>
+                <div className='lg:w-[280px] w-full inter xl:pb-10 pb-10 flex flex-col justify-start gap-1'>
                     <Typography
                         typo="header-3-light"
                     >

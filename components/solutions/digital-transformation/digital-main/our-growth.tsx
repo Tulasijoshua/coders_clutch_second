@@ -53,11 +53,11 @@ function OurGrowth() {
                     Scaling up digital business growth from scratch
                 </Typography>
             </div>
-            <div className='w-full py-6 grid grid-cols-4'>
+            <div className='w-full py-6 grid lg:grid-cols-4 grid-cols-2 lg:gap-0 gap-4'>
                 {business_growth.map((data) => (
                     <div
                         key={data.id}
-                        className='relative pl-10 pr-8 flex flex-col gap-2 border-l border-gray-300'
+                        className='relative 2xl:pl-10 xl:pl-6 pl-4 xl:pr-8 pr-4 lg:pb-0 pb-2 flex flex-col justify-between gap-2 lg:border-l lg:border-b-none border-b border-dashed border-gray-300'
                     >
                         <div className='flex flex-col gap-4'>
                             <Typography
@@ -71,7 +71,7 @@ function OurGrowth() {
                                 {data.description}
                             </Typography>
                         </div>
-                        <div className='inter pt-10 flex flex-col '>
+                        <div className='inter lg:pt-10 pt-5 flex flex-col '>
                             <Typography
                                 typo="header-1-semibold"
                                 className='text-app-green-text !font-bold !leading-none'
@@ -81,7 +81,7 @@ function OurGrowth() {
                             >
                                 {data.rate_title}
                             </Typography>
-                            <div className='h-16 w-[2px] absolute left-0 bg-app-green-text'></div>
+                            <div className='lg:block hidden h-16 w-[2px] absolute left-0 bg-app-green-text'></div>
                         </div>
                     </div>
                 ))}

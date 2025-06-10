@@ -53,8 +53,8 @@ const service_providers = [
 function WhyChooseDigital() {
   return (
     <div className='w-full py-12 bg-app-primary-deep'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-8'>
-            <div className='inter xl:pb-10 pb-10 flex flex-col gap-2 text-white'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col lg:gap-8 gap-2'>
+            <div className='inter xl:pb-10 pb-6 flex flex-col gap-2 text-white'>
                 <Typography
                     typo="header-3-light"
                 >
@@ -67,15 +67,15 @@ function WhyChooseDigital() {
                     Your Digital Transformation Service Provider
                 </Typography>
             </div>
-            <div className='w-full p-16 grid grid-cols-3 gap-6 bg-[#F7EFE1] rounded-[1.2rem]'>
+            <div className='w-full lg:p-16 p-8 grid lg:grid-cols-3 grid-cols-2 xl:gap-6 gap-3 bg-[#F7EFE1] rounded-[1.2rem]'>
                 {service_providers.map((data, index) => (
                     <Card 
                         key={data.id}
-                        className='group px-12 py-4 bg-transparent border shadow-none border-gray-300 rounded-2xl transition-all duration-300'
+                        className='group xl:px-12 px-6 xl:py-4 bg-transparent border shadow-none border-gray-300 rounded-2xl transition-all duration-300'
                     >
                         <CardHeader className='px-0 flex flex-col gap-2'>
                             <div className='w-fit p-4 rounded-xl border border-gray-300 transition-all duration-300 group-hover:bg-app-green-text'>
-                                <Image 
+                                <Image
                                     src={data.icon}
                                     alt={`Service ${index+1}`}
                                     className='w-8 h-fit'

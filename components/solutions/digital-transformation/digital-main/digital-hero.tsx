@@ -40,7 +40,7 @@ function DigitalHero() {
                 >
                     Modernizing Infrastructure for Digital Enterprise
                 </Typography>
-                <div className='arial lg:flex hidden flex-col gap-3 text-white'>
+                <div className='arial md:flex hidden flex-col lg:gap-3 text-white'>
                     <Typography
                         className='text-center '
                         typo="header-3-semibold"
@@ -70,7 +70,7 @@ function DigitalHero() {
                         business transformation for every enterprise, industry and business needs.
                     </Typography>
                 </div>
-                <div className='w-[70%] mx-auto flex flex-col items-center gap-2'>
+                <div className='md:w-[70%] mx-auto flex flex-col items-center gap-2'>
                     <div className=' grid xs:grid-cols-2 gap-4'>
                         {
                             digital_services.map(data => (

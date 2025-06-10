@@ -79,12 +79,12 @@ const solutions = [
 function CompleteDigitalSolutions() {
   return (
     <div className='w-full py-16 bg-app-gray-bg'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto grid grid-cols-4 gap-4'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto grid xl:grid-cols-4 md:grid-cols-3 gap-4'>
           {solutions.map((data, index) => (
             data.description ? (
               <Card
                 key={data.id}
-                className='py-6 bg-app-primary-deep text-white rounded-2xl'
+                className='lg:py-6 py-3 bg-app-primary-deep text-white rounded-2xl'
               >
                 <CardHeader 
                   className='flex flex-col'
@@ -109,7 +109,7 @@ function CompleteDigitalSolutions() {
                 <CardFooter
                   className='w-full pt-4 flex justify-end items-end'
                 >
-                  <div className='w-24 h-fit'>
+                  <div className='lg:w-24 w-16 h-fit'>
                     <Image 
                       src={data.img}
                       alt={`Solution ${index+1}`}

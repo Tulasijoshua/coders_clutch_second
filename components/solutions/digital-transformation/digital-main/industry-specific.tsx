@@ -72,16 +72,15 @@ function IndustrySpecific() {
                     Digital Transformation Solutions
                 </Typography>
             </div>
-            <div className='w-full py-2 grid grid-cols-3 gap-8'>
+            <div className='w-full py-2 grid md:grid-cols-3 grid-cols-2 lg:gap-8 gap-3'>
                 {
                     industry_specifics.map((data, index) => (
                         <Card
                             key={data.id}
-                            className='flex flex-col justify-between space-y-6 rounded-[1.3rem]'
+                            className='flex flex-col justify-between xl:space-y-6 lg:space-y-3 rounded-[1.3rem]'
                         >
                             <div>
-
-                                <CardHeader className='px-10 pb-3'>
+                                <CardHeader className='xl:px-10 px-5 pb-2'>
                                     <Typography
                                         typo="header-6-semibold"
                                     >
@@ -89,7 +88,7 @@ function IndustrySpecific() {
                                     </Typography>
                                 </CardHeader>
                                 <CardContent
-                                    className='px-10'
+                                    className='xl:px-10 px-5'
                                 >
                                     <Typography
                                         typo="body-large-medium"
@@ -99,12 +98,12 @@ function IndustrySpecific() {
                                 </CardContent>
                             </div>
                             <div 
-                                className='w-full h-[250px]'
+                                className='w-full xl:h-[250px] h-[200px]'
                             >
                                 <Image 
                                     src={data.img}
                                     alt={`Specific ${index+1}`}
-                                    className='w-full h-full'
+                                    className='w-full h-full object-cover rounded-b-[1.2rem]'
                                 />
                             </div>
                         </Card>

@@ -46,7 +46,7 @@ function DigitalServices() {
   return (
     <div className='digital_service_bg w-full py-20 '>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
-            <div className='inter xl:pb-10 pb-10 flex flex-col gap-2 text-white'>
+            <div className='inter xl:pb-10 pb-6 flex flex-col gap-2 text-white'>
                 <Typography
                     typo="header-3-light"
                 >
@@ -59,7 +59,7 @@ function DigitalServices() {
                     Tailor-made Digital solutions for All Kinds of Transformation
                 </Typography>
             </div>
-            <div className='py-6 grid grid-cols-3 gap-6'>
+            <div className='py-6 grid lg:grid-cols-3 grid-cols-2 gap-6'>
                 {digital_services.map((data) => (
                     <Card 
                         key={data.id}
