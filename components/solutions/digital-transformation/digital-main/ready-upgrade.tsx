@@ -10,7 +10,7 @@ function ReadyUpgrade() {
             <div className='flex flex-col items-center gap-2'>
                 <Typography
                     typo="header-3-semibold"
-                    className='text-[#F9DF91]'
+                    className='text-[#F9DF91] text-center'
                 >
                     Your all-new digital transformation is here!
                 </Typography>

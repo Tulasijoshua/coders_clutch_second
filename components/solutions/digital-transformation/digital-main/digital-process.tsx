@@ -40,8 +40,8 @@ const processes = [
 function DigitalProcess() {
   return (
     <div className='w-full py-12'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between'>
-            <div className='flex-1 md:flex hidden lg:flex-row flex-col justify-between items-stretch'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between'>
+            <div className='flex-1 flex lg:flex-row flex-col justify-between items-stretch'>
                 <div className='lg:w-[280px] w-full inter xl:pb-10 pb-10 flex flex-col justify-start gap-1'>
                     <Typography
                         typo="header-3-light"
@@ -56,12 +56,12 @@ function DigitalProcess() {
                     </Typography>
                     <Button
                         variant="primary"
-                        className='w-fit mt-6 2xl:!py-3 sm:!py-3 2xl:!px-12 lg:!px-16 md:!px-10 !px-8 !text-lg font-semibold rounded-none shadow-md hover:shadow-2xl'
+                        className='md:block hidden w-fit mt-6 2xl:!py-3 sm:!py-3 2xl:!px-12 lg:!px-16 md:!px-10 !px-8 !text-lg font-semibold rounded-none shadow-md hover:shadow-2xl'
                     >
                         Let&apos;s Talk
                     </Button>
                 </div>
-                <div className='flex-1 pb-20 flex flex-col justify-end'>
+                <div className='flex-1 pb-20 md:flex hidden flex-col justify-end'>
                     <div className='w-full h-fit'>
                         <Image 
                             src={dashed_line}
@@ -84,7 +84,7 @@ function DigitalProcess() {
                             >
                                 {data.id}
                             </Typography>
-                            <div className={`flex-1 w-0.5 h-full border-l-2 border-dashed border-app-yellow-medium`}></div>
+                            <div className={`flex-1 w-0.5 h-full ${data.id !== '5' && "border-l-2 border-dashed border-app-yellow-medium"} `}></div>
                         </div>
                         <div className='py-2 flex flex-col gap-4'>
                             <Typography

@@ -8,10 +8,10 @@ import Image from 'next/image';
 function CircleTrustBrands() {
   return (
         <section 
-            className="w-full mx-auto  text-center space-y-16"
+            className="w-full mx-auto text-center sm:space-y-16 space-y-8"
         >
             <Typography
-                className="text-center px-6 py-3 border border-gray-500 rounded-full"
+                className="text-center sm:px-6 py-3 sm:border border-none border-gray-500 rounded-full"
                 typo="body-large-semibold"
             >
                 Trusted by Funded Startups to <span className="text-[#108B47]">Fortune 500+ Brands</span> in 12+ Countries

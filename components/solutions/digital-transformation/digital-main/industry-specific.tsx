@@ -72,7 +72,7 @@ function IndustrySpecific() {
                     Digital Transformation Solutions
                 </Typography>
             </div>
-            <div className='w-full py-2 grid md:grid-cols-3 grid-cols-2 lg:gap-8 gap-3'>
+            <div className='w-full py-2 grid md:grid-cols-3 xs:grid-cols-2 lg:gap-8 gap-3'>
                 {
                     industry_specifics.map((data, index) => (
                         <Card

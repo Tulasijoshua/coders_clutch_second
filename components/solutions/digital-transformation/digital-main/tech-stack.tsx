@@ -70,7 +70,7 @@ function TechStack() {
                 </div>
             </div>
 
-            <div className='xl:pt-0 pt-12 md:w-[65%] mx-auto py-6'>
+            <div className='xl:pt-0 pt-12 sm:w-[65%] mx-auto py-6'>
                 <Image 
                     src={currentStack?.img || databaseImg}
                     alt={`${currentStack?.title} Image`}

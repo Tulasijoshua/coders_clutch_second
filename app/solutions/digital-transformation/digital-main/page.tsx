@@ -12,7 +12,6 @@ import OurGrowth from '@/components/solutions/digital-transformation/digital-mai
 import ReadyUpgrade from '@/components/solutions/digital-transformation/digital-main/ready-upgrade'
 import TechStack from '@/components/solutions/digital-transformation/digital-main/tech-stack'
 import WhyChooseDigital from '@/components/solutions/digital-transformation/digital-main/why-choolse-digital'
-import WhyChoose from '@/components/solutions/security-cloud/devops-services/why-choose'
 import React from 'react'
 
 function DigitalTransformationMain() {

@@ -64,7 +64,7 @@ function CaseStudyHistory() {
             >
                 Case Studies Our History of Successful Transformations
             </Typography>
-            <div className='inter w-full grid lg:grid-cols-3 grid-cols-2 gap-4'>
+            <div className='inter w-full grid lg:grid-cols-3 sm:grid-cols-2 gap-4'>
                 {case_studies.map((data, index) => (
                     <Card
                         key={data.id}
