@@ -1,0 +1,119 @@
+'use client';
+import Typography from '@/components/shared/typography';
+import React from 'react'
+import bankingImg from "@/public/assets/images/solutions/digital-transformation/banking.png"
+import hospitalImg from "@/public/assets/images/solutions/digital-transformation/hospital.png"
+import educationImg from "@/public/assets/images/solutions/digital-transformation/education.png"
+import telecomImg from "@/public/assets/images/solutions/digital-transformation/telecom.png"
+import automativeImg from "@/public/assets/images/solutions/digital-transformation/automative.png"
+import mediaImg from "@/public/assets/images/solutions/digital-transformation/media.png"
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import Image from 'next/image';
+
+const industry_specifics = [
+    {
+        id: "1",
+        title: "Banking",
+        img: bankingImg,
+        description: `Implement digital solutions to ensure automated bank transactions, high-end data security, 
+                        leveraging AI and big data analytics.`,
+    },
+    {
+        id: "2",
+        title: "Healthcare",
+        img: hospitalImg,
+        description: `Reshaping healthcare with telehealth services to monitor patients and implement AI to identify 
+                        health risks at bay fostering patient-care.`,
+    },
+    {
+        id: "3",
+        title: "Education",
+        img: educationImg,
+        description: `Build LMS apps, e-learning solutions and corporate training apps for inductions and simplify tasks 
+                        within organizations.`,
+    },
+    {
+        id: "4",
+        title: "Telecommunications",
+        img: telecomImg,
+        description: `Rediscover seamless connectivity adopting data-driven development solutions improving operational 
+                        efficiency and seamless communication.`,
+    },
+    {
+        id: "5",
+        title: "Automotive",
+        img: automativeImg,
+        description: `Adaptive Automotive engineering that simplifies your every move with innovative vehicle solutions 
+                        like connected car, BEV, NEV softwares.`,
+    },
+    {
+        id: "6",
+        title: "Media & Entertainment",
+        img: mediaImg,
+        description: `Develop next-gen entertainment and media applications that’s innovative, creative, interactive and 
+                        customizable to the core.`,
+    },
+]
+
+function IndustrySpecific() {
+  return (
+    <div className='w-full py-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
+            <div className='inter xl:pb-10 pb-10 flex flex-col gap-1'>
+                <Typography
+                    typo="header-3-light"
+                >
+                    Industry Specific
+                </Typography>
+                <Typography
+                    typo="header-3-semibold"
+                    className='!font-bold'
+                >
+                    Digital Transformation Solutions
+                </Typography>
+            </div>
+            <div className='w-full py-2 grid grid-cols-3 gap-8'>
+                {
+                    industry_specifics.map((data, index) => (
+                        <Card
+                            key={data.id}
+                            className='flex flex-col justify-between space-y-6 rounded-[1.3rem]'
+                        >
+                            <div>
+
+                                <CardHeader className='px-10 pb-3'>
+                                    <Typography
+                                        typo="header-6-semibold"
+                                    >
+                                        {data.title}
+                                    </Typography>
+                                </CardHeader>
+                                <CardContent
+                                    className='px-10'
+                                >
+                                    <Typography
+                                        typo="body-large-medium"
+                                    >
+                                        {data.description}
+                                    </Typography>
+                                </CardContent>
+                            </div>
+                            <div 
+                                className='w-full h-[250px]'
+                            >
+                                <Image 
+                                    src={data.img}
+                                    alt={`Specific ${index+1}`}
+                                    className='w-full h-full'
+                                />
+                            </div>
+                        </Card>
+                    ))
+                }
+            </div>
+        </section>
+    </div>
+  )
+}
+
+export default IndustrySpecific

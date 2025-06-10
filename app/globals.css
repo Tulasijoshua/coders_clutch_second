@@ -180,6 +180,14 @@ body {
   /* background-attachment: fixed; */
 }
 
+.digital_service_bg {
+  background: url('/assets/images/solutions/digital-transformation/digital_service-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;

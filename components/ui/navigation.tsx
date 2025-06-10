@@ -280,7 +280,7 @@ const nav_links = [
             id: "1",
             title: "IT Strategy Development",
             description: "Align technology with business objectives",
-            href: "/"
+            href: "/solutions/digital-transformation/digital-main"
           },
           {
             id: "2",

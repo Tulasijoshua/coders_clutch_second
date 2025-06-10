@@ -5,6 +5,7 @@ import { digital_solutions } from '@/constant';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import { Check } from 'lucide-react';
 
+
 function DigitalSolutions() {
   return (
     <div className='w-full py-12 bg-gray-100'>
