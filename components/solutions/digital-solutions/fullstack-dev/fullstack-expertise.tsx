@@ -1,11 +1,11 @@
 'use client';
-import Typography from '@/components/shared/typography';
 import React, { useState } from 'react'
 import mediaImg from "@/public/assets/images/security-cloud/media.png"
 import iotImg from "@/public/assets/images/security-cloud/iot_img.png"
 import ecommerceImg from "@/public/assets/images/security-cloud/ecommerce.png"
 import healthImg from "@/public/assets/images/security-cloud/healthcare.png"
 import bankingImg from "@/public/assets/images/security-cloud/banking.png"
+import Typography from '@/components/shared/typography';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Image from 'next/image';
 
@@ -14,41 +14,42 @@ const accross_verticals = [
         id: "1",
         title: "Media & Entertainment",
         img: mediaImg,
-        description: `Elevate your media workflows with a scalable DevOps service company. Deliver high-qualiy content and 
-                        improve experience across platforms and devices.`,
+        description: `Create state-of-the-art streaming platforms for content delivery, engagement, and personalized 
+                        entertainment solutions with full-stack web development services.`,
     },
     {
         id: "2",
         title: "IoT Management",
         img: iotImg,
-        description: `Streamline IoT ecosystems with robust DevOps development services. Ensure seamless integration, 
-                        deployment, and management of IoT devices.`,
+        description: `Connect devices and vehicles seamlessly. Full-stack expertise ensures robust IoT ecosystems with 
+                        efficient data processing, security, and real-time analytics.`,
     },
     {
         id: "3",
         title: "Retail & E-commerce",
         img: ecommerceImg,
-        description: `Boost retail operations with agile DevOps solutions. Optimize online shopping experiences through rapid 
-                        deployment and continuous innovation.`,
+        description: `Transform shopping experiences with full stack services optimized for e-commerce platforms. 
+                        Develop scalable, user-friendly app interfaces with seamless transactions.`,
     },
     {
         id: "4",
         title: "Healthcare",
         img: healthImg,
-        description: `Secure patient data and improve healthcare services with compliant, efficient processes. Get DevOps 
-                        solutions tailored to the healthcare industry's needs.`,
+        description: `Enhance patient care with a full stack company that builds secure, interoperable systems. Facilitate 
+                        seamless data exchange and efficient healthcare management.`,
     },
     {
         id: "5",
         title: "Banking",
         img: bankingImg,
-        description: `Transform your banking services with secure, reliable DevOps services. Enable faster service delivery, 
-                        safer transactions, and improoved customer satisfaction.`,
+        description: `Create secure, scalable, and compliant banking systems. Facilitate secure transactions and 
+                        ensure a seamless user experience with our full-stack expertise. `,
     },
 ]
 
-function DevopsAsService() {
+function FullstackExpertise() {
     const [activeItem, setActiveItem] = useState("item-1");
+    
   return (
     <div className='employ_bg w-full py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
@@ -56,13 +57,13 @@ function DevopsAsService() {
                 <Typography
                     typo="header-3-light"
                 >
-                    Employ DevOps As a Service
+                    Our Development Expertise
                 </Typography>
                 <Typography
                     typo="header-3-semibold"
                     className='!font-bold'
                 >
-                    Across Verticals and Industries
+                    Spans Across Verticals and Industries
                 </Typography>
             </div>
             <div className='w-full py-8 flex md:flex-row flex-col justify-between'>
@@ -76,7 +77,7 @@ function DevopsAsService() {
                     >
                         {
                             accross_verticals.map((data, index) => (
-                                <AccordionItem 
+                                <AccordionItem
                                     key={data.id}
                                     value={`item-${index+1}`}
                                     className={`xs:px-6 px-3 xs:py-4 border-b border-gray-200 last:border-b-0 ${
@@ -91,7 +92,7 @@ function DevopsAsService() {
                                             {data.description}
                                         </p>
                                         <div className='md:hidden block w-full h-full max-h-[400px] overflow-hidden shadow-sm'>
-                                            <Image 
+                                            <Image
                                                 src={data.img}
                                                 alt='Industry Image'
                                                 className='w-full h-full object-cover'
@@ -124,4 +125,4 @@ function DevopsAsService() {
   )
 }
 
-export default DevopsAsService
+export default FullstackExpertise

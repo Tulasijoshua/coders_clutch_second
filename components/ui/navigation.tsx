@@ -144,6 +144,12 @@ const nav_links = [
             description: "Crafting compelling brand narratives across channels.",
             href: "/"
           },
+          {
+            id: "6",
+            title: "Full Stack Development",
+            description: "Crafting compelling brand narratives across channels.",
+            href: "/solutions/digital-solutions/full-stack-development"
+          },
         ]
       },
       {
