@@ -188,6 +188,14 @@ body {
   /* background-attachment: fixed; */
 }
 
+.pattern_bg {
+  background: url('/assets/images/solutions/product_development/pattern-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;

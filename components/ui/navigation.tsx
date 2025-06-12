@@ -121,6 +121,12 @@ const nav_links = [
             href: "/solutions/digital-solutions/ui-ux-design"
           },
           {
+            id: "7",
+            title: "Product Development",
+            description: "Beautiful, functional digital experiences that convert",
+            href: "/solutions/digital-solutions/product-development"
+          },
+          {
             id: "2",
             title: "Website Design",
             description: "Beautiful, functional digital experiences that convert",

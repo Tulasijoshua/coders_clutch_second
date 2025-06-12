@@ -3,13 +3,13 @@ import React from 'react'
 import cIcon from "@/public/assets/icons/security-cloud/c_rating.png";
 import sIcon from "@/public/assets/icons/security-cloud/s_rating.png";
 import fIcon from "@/public/assets/icons/security-cloud/f_rating.png";
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import Typography from '@/components/shared/typography';
 import { CircleCheckBig } from 'lucide-react';
-import Image from 'next/image';
 import StarRating from '@/components/reusable/star-rating';
-import { Button } from '@/components/ui/button';
 
-const digital_services = ["Easy Onboarding in 48 Hours", "300+ Senior Developers", "Save 60% on Development Cost", "Flexible Hiring Models", "95% Client Satisfaction Rate", "Get 15 Days Risk-Free Trial"]
+const digital_services = ["200+ Innovation Patents", "4X Faster Market Entry", "Dedicated Success Teams", "95% On-Time Delivery"]
 
 const digital_rating = [
     {
@@ -29,7 +29,7 @@ const digital_rating = [
     },
 ]
 
-function FullStackHero() {
+function ProductHero() {
   return (
     <div className='w-full md:py-12 py-8 bg-app-primary-deep'>
         <div className='max-container lg:w-[85%] w-[95%] mx-auto'>
@@ -38,20 +38,20 @@ function FullStackHero() {
                     typo="header-6-semibold"
                     className='text-center text-app-green'
                 >
-                    Top 3% Full Stack Engineers
+                    From Concept To Product Launch
                 </Typography>
                 <div className='arial md:flex hidden flex-col lg:gap-3 text-white'>
                     <Typography
                         className='text-center '
                         typo="header-3-semibold"
                     >
-                        Hire #1 Trusted Full Stack Development
+                        A Full-Cycle Product Development Company
                     </Typography>
                     <Typography
                         className='text-center '
                         typo="header-3-semibold"
                     >
-                        Company for Services
+                        To Build Future-Ready Products
                     </Typography>
                 </div>
                 <Typography
@@ -65,18 +65,13 @@ function FullStackHero() {
                         typo="body-large-semibold"
                         className='text-center !leading-relaxed'
                     >
-                        Hire a professional full stack software developer from a leading full stack development company in 
-                        just 2 days. Build high-performance, scalable web and mobile apps with expert solutions on tight 
-                        timescales.
-                    </Typography>
-                    <Typography
-                        typo="body-large-semibold"
-                        className='text-center !leading-relaxed'
-                    >
-                        Get started with the best in the industry!
+                        Transform your bold ideas into powerful digital realities with expert product development services. 
+                        We don't just build products—we create experiences that set industry standards. Backed by a proven 
+                        track record, our services accelerate time-to-market by 4X, delivering digital products users love.
                     </Typography>
                 </div>
-                    <div className='w-full grid md:grid-cols-3 xs:grid-cols-2 gap-4'>
+                <div className='md:w-[70%] mx-auto flex flex-col items-center gap-2'>
+                    <div className=' grid xs:grid-cols-2 gap-4'>
                         {
                             digital_services.map(data => (
                                 <div key={data} className='flex items-center gap-3'>
@@ -122,10 +117,11 @@ function FullStackHero() {
                     >
                         Let&apos;s Talk
                     </Button>
+                </div>
             </section>
         </div>
-    </div> 
+    </div>
   )
 }
 
-export default FullStackHero
+export default ProductHero
