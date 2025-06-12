@@ -25,7 +25,7 @@ function DigitalProducts() {
                 variant="primary"
                 className='w-fit sm:mt-3 mt-6 mx-auto 2xl:!py-3 sm:!py-3 2xl:!px-10 lg:!px-16 md:!px-10 !px-8 !text-lg font-semibold'
             >
-                Let's Talk
+                Let&apos;s Talk
             </Button>
         </section>
     </div>

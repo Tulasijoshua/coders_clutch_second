@@ -89,7 +89,6 @@ function ProductSuccessStories() {
                         </CardHeader>
                         <CardContent className='md:w-[90%] p-0'>
                             <Typography
-                                // typo="body-large-semibold"
                                 className='!text-xl font-medium'
                             >
                                 {data.content}
