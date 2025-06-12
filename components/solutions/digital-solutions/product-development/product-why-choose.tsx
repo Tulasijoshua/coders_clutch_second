@@ -76,7 +76,7 @@ const products = [
 function ProductWhyChoose() {
   return (
     <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto grid grid-cols-3 gap-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto grid lg:grid-cols-3 sm:grid-cols-2 2xl:gap-12 gap-6'>
             {products.map((data, index) => (
                 data.sub_title ? (
                     <div key={data.id} className='inter xl:pb-10 pb-10 flex flex-col gap-1'>

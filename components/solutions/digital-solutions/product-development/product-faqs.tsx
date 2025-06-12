@@ -45,8 +45,8 @@ const product_faqs = [
 
 function ProductFaqs() {
   return (
-    <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto'>
+    <div className='w-full py-12 bg-app-gray-bg'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-1'>
                 <Typography
                     typo="header-3-light"

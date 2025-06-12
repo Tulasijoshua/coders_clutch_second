@@ -57,7 +57,7 @@ const served_industries = [
 function ProductWeServe() {
   return (
     <div className='w-full py-12 bg-app-primary-deep'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-1 text-white'>
                 <Typography
                     typo="header-3-light"
@@ -72,10 +72,10 @@ function ProductWeServe() {
                 </Typography>
             </div>
 
-            <div className='w-full py-4 grid grid-cols-3 gap-16'>
+            <div className='w-full py-4 grid md:grid-cols-3 xs:grid-cols-2 lg:gap-16 gap-8'>
                 {served_industries.map((data, index) => (
                     <div key={data.id} className='flex flex-col gap-4 text-white'>
-                        <div className='w-24 h-fit'>
+                        <div className='md:w-24 w-16 h-fit'>
                             <Image 
                                 src={data.img}
                                 alt={`Industry ${index+1}`}

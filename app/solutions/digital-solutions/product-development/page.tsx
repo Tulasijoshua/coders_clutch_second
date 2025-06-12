@@ -1,4 +1,5 @@
 import AwardsRecognition from '@/components/home/awards-recognition'
+import Hereforyou from '@/components/home/hereforyou'
 import DigitalProducts from '@/components/solutions/digital-solutions/product-development/digital-products'
 import ProductBrands from '@/components/solutions/digital-solutions/product-development/product-brands'
 import ProductFaqs from '@/components/solutions/digital-solutions/product-development/product-faqs'
@@ -27,6 +28,7 @@ function ProductDevelopment() {
         <ProductWeServe />
         <ProductTestimonials />
         <ProductFaqs />
+        <Hereforyou />
     </div>
   )
 }

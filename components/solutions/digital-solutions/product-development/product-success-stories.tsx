@@ -58,7 +58,7 @@ const success_stories = [
 function ProductSuccessStories() {
   return (
     <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-1'>
                 <Typography
                     typo="header-3-light"
@@ -87,7 +87,7 @@ function ProductSuccessStories() {
                                 className='w-full h-full'
                             />
                         </CardHeader>
-                        <CardContent className='w-[90%] p-0'>
+                        <CardContent className='md:w-[90%] p-0'>
                             <Typography
                                 // typo="body-large-semibold"
                                 className='!text-xl font-medium'
@@ -97,7 +97,7 @@ function ProductSuccessStories() {
                         </CardContent>
 
                         <CardFooter
-                            className='h-full p-0 pt-8 flex flex-col items-start justify-end'
+                            className='h-full p-0 md:pt-8 pt-4 flex flex-col items-start justify-end'
                         >
                             <Typography
                                 typo="header-2-semibold"

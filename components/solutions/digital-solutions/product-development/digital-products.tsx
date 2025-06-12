@@ -6,12 +6,12 @@ import React from 'react'
 function DigitalProducts() {
   return (
     <div className='w-full py-16 bg-app-primary-deep'>
-        <section className='w-[70%] mx-auto flex flex-col items-center gap-6 text-white'>
+        <section className='max-w-[990px] 2xl:w-[70%] xl:w-[80%] w-[90%] mx-auto flex flex-col items-center gap-6 text-white'>
             <Typography
                 typo="header-3-semibold"
                 className='text-center !leading-normal'
             >
-                From Idea to Launch — We Build the <span className='text-app-yellow-medium'>Digital Products</span>
+                From Idea to Launch — We Build the <span className='text-app-yellow-medium'>Digital Products </span>
                 That Power Your Business Growth.
             </Typography>
             <Typography

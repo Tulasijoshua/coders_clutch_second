@@ -39,7 +39,7 @@ const product_steps = [
 function ProductStepsEngage() {
   return (
     <div className='w-full pt-12 pb-8 bg-app-primary-deep'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-1 text-white'>
                 <Typography
                     typo="header-3-light"
@@ -53,7 +53,7 @@ function ProductStepsEngage() {
                     Our Digital Product Development Process We Follow
                 </Typography>
             </div>
-            <div className='w-full py-4 grid grid-cols-5 gap-6'>
+            <div className='hidden w-full py-4 xl:grid grid-cols-5 gap-6'>
                 {product_steps.map((data, index) => (
                     <div
                         key={data.id}
@@ -99,6 +99,49 @@ function ProductStepsEngage() {
                         </Card>
                     </div>
                 ))}
+            </div>
+            <div className='max-w-[90%] mx-auto w-full overflow-auto'>
+                <div className='xl:hidden w-full py-4 flex items-stretch flex-nowrap '>
+                    {product_steps.map((data, index) => (
+                        <div
+                        key={data.id}
+                        className={`min-w-[300px] flex flex-col gap-12`}
+                    >
+                        <div className='w-full flex items-center'>
+                            <Typography
+                                typo="body-small-medium"
+                                className='w-fit p-2 bg-white rounded-full'
+                            >
+                                Process of work
+                            </Typography>
+                            <div className='flex-1 h-[1px] bg-white rounded-full'></div>
+                        </div>
+                        <Card 
+                            className={`h-full mr-6 flex flex-col bg-[#F7EFE1] hover:bg-gradient-to-br hover:from-white hover:via-white hover:to-green-300`}
+                        >
+                            <CardHeader className='flex flex-col gap-2'>
+                                <Typography
+                                    className='w-fit px-3 py-1 !text-sm font-semibold bg-[#F9DF91] text-[#AD5E07] rounded-md'
+                                >
+                                    Step {index + 1}
+                                </Typography>
+                                <Typography
+                                    typo="header-6-semibold"
+                                >
+                                    {data.title}
+                                </Typography>
+                            </CardHeader>
+                            <CardContent>
+                                <Typography
+                                    typo="body-medium-medium"
+                                >
+                                    {data.description}
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </div>
+                    ))}
+                </div>
             </div>
         </section>
     </div>

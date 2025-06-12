@@ -48,7 +48,7 @@ function ProductTechExpertise() {
     const currentProduct = experts_products.find(product => product.id === selectedProduct)
   return (
     <div className='w-full py-12 bg-app-gray-bg'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-1'>
                 <Typography
                     typo="header-3-light"
@@ -62,21 +62,21 @@ function ProductTechExpertise() {
                     Building Your Digital Product with Robust Tech Stack
                 </Typography>
             </div>
-            <div className='w-full py-8 space-y-16'>
-                <div className='min-w-[600px] overflow-auto'>
-                    <div className='w-full flex justify-between items-center gap-5 border-b-2 border-gray-400'>
+            <div className='w-full py-8 flex flex-col space-y-16'>
+                <div className=' w-full overflow-auto'>
+                    <div className='w-fit flex justify- items-center gap-5 flex-nowrap border-b-2 border-gray-400'>
                         {experts_products.map(data => (
                             <button 
                                 key={data.id}
                                 onClick={() => setSelectedProduct(data.id)}
-                                className={`pb-3 text-base font-semibold text-center ${selectedProduct === data.id ? "border-b-[3px] border-app-green-text text-app-green-text" : ""}`}
+                                className={`min-w-[170px] pb-3 text-base font-semibold text-center ${selectedProduct === data.id ? "border-b-[3px] border-app-green-text text-app-green-text" : ""}`}
                             >
                                 {data.title}
                             </button>
                         ))}
                     </div>
                 </div>
-                <div className='w-[700px] mx-auto h-fit'>
+                <div className='lg:w-[700px] w-[80%] mx-auto h-fit'>
                     <Image 
                         src={currentProduct?.img || ''}
                         alt={`Product ${currentProduct?.id}`}

@@ -76,7 +76,7 @@ const testimonial = [
 function ProductTestimonials() {
   return (
     <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-10 flex flex-col gap-1'>
                 <Typography
                     typo="header-3-light"
@@ -104,9 +104,9 @@ function ProductTestimonials() {
                 >
                     <CarouselContent>
                         {testimonial.map((data, index) => (
-                            <CarouselItem key={index} className="sm:basis-1/2 xl:basis-1/3">
+                            <CarouselItem key={index} className="sm:basis-1/2 xl:basis-1/3 py-6">
                                 <Card
-                                    className='lg:w-[420px] md:w-[350px] sm:w-[300px] w-[350px] py-4'
+                                    className='lg:w-[420px] md:w-[350px] sm:w-[300px] w-[350px] py-6 px-4 shadow-xl'
                                     key={data.id}
                                 >
                                     <CardHeader  className='pb-2'>
@@ -121,7 +121,7 @@ function ProductTestimonials() {
                                             {data.description}
                                         </Typography>
                                     </CardContent>
-                                    <CardFooter className='pt-12 flex items-center gap-2'>
+                                    <CardFooter className='md:pt-20 flex items-center gap-2'>
                                         <Image
                                             src={data.img}
                                             alt={`Testimony ${index+1}`}
