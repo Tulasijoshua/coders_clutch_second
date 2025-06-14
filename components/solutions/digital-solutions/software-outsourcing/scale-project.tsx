@@ -32,7 +32,7 @@ function ScaleProject() {
                     variant="primary"
                     className='mt-8 !px-12 font-semibold !text-lg'
                 >
-                    Let's Talk
+                    Let&apos;s Talk
                 </Button>
             </div>
             <div className='sm:block hidden xl:w-[35%] w-[25%] h-fit'>
