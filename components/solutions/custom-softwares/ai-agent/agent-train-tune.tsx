@@ -27,7 +27,7 @@ function AgentTrainTune() {
                 </Typography>
             </div>
             <div className='xl:w-[90%] mx-auto py-6'>
-                <div className='w-full lg:px-10 px-4 py-3 grid md:grid-cols-6 grid-cols-3 bg-[#089B2A] rounded-md'>
+                <div className='w-full lg:px-10 px-4 py-3 grid md:grid-cols-6 xs:grid-cols-3 grid-cols-2 bg-[#089B2A] rounded-md'>
                     {top_agents.map((data, index) => (
                         <div key={data.id} className='flex items-center gap-3'>
                             <Image 
@@ -87,8 +87,8 @@ function AgentTrainTune() {
                             className='uppercase text-app-green-text text-center'
                         >Gent Ai</Typography>
                     </CardHeader>
-                    <CardContent className='w-full grid md:grid-cols-4 grid-cols-2 xl:gap-6 gap-3'>
-                        {below_agents.map((data, index) => (
+                    <CardContent className='w-full grid md:grid-cols-4 xs:grid-cols-2 xl:gap-6 gap-3'>
+                        {below_agents.map((data) => (
                             <Card key={data.id} className='rounded-md bg-white shadow-lg'>
                                 <CardHeader
                                     className='py-2 xl:px-6 px-4 text-white text-center bg-black rounded-t-lg'
@@ -188,7 +188,7 @@ function AgentTrainTune() {
                         className='py-8 flex justify-between gap-12 bg-[#013330] rounded-b-lg'
                     >
                        
-                        <div className='w-[70%] mx-auto h-fit'>
+                        <div className='sm:w-[70%] w-full mx-auto h-fit'>
                             <Image 
                                 src={deployImg}
                                 alt={`Deployment image`}

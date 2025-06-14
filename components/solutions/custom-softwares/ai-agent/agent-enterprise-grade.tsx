@@ -24,7 +24,7 @@ function AgentEnterpriseGrade() {
             </Typography>
         </div>
         <div className='w-full py-4'>
-          <div className='md:w-full w-[80%] mx-auto'>
+          <div className='md:w-full xs:w-[80%] mx-auto'>
             <Image 
               src={enterpriseImg}
               alt='Enterprise image'
@@ -33,11 +33,11 @@ function AgentEnterpriseGrade() {
             <Image 
               src={enterpriseMobileImg}
               alt='Enterprise image'
-              className='w-full h-full'
+              className='md:hidden block w-full h-full'
             />
           </div>
         </div>
-        <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto py-6 grid md:grid-cols-3 grid-cols-2 xl:gap-12 lg:gap-8 gap-4'>
+        <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto py-6 grid md:grid-cols-3 sm:grid-cols-2 xl:gap-12 lg:gap-8 gap-4'>
           {enterprise_grade.map((data, index) => (
             <Card
               key={data.id}

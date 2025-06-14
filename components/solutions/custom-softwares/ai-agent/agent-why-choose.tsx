@@ -22,7 +22,7 @@ function AgentWhyChoose() {
                     to Build, Deploy, and Manage AI Agents
                 </Typography>
             </div>
-            <div className='w-full py-4 grid lg:grid-cols-3 grid-cols-2 xl:gap-8 gap-4'>
+            <div className='w-full py-4 grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-8 gap-4'>
                 {agent_reasons.map((data, index) => (
                     <Card
                         key={data.id}
@@ -36,7 +36,7 @@ function AgentWhyChoose() {
                             />
                         </CardHeader>
                         <CardContent className='flex flex-col gap-3'>
-                            <div className='flex flex-col'>
+                            <div className='flex sm:flex-col sm:gap-0 gap-2'>
                                 <Typography
                                     typo="header-5-semibold"
                                 >

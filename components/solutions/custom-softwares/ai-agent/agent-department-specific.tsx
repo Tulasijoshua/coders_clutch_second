@@ -110,7 +110,7 @@ function AgentDepartmentSpecific() {
                                                 <div key={content} className='flex items-center gap-3'>
                                                     <CircleCheck color='#62FF00' />
                                                     <Typography
-                                                        className='!text-base'
+                                                        className='xs:!text-base'
                                                     >
                                                         {content}
                                                     </Typography>

@@ -25,7 +25,7 @@ function AgentOnboard() {
                     Work 24/7 Without Unnecessary Breaks
                 </Typography>
             </div>
-            <div className='w-full py-6 '>
+            <div className='w-full py-6 md:space-y-0 space-y-6'>
                 <div className='w-full h-fit'>
                     <Image 
                         src={onboardImg}
@@ -66,7 +66,7 @@ function AgentOnboard() {
                                 <CardContent className='xl:py-8 py-4 flex flex-col space-y-4'>
                                     {data.contents.map(content => (
                                         <div key={content} className='flex items-center gap-2'>
-                                            <Forward color='#48B02C' className='lg:block hidden' />
+                                            <Forward color='#48B02C' className='lg:block md:hidden' />
                                             <Typography className=''>
                                                 {content}
                                             </Typography>

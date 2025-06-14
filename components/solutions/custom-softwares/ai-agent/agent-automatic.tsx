@@ -94,7 +94,7 @@ function AgentAutomatic() {
                                     }`}
                                 >
                                     <AccordionTrigger
-                                        className='text-xl font-semibold'
+                                        className='xs:text-xl text-lg font-semibold'
                                     >{data.title}</AccordionTrigger>
                                     <AccordionContent className="w-full flex flex-col gap-4 text-balance">
                                         <p className='w-full text-base'>

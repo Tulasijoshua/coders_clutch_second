@@ -21,7 +21,7 @@ function AgentNeedToBuild() {
                     Secure, Scalable & High-Performing AI Agents
                 </Typography>
             </div>
-            <div className='w-full py-6 grid lg:grid-cols-3 grid-cols-2 gap-10'>
+            <div className='w-full py-6 grid lg:grid-cols-3 sm:grid-cols-2 gap-10'>
                 {need_builds.map((data, index) => (
                     <div 
                         key={data.id} 

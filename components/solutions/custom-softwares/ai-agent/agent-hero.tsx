@@ -11,7 +11,7 @@ function AgentHero() {
     <div className='aiagent-bg w-full md:py-20 py-12'>
         <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='xl:w-[60%] lg:w-[70%] md:w-[85%] flex flex-col md:items-start items-center xl:gap-8 gap-4 text-white'>
-                <div className='flex flex-col'>
+                <div className='xs:flex hidden flex-col'>
                     <Typography
                         typo="header-2-semibold"
                         className='md:text-left text-center'
@@ -32,12 +32,18 @@ function AgentHero() {
                     </Typography>
                 </div>
                 <Typography
+                    typo="header-2-semibold"
+                    className='xs:hidden block text-center'
+                >
+                    Build and Deploy AI Agents <span className='text-app-yellow'>On-Cloud or On-Premise</span> The Choice is Yours
+                </Typography>
+                <Typography
                     typo="body-large-medium"
                     className='text-gray-300 text-center'
                 >
                     Contus Tech brings smart AI Agents that think on their feet, proactively automate tasks, and get things done before you even ask.
                 </Typography>
-                <div className='w-full grid grid-cols-2 md:gap-6 gap-3'>
+                <div className='sm:w-full w-fit mx-auto grid sm:grid-cols-2 md:gap-6 gap-3'>
                     {agent_services.map((data) => (
                         <div key={data} className='flex items-center gap-4'>
                             <CircleCheckBig size={25} fill='#4D7372' />
