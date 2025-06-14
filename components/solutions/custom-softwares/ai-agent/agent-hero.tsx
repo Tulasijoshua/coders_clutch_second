@@ -39,9 +39,9 @@ function AgentHero() {
                 </Typography>
                 <Typography
                     typo="body-large-medium"
-                    className='text-gray-300 text-center'
+                    className='text-gray-300 xs:text-left text-center !leading-relaxed'
                 >
-                    Contus Tech brings smart AI Agents that think on their feet, proactively automate tasks, and get things done before you even ask.
+                    Coders Clutch brings smart AI Agents that think on their feet, proactively automate tasks, and get things done before you even ask.
                 </Typography>
                 <div className='sm:w-full w-fit mx-auto grid sm:grid-cols-2 md:gap-6 gap-3'>
                     {agent_services.map((data) => (
