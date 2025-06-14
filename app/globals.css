@@ -204,6 +204,30 @@ body {
   /* background-attachment: fixed; */
 }
 
+.aiagent-bg {
+  background: url('/assets/images/solutions/ai-agent/ai-agent-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.train_bg {
+  background: url('/assets/images/solutions/ai-agent/train-tune-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-attachment: fixed; */
+}
+
+.enterprise_card_bg {
+  background: url('/assets/images/solutions/ai-agent/enterprise-overlay.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;

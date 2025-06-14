@@ -47,7 +47,7 @@ const typoVariants = cva("overflow-wrap overflow-hidden leading-normal", {
       "body-medium-semibold": "sm:text-[16px] text-[14px] leading-[24px] font-semibold",
       "body-medium-underline": "",
       "body-small-small": "text-[10px] leading-[16px] font-normal",
-      "body-small-regular": "text-[13px] leading-[16px] font-normal",
+      "body-small-regular": "text-[14px] leading-[16px] font-normal",
       "body-small-medium": "text-[13px] leading-[16px] font-medium",
       "body-small-semibold": "text-[13px] leading-[16px] font-semibold",
       "body-small-underline": "",
