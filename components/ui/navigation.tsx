@@ -156,6 +156,12 @@ const nav_links = [
             description: "Crafting compelling brand narratives across channels.",
             href: "/solutions/digital-solutions/full-stack-development"
           },
+          {
+            id: "8",
+            title: "Software Outsourcing",
+            description: "Crafting compelling brand narratives across channels.",
+            href: "/solutions/digital-solutions/software-outsourcing"
+          },
         ]
       },
       {

@@ -196,6 +196,14 @@ body {
   /* background-attachment: fixed; */
 }
 
+.sourcing-bg {
+  background: url('/assets/images/solutions/outsourcing/source-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
