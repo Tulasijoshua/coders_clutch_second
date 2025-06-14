@@ -153,7 +153,7 @@ function AgentTrainTune() {
                                     typo="body-medium-semibold"
                                     className=' text-center'
                                 >{data.title}</Typography>
-                                <div className='min-w-24 max-w-40 w-full h-fit'>
+                                <div className='min-w-20 max-w-40 w-full h-fit'>
                                     <Image 
                                         src={data.img}
                                         alt={`Unified image ${index+1}`}

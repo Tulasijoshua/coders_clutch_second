@@ -76,7 +76,7 @@ function AgentDepartmentSpecific() {
                     </div>
                 </div>
             </div>
-            <div className='w-full'>
+            <div className='lg:hidden block w-full'>
                     <Accordion
                         type="single"
                         collapsible
