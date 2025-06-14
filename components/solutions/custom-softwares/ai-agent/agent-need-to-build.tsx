@@ -7,7 +7,7 @@ import React from 'react'
 function AgentNeedToBuild() {
   return (
     <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-6 flex flex-col'>
                 <Typography
                     typo="header-3-light"
@@ -21,7 +21,7 @@ function AgentNeedToBuild() {
                     Secure, Scalable & High-Performing AI Agents
                 </Typography>
             </div>
-            <div className='w-full py-6 grid grid-cols-3 gap-10'>
+            <div className='w-full py-6 grid lg:grid-cols-3 grid-cols-2 gap-10'>
                 {need_builds.map((data, index) => (
                     <div 
                         key={data.id} 

@@ -216,7 +216,7 @@ body {
   background: url('/assets/images/solutions/ai-agent/train-tune-bg.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   /* background-attachment: fixed; */
 }
 

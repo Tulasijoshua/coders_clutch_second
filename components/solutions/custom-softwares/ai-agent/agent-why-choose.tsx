@@ -8,7 +8,7 @@ import React from 'react'
 function AgentWhyChoose() {
   return (
     <div className='w-full py-12 bg-app-gray-bg'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-6 flex flex-col gap-2'>
                 <Typography
                     typo="header-3-light"
@@ -22,7 +22,7 @@ function AgentWhyChoose() {
                     to Build, Deploy, and Manage AI Agents
                 </Typography>
             </div>
-            <div className='w-full py-4 grid grid-cols-3 gap-8'>
+            <div className='w-full py-4 grid lg:grid-cols-3 grid-cols-2 xl:gap-8 gap-4'>
                 {agent_reasons.map((data, index) => (
                     <Card
                         key={data.id}

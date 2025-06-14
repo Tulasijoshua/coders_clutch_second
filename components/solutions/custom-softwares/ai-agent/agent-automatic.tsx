@@ -61,7 +61,7 @@ function AgentAutomatic() {
     
   return (
     <div className='w-full py-8'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-6 flex flex-col gap-2'>
                 <Typography
                     typo="header-3-light"
@@ -100,7 +100,7 @@ function AgentAutomatic() {
                                         <p className='w-full text-base'>
                                             {data.description}
                                         </p>
-                                        <div className='md:hidden block w-full h-full max-h-[400px] overflow-hidden shadow-sm'>
+                                        <div className='lg:hidden block w-full h-full max-h-[400px] overflow-hidden shadow-sm'>
                                             <Image
                                                 src={data.img}
                                                 alt='Industry Image'
@@ -115,7 +115,7 @@ function AgentAutomatic() {
                         }
                     </Accordion>
                 </div>
-                <div className='md:block hidden flex-1'>
+                <div className='lg:block hidden flex-1'>
                     <div className='w-full h-fit overflow-hidden shadow-sm'>
                         <Image
                             src={accross_verticals.find(item => 

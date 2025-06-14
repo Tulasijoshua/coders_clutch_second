@@ -11,7 +11,7 @@ import { Forward } from 'lucide-react';
 function AgentOnboard() {
   return (
     <div className='w-full py-12 bg-app-primary-deep'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-6 flex flex-col gap-2 text-white'>
                 <Typography
                     typo="header-3-light"
@@ -34,18 +34,18 @@ function AgentOnboard() {
                     />
                 </div>
                 <div className='w-full'>
-                    <div className='w-[80%] h-fit mx-auto'>
+                    <div className='md:block hidden w-[80%] h-fit mx-auto'>
                         <Image 
                             src={topAngleImg}
                             alt='Top Angle image'
                             className='w-full h-full'
                         />
                     </div>
-                    <div className='w-full grid grid-cols-3 gap-12'>
+                    <div className='w-full grid md:grid-cols-3  xl:gap-12 gap-6'>
                         {onboard_agents.map((data) => (
                             <Card
                                 key={data.id}
-                                className='py-2 px-3 bg-[#FFF8ED]'
+                                className='xl:py-2 xl:px-3 bg-[#FFF8ED]'
                             >
                                 <CardHeader
                                     className='flex flex-col'
@@ -63,10 +63,10 @@ function AgentOnboard() {
                                     </Typography>
                                 </CardHeader>
                                 <div className='border-b-2 border-dashed border-gray-300'></div>
-                                <CardContent className='py-8 flex flex-col space-y-4'>
+                                <CardContent className='xl:py-8 py-4 flex flex-col space-y-4'>
                                     {data.contents.map(content => (
                                         <div key={content} className='flex items-center gap-2'>
-                                            <Forward color='#48B02C' />
+                                            <Forward color='#48B02C' className='lg:block hidden' />
                                             <Typography className=''>
                                                 {content}
                                             </Typography>

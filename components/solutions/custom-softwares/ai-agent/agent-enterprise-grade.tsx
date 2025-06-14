@@ -2,6 +2,7 @@
 import Typography from '@/components/shared/typography';
 import React from 'react';
 import enterpriseImg from "@/public/assets/images/solutions/ai-agent/enterprise-grade.png";
+import enterpriseMobileImg from "@/public/assets/images/solutions/ai-agent/enterprise_mobile_img.png";
 import Image from 'next/image';
 import { enterprise_grade } from '@/constant';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
@@ -9,7 +10,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 function AgentEnterpriseGrade() {
   return (
     <div className='w-full py-12'>
-        <div className='inter w-[85%] mx-auto xl:pb-10 pb-6 flex flex-col gap-2'>
+        <div className='inter max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto xl:pb-10 pb-6 flex flex-col gap-2'>
             <Typography
                 typo="header-3-light"
             >
@@ -23,15 +24,20 @@ function AgentEnterpriseGrade() {
             </Typography>
         </div>
         <div className='w-full py-4'>
-          <div className='w-full mx-auto'>
+          <div className='md:w-full w-[80%] mx-auto'>
             <Image 
               src={enterpriseImg}
+              alt='Enterprise image'
+              className='md:block hidden w-full h-full'
+            />
+            <Image 
+              src={enterpriseMobileImg}
               alt='Enterprise image'
               className='w-full h-full'
             />
           </div>
         </div>
-        <div className='w-[85%] mx-auto py-6 grid grid-cols-3 gap-12'>
+        <div className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto py-6 grid md:grid-cols-3 grid-cols-2 xl:gap-12 lg:gap-8 gap-4'>
           {enterprise_grade.map((data, index) => (
             <Card
               key={data.id}

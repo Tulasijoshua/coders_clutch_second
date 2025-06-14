@@ -12,7 +12,7 @@ import deployImg from "@/public/assets/images/solutions/ai-agent/deploymentImg.p
 function AgentTrainTune() {
   return (
     <div className='train_bg w-full py-12'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-6 flex flex-col'>
                 <Typography
                     typo="header-3-light"
@@ -26,14 +26,14 @@ function AgentTrainTune() {
                     Just the Way You Need
                 </Typography>
             </div>
-            <div className='w-[90%] mx-auto py-6'>
-                <div className='w-full px-4 py-3 flex justify-between items-center bg-[#089B2A] rounded-md'>
+            <div className='xl:w-[90%] mx-auto py-6'>
+                <div className='w-full lg:px-10 px-4 py-3 grid md:grid-cols-6 grid-cols-3 bg-[#089B2A] rounded-md'>
                     {top_agents.map((data, index) => (
                         <div key={data.id} className='flex items-center gap-3'>
                             <Image 
                                 src={data.icon}
                                 alt={`Top agent ${index+1}`}
-                                className='w-8 h-fit'
+                                className='lg:w-8 w-4 h-fit'
                             />
                             <Typography
                                 typo="body-medium-medium"
@@ -45,7 +45,7 @@ function AgentTrainTune() {
                     ))}
                 </div>
 
-                <div className='w-full flex justify-between items-center gap-6'>
+                <div className='w-full flex justify-between items-center lg:gap-6 gap-3'>
                     {middle_agents.map((data, index) => (
                         <div key={data.id} className='flex-1 flex flex-col justify-center items-center'>
                             <div className='w-3 h-fit'>
@@ -55,7 +55,7 @@ function AgentTrainTune() {
                                     className='w-full h-full'
                                 />
                             </div>
-                            <div className='w-full py-4 flex justify-center items-center gap-3 bg-[#DBEADF] rounded-md'>
+                            <div className='w-full py-4 flex md:flex-row flex-col justify-center items-center gap-3 bg-[#DBEADF] rounded-md'>
                                 <Image 
                                     src={data.icon}
                                     alt={`Middle agent ${index+1}`}
@@ -87,18 +87,18 @@ function AgentTrainTune() {
                             className='uppercase text-app-green-text text-center'
                         >Gent Ai</Typography>
                     </CardHeader>
-                    <CardContent className='w-full grid grid-cols-4 gap-6'>
+                    <CardContent className='w-full grid md:grid-cols-4 grid-cols-2 xl:gap-6 gap-3'>
                         {below_agents.map((data, index) => (
                             <Card key={data.id} className='rounded-md bg-white shadow-lg'>
                                 <CardHeader
-                                    className='py-2 text-white text-center bg-black rounded-t-lg'
+                                    className='py-2 xl:px-6 px-4 text-white text-center bg-black rounded-t-lg'
                                 >
                                     <Typography
                                         typo="body-medium-semibold"
                                     >{data.title}</Typography>
                                 </CardHeader>
                                 <CardContent
-                                    className='py-8 flex flex-col gap-5 bg-white rounded-b-lg'
+                                    className='xl:py-8 py-4 xl:px-6 px-4 flex flex-col xl:gap-5 gap-4 bg-white rounded-b-lg'
                                 >
                                     {data.contents.map(content => (
                                         <Typography
@@ -143,7 +143,7 @@ function AgentTrainTune() {
                         >Unified Integration</Typography>
                     </CardHeader>
                     <CardContent
-                        className='py-8 flex justify-between gap-12 bg-[#F0F6F3]'
+                        className='py-8 flex justify-between lg:gap-12  gap-8 flex-wrap bg-[#F0F6F3]'
                     >
                         {unifieds.map((data, index) => (
                             <div 
@@ -153,7 +153,7 @@ function AgentTrainTune() {
                                     typo="body-medium-semibold"
                                     className=' text-center'
                                 >{data.title}</Typography>
-                                <div className='w-full h-fit'>
+                                <div className='min-w-24 max-w-40 w-full h-fit'>
                                     <Image 
                                         src={data.img}
                                         alt={`Unified image ${index+1}`}
