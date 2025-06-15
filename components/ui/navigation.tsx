@@ -228,6 +228,12 @@ const nav_links = [
             description: "Generative AI, Chatbot, custom LLMs and machine learning.",
             href: "/solutions/custom-softwares/ai-agent-development"
           },
+          {
+            id: "6",
+            title: "AI Development",
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/solutions/custom-softwares/ai-development"
+          },
         ]
       },
       {

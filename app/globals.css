@@ -228,6 +228,38 @@ body {
   /* background-attachment: fixed; */
 }
 
+.creativity_bg {
+  background: url('/assets/images/solutions/ai-agent/creativity-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.ai_right_active_bg {
+  background: url('/assets/images/solutions/ai-agent/ai_right_active_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.ai_left_active_bg {
+  background: url('/assets/images/solutions/ai-agent/ai_left_active_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.ai_automate_bg {
+  background: url('/assets/images/solutions/ai-agent/ai-automate-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
