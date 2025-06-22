@@ -34,6 +34,13 @@ import mohisola from "@/public/assets/images/projects/mojisola-1-uai-840x560.png
 import woodentools from "@/public/assets/images/projects/woodentods-1-uai-840x560.png";
 import { ProjectProp } from "@/type";
 import loyaltyIcon from "@/public/assets/icons/career_icons/loyalty_icon.png";
+import team1 from "@/public/assets/images/solutions/outsourcing/partnership.png"
+import team2 from "@/public/assets/images/solutions/outsourcing/recruitment.png"
+import team3 from "@/public/assets/images/solutions/outsourcing/security.png"
+import team4 from "@/public/assets/images/solutions/outsourcing/talent_pool.png"
+
+
+export const team_members = [team1, team2, team3, team4]
 
 export const values = [
     {

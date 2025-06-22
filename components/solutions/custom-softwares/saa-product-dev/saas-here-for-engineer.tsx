@@ -1,18 +1,18 @@
 'use client';
+import Typography from '@/components/shared/typography'
+import { Button } from '@/components/ui/button'
+import { social_icons } from '@/constant'
+import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
-import Typography from '../shared/typography'
-import { Button } from '../ui/button';
-import { ArrowRight } from 'lucide-react';
 import indiaImg from "@/public/assets/images/india.svg"
 import americaImg from "@/public/assets/images/america.svg"
-import Image from 'next/image';
-import { social_icons } from '@/constant';
 
-function Hereforyou() {
+function SaasHereForEngineer() {
   return (
     <div className='w-full pb-12 pt-20 bg-app-primary-medium'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between items-center gap-16'>
-            <div className='flex-1 flex flex-col gap-4'>
+            <div className='flex-1 flex flex-col gap-6'>
                 <Typography
                     typo="header-6-semibold"
                     className='text-[#15FF7E]'
@@ -22,9 +22,9 @@ function Hereforyou() {
 
                 <Typography
                     typo="header-2-semibold"
-                    className='text-white leading-tight'
+                    className='w-[90%] text-white leading-tight'
                 >
-                    What can we develop together?
+                    Engineer Your Next SaaS Project With Us
                 </Typography>
                 <Button
                     variant="primary"
@@ -88,8 +88,8 @@ function Hereforyou() {
                 </div>
             </div>
         </section>
-    </div> 
+    </div>
   )
 }
 
-export default Hereforyou
+export default SaasHereForEngineer

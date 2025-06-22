@@ -260,6 +260,14 @@ body {
   /* background-attachment: fixed; */
 }
 
+.saas-bg {
+  background: url('/assets/images/solutions/saas-product/saas-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
