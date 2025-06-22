@@ -1,11 +1,8 @@
 'use client';
 import Typography from '@/components/shared/typography';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { MousePointer2 } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
-import smartImg from '@/public/assets/images/solutions/smart-interface.png'
 import { design_services } from '@/constant';
 
 

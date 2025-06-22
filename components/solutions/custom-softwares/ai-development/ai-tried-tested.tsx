@@ -2,13 +2,12 @@
 import Typography from '@/components/shared/typography';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { tested_approaches } from '@/constant';
-import { CornerDownRight, MousePointer2 } from 'lucide-react';
+import { MousePointer2 } from 'lucide-react';
 import Image from 'next/image'
 import React, { useState } from 'react'
 
 function AiTriedTested() {
     const [selectedApproach, setSelectedApproach] = useState(tested_approaches[0].id)
-    const [activeItem, setActiveItem] = useState("item-1");
 
     const currentSpecific = tested_approaches.find(data => data.id === selectedApproach);
   return (

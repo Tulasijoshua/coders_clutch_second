@@ -1,15 +1,13 @@
 'use client';
 import Typography from '@/components/shared/typography';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { industry_specifics } from '@/constant';
-import { CircleCheck, CornerDownRight } from 'lucide-react';
+import { CornerDownRight } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
 function AiIndustrySpecific() {
     const [selectedSpecific, setSelectedSpecific] = useState(industry_specifics[0].id)
-    const [activeItem, setActiveItem] = useState("item-1");
 
     const currentSpecific = industry_specifics.find(department => department.id === selectedSpecific);
   return (
