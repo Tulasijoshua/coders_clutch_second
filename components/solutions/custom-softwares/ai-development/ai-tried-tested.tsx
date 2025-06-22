@@ -57,8 +57,8 @@ function AiTriedTested() {
                             </Typography>
                         </CardHeader>
                         <CardContent className='px-0 grid grid-cols-2 gap-6'>
-                            {currentSpecific?.contents.map(content => (
-                                <div className='pb-4 flex gap-3'>
+                            {currentSpecific?.contents.map((content, index) => (
+                                <div key={index+1} className='pb-4 flex gap-3'>
                                     <div className=''>
                                         <MousePointer2 className='rotate-90' fill='#FFB22B' />
                                     </div>

@@ -50,8 +50,8 @@ function AiIndustrySpecific() {
                             <div className='w-12 h-[3px] bg-black'></div>
                         </CardHeader>
                         <CardContent className='flex flex-col gap-4'>
-                            {currentSpecific?.contents.map(content => (
-                                <div className='flex gap-3'>
+                            {currentSpecific?.contents.map((content, index) => (
+                                <div key={index+1} className='flex gap-3'>
                                     <CornerDownRight color='#178450' />
                                     <div className='flex flex-col gap-2'>
                                         <Typography
