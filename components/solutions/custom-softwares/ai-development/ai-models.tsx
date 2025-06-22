@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 function AiModels() {
   return (
     <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto flex justify-between items-center gap-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between items-center gap-12'>
             <div className='flex-1 flex justify-between items-center gap-8'>
                 <div className='flex-1 flex flex-col gap-6'>
                     <div className='inter flex flex-col gap-'>

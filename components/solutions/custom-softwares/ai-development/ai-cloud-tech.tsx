@@ -7,7 +7,7 @@ import Image from 'next/image';
 function AiCloudTech() {
   return (
     <div className='w-full py-12'>
-        <section className='w-[85%] mx-auto'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-6 flex flex-col gap-2'>
                 <Typography
                     typo="header-3-light"
