@@ -14,7 +14,7 @@ function SaasHero() {
   return (
     <div className='saas-bg w-full md:py-12 py-8 '>
         <div className='max-container lg:w-[85%] w-[95%] mx-auto'>
-            <section className='2xl:w-[90%] xl:w-[90%] mx-auto flex flex-col justify-center gap-3 text-white'>
+            <section className='2xl:w-[90%] mx-auto flex flex-col justify-center gap-3 text-white'>
                 <div className='arial md:flex hidden flex-col xl:gap-3 text-white'>
                     <Typography
                         className='text-center '
@@ -33,7 +33,7 @@ function SaasHero() {
                     typo="header-3-semibold"
                     className='md:hidden block md:pt-4 text-center text-white md:!leading-relaxed !leading-snug'
                 >
-                    A Next-Gen Software Development Outsourcing Company
+                    #1 SaaS Product Development Company To Build Digital Products
                 </Typography>
                 <div className='lg:w-[90%] mx-auto flex flex-col py-3 text-center'>
                     <Typography

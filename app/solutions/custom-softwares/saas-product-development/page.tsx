@@ -3,6 +3,7 @@ import SaasHero from '@/components/solutions/custom-softwares/saa-product-dev/sa
 import SaasDevExpertise from '@/components/solutions/custom-softwares/saa-product-dev/saas-dev-expertise'
 import SaasEntireProduct from '@/components/solutions/custom-softwares/saa-product-dev/saas-entire-product'
 import SaasFullCircle from '@/components/solutions/custom-softwares/saa-product-dev/saas-full-circle'
+import SaasFullCycle2 from '@/components/solutions/custom-softwares/saa-product-dev/saas-full-cycle_2'
 import SaasHereForEngineer from '@/components/solutions/custom-softwares/saa-product-dev/saas-here-for-engineer'
 import SaasSuccessful from '@/components/solutions/custom-softwares/saa-product-dev/saas-successful'
 import SaasTailoredSolution from '@/components/solutions/custom-softwares/saa-product-dev/saas-tailored-solution'
@@ -19,7 +20,8 @@ function SaasProductDevelopment() {
         <SaasUnlockSavings />
         <SaasDevExpertise />
         <AwardsRecognition />
-        <SaasFullCircle />
+        {/* <SaasFullCircle /> */}
+        <SaasFullCycle2 />
         <SaasTailoredSolution />
         <SaasSuccessful />
         <SaasHereForEngineer />

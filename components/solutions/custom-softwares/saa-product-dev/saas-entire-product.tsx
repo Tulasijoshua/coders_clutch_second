@@ -22,13 +22,13 @@ function SaasEntireProduct() {
                     From Scratch to Finish
                 </Typography>
             </div>
-            <div className='w-full grid grid-cols-2 gap-12'>
+            <div className='w-full grid md:grid-cols-2 gap-12'>
                 {products_developed.map((data, index) => (
                     <Card 
                         key={data.id}
                         className='bg-gray-50 rounded-[1.1rem] border-none shadow-none'
                     >
-                        <CardContent className='pt-6 flex justify-between items-center gap-4'>
+                        <CardContent className='pt-6 flex xs:flex-row flex-col justify-between items-center gap-4'>
                             <div className='flex-1 flex flex-col gap-3'>
                                 <Typography
                                     typo="header-6-semibold"
@@ -41,7 +41,7 @@ function SaasEntireProduct() {
                                     {data.description}
                                 </Typography>
                             </div>
-                            <div className='w-[45%] h-fit'>
+                            <div className='xs:w-[45%] w-full h-fit'>
                                 <Image 
                                     src={data.img}
                                     alt={`Product ${index+1}`}
