@@ -113,18 +113,18 @@ function SaasFullCycle2() {
                     ))}
                 </div>
                 <div className='w-[90%] mb-2 flex justify-around'>
-                    {Array.from({length: 3}).map((_, index) => (
-                        <div className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
+                    {Array.from({length: 3}).map((_, index) => ( // eslint-disable-line @typescript-eslint/no-unused-vars
+                        <div key={index+1} className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
                     ))}
                 </div>
                 <div className='w-[90%] -mb-2 flex justify-around'>
-                    {Array.from({length: 3}).map((_, index) => (
-                        <div className=' py-6 border-l-[2px] border-dashed border-gray-500'></div>
+                    {Array.from({length: 3}).map((_, index) => ( // eslint-disable-line @typescript-eslint/no-unused-vars
+                        <div key={index+1} className=' py-6 border-l-[2px] border-dashed border-gray-500'></div>
                     ))}
                 </div>
                 <div className='w-[90%] -mb-4 flex justify-around z-[20]'>
-                    {Array.from({length: 3}).map((_, index) => (
-                        <div className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
+                    {Array.from({length: 3}).map((_, index) => ( // eslint-disable-line @typescript-eslint/no-unused-vars
+                        <div key={index+1} className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
                     ))}
                 </div>
                 <div className='w-full flex flex-justify-between items-center'>
@@ -133,18 +133,18 @@ function SaasFullCycle2() {
                     <div className='w-4 h-4 bg-green-700 rounded-full'></div>
                 </div>
                 <div className='w-[90%] ml-auto -mt-4 flex justify-around'>
-                    {Array.from({length: 3}).map((_, index) => (
-                        <div className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
+                    {Array.from({length: 3}).map((_, index) => ( // eslint-disable-line @typescript-eslint/no-unused-vars
+                        <div key={index+1} className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
                     ))}
                 </div>
                 <div className='w-[90%] ml-auto -mb-2 flex justify-around'>
-                    {Array.from({length: 3}).map((_, index) => (
-                        <div className=' py-6 border-l-[2px] border-dashed border-gray-500'></div>
+                    {Array.from({length: 3}).map((_, index) => ( // eslint-disable-line @typescript-eslint/no-unused-vars
+                        <div key={index+1} className=' py-6 border-l-[2px] border-dashed border-gray-500'></div>
                     ))}
                 </div>
                 <div className='w-[90%] ml-auto mb- flex justify-around'>
-                    {Array.from({length: 3}).map((_, index) => (
-                        <div className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
+                    {Array.from({length: 3}).map((_, index) => ( // eslint-disable-line @typescript-eslint/no-unused-vars
+                        <div key={index+1} className='w-4 h-4 bg-white border-[3px] border-black rounded-full'></div>
                     ))}
                 </div>
                 <div className='w-[90%] ml-auto grid grid-cols-3 gap-4'>
