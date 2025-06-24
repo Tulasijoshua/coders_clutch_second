@@ -276,6 +276,23 @@ body {
   /* background-attachment: fixed; */
 }
 
+.iot-holistic-bg {
+  background: url('/assets/images/solutions/iot-automobile/connected-trucks-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.e-vehicle-bg {
+  background: url('/assets/images/solutions/iot-automobile/iot_e-vechile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  /* background-attachment: fixed; */
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;

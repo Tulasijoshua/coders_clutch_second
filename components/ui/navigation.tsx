@@ -240,6 +240,12 @@ const nav_links = [
             description: "Design & Develop Customized SaaS Application.",
             href: "/solutions/custom-softwares/saas-product-development"
           },
+          {
+            id: "8",
+            title: "IoT for Automobile",
+            description: "Real-time Access to Vehicles.",
+            href: "/solutions/custom-softwares/iot-automobile"
+          },
         ]
       },
       {
