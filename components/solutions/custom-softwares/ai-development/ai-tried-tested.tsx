@@ -1,5 +1,6 @@
 'use client';
 import Typography from '@/components/shared/typography';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { tested_approaches } from '@/constant';
 import { MousePointer2 } from 'lucide-react';
@@ -8,6 +9,8 @@ import React, { useState } from 'react'
 
 function AiTriedTested() {
     const [selectedApproach, setSelectedApproach] = useState(tested_approaches[0].id)
+    const [activeItem, setActiveItem] = useState("item-1");
+    
 
     const currentSpecific = tested_approaches.find(data => data.id === selectedApproach);
   return (
@@ -33,7 +36,7 @@ function AiTriedTested() {
                             type='button'
                             key={data.id}
                             onClick={() => setSelectedApproach(data.id)}
-                            className={`flex-1 py-5 xl:text-base text-sm font-medium border border-gray-300 bg-app-primary-medium ${
+                            className={`flex-1 py-5 xl:text-base text-sm font-semibold border border-gray-300 bg-gray-200 ${
                                 selectedApproach === data.id ? "bg-gradient-to-b from-green-300 via-green-600 to-green-900 text-white font-semibold" : "text-black bg-[#E3E3E3]"
                             }`}
                         >{data.title}</button>
@@ -56,9 +59,9 @@ function AiTriedTested() {
                                 {currentSpecific?.description}
                             </Typography>
                         </CardHeader>
-                        <CardContent className='px-0 grid grid-cols-2 gap-6'>
+                        <CardContent className='px-0 grid xl:grid-cols-2 gap-6'>
                             {currentSpecific?.contents.map((content, index) => (
-                                <div key={index+1} className='pb-4 flex gap-3'>
+                                <div key={index+1} className='pb-4 fle  gap-3'>
                                     <div className=''>
                                         <MousePointer2 className='rotate-90' fill='#FFB22B' />
                                     </div>
@@ -88,7 +91,7 @@ function AiTriedTested() {
                 </div>
             </div>
             <div className='lg:hidden block w-full'>
-                {/* <Accordion
+                <Accordion
                     type="single"
                     collapsible
                     className="w-full"
@@ -100,14 +103,14 @@ function AiTriedTested() {
                             <AccordionItem
                                 key={data.id}
                                 value={`item-${index+1}`}
-                                className={`xs:px-6 px-3 border-b border-gray-400 last:border-b-0 text-white ${
+                                className={`sm:px-6 px-3 border-b border-gray-400 last:border-b-0 text-black ${
                                     activeItem === `item-${index+1}` ? 'border-2-b border-[#34644C]' : ''
                                 }`}
                             >
                                 <AccordionTrigger
                                     className='text-xl font-semibold'
-                                >{data.header}</AccordionTrigger>
-                                <AccordionContent className="w-full flex flex-col gap-4 text-balance">
+                                >{data.title}</AccordionTrigger>
+                                <AccordionContent className="w-full text-black flex flex-col gap-4 text-balance">
                                     <Typography
                                         typo="header-5-semibold"
                                     >
@@ -116,15 +119,24 @@ function AiTriedTested() {
                                     <p className='w-full text-base'>
                                         {data.description}
                                     </p>
-                                    <div className='w-full py-3 flex flex-col gap-4'>
-                                        {currentSpecific?.contents.map((content) => (
-                                            <div key={content} className='flex items-center gap-3'>
-                                                <CircleCheck color='#62FF00' />
-                                                <Typography
-                                                    className='xs:!text-base'
-                                                >
-                                                    {content}
-                                                </Typography>
+                                    <div className='w-full py-3 grid xs:grid-cols-2 xs:gap-4'>
+                                        {currentSpecific?.contents.map((content, index) => (
+                                            <div key={index+1} className='pb-4 fle  gap-3'>
+                                                <div className=''>
+                                                    <MousePointer2 className='rotate-90' fill='#FFB22B' />
+                                                </div>
+                                                <div className='flex flex-col gap-2'>
+                                                    <Typography
+                                                        typo="body-large-semibold"
+                                                    >
+                                                        {content.title}
+                                                    </Typography>
+                                                    <Typography
+                                                        typo="body-medium-medium"
+                                                    >
+                                                        {content.description}
+                                                    </Typography>
+                                                </div>
                                             </div>
                                         ))}
                                     </div>
@@ -141,7 +153,7 @@ function AiTriedTested() {
 
                         ))
                     }
-                </Accordion> */}
+                </Accordion>
             </div>
         </section>
     </div>

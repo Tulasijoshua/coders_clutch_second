@@ -1,13 +1,15 @@
 'use client';
 import Typography from '@/components/shared/typography';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { industry_specifics } from '@/constant';
-import { CornerDownRight } from 'lucide-react';
+import { CircleCheck, CornerDownRight } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
 function AiIndustrySpecific() {
     const [selectedSpecific, setSelectedSpecific] = useState(industry_specifics[0].id)
+    const [activeItem, setActiveItem] = useState("item-1");
 
     const currentSpecific = industry_specifics.find(department => department.id === selectedSpecific);
   return (
@@ -50,8 +52,8 @@ function AiIndustrySpecific() {
                             <div className='w-12 h-[3px] bg-black'></div>
                         </CardHeader>
                         <CardContent className='flex flex-col gap-4'>
-                            {currentSpecific?.contents.map((content, index) => (
-                                <div key={index+1} className='flex gap-3'>
+                            {currentSpecific?.contents.map(content => (
+                                <div className='flex gap-3'>
                                     <CornerDownRight color='#178450' />
                                     <div className='flex flex-col gap-2'>
                                         <Typography
@@ -79,7 +81,7 @@ function AiIndustrySpecific() {
                 </div>
             </div>
             <div className='lg:hidden block w-full'>
-                {/* <Accordion
+                <Accordion
                     type="single"
                     collapsible
                     className="w-full"
@@ -91,30 +93,34 @@ function AiIndustrySpecific() {
                             <AccordionItem
                                 key={data.id}
                                 value={`item-${index+1}`}
-                                className={`xs:px-6 px-3 border-b border-gray-400 last:border-b-0 text-white ${
+                                className={`md:px-6 px-3 border-b border-gray-400 last:border-b-0 text-white ${
                                     activeItem === `item-${index+1}` ? 'border-2-b border-[#34644C]' : ''
                                 }`}
                             >
                                 <AccordionTrigger
                                     className='text-xl font-semibold'
-                                >{data.header}</AccordionTrigger>
-                                <AccordionContent className="w-full flex flex-col gap-4 text-balance">
-                                    <Typography
-                                        typo="header-5-semibold"
-                                    >
-                                        {data.title}
-                                    </Typography>
-                                    <p className='w-full text-base'>
-                                        {data.description}
-                                    </p>
+                                >{data.title}</AccordionTrigger>
+                                <AccordionContent className="w-full sm:p-9 p-4 flex flex-col gap-4 text-black bg-[#F7EFE1] border-t-[5px] border-[#0CA35B] rounded-xl">
+                                    <div className=' flex flex-col gap-[2px]'>
+                                        <Typography
+                                            typo="header-6-semibold"
+                                        >
+                                            {currentSpecific?.title === "Ecommerce" ? "Ecommerce & Retail" : currentSpecific?.title}
+                                        </Typography>
+                                        <div className='w-12 h-[3px] bg-black'></div>
+                                    </div>
                                     <div className='w-full py-3 flex flex-col gap-4'>
-                                        {currentSpecific?.contents.map((content) => (
-                                            <div key={content} className='flex items-center gap-3'>
-                                                <CircleCheck color='#62FF00' />
+                                        {data.contents.map((content) => (
+                                            <div key={content.id} className='flex flex-col gap-3'>
+                                                <Typography
+                                                    typo="header-6-semibold"
+                                                >
+                                                    {content.title}
+                                                </Typography>
                                                 <Typography
                                                     className='xs:!text-base'
                                                 >
-                                                    {content}
+                                                    {content.description}
                                                 </Typography>
                                             </div>
                                         ))}
@@ -132,7 +138,7 @@ function AiIndustrySpecific() {
 
                         ))
                     }
-                </Accordion> */}
+                </Accordion>
             </div>
         </section>
     </div>

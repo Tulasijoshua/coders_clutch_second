@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 function AiModels() {
   return (
     <div className='w-full py-12'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between items-center gap-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex sm:flex-row flex-col justify-between items-center gap-12'>
             <div className='flex-1 flex justify-between items-center gap-8'>
                 <div className='flex-1 flex flex-col gap-6'>
                     <div className='inter flex flex-col gap-'>
@@ -35,7 +35,7 @@ function AiModels() {
                         Talk to our AI Experts
                     </Button>
                 </div>
-                <div className='w-32 h-fit'>
+                <div className='md:block hidden xl:w-32 w-24 h-fit'>
                     <Image 
                         src={ai_arrow_img}
                         alt='Ai arrow'
@@ -43,7 +43,7 @@ function AiModels() {
                     />
                 </div>
             </div>
-            <div className='w-[50%]'>
+            <div className='sm:w-[50%] w-full'>
                 <div className='w-full h-fit'>
                     <Image 
                         src={ai_model_img}

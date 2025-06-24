@@ -21,7 +21,7 @@ function AiCloudTech() {
                     Giants to Deliver Next-Level Solutions
                 </Typography>
             </div>
-            <div className='w-[80%] mx-auto h-fit '>
+            <div className='md:w-[80%] mx-auto h-fit pt-4'>
                 <Image 
                     src={cloudPartnersImg}
                     alt='Cloud partners'

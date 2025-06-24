@@ -21,11 +21,11 @@ function AiBestBet() {
                     Best Bet for AI Software Development
                 </Typography>
             </div>
-            <div className='w-full py-4 grid grid-cols-3 gap-8'>
+            <div className='w-full py-4 grid lg:grid-cols-3 xs:grid-cols-2 md:gap-8 gap-4'>
                 {best_bet.map((data) => (
                     <Card
                         key={data.id}
-                        className='p-4 bg-[#F7EFE1]  border-none shadow-none'
+                        className='md:p-4 bg-[#F7EFE1]  border-none shadow-none'
                     >
                         <CardHeader className='flex flex-col gap-'>
                             <Typography 

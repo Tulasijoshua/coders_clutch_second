@@ -1,6 +1,8 @@
 'use client';
 import Typography from '@/components/shared/typography'
+import { Accordion, AccordionContent, AccordionTrigger } from '@/components/ui/accordion';
 import { automate_services } from '@/constant';
+import { AccordionItem } from '@radix-ui/react-accordion';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react'
@@ -25,7 +27,7 @@ function AiAutomateMuntane() {
                     Services and Focus on What Truly Matters
                 </Typography>
             </div>  
-            <div className='w-[90%] mx-auto py-4 flex justify-between gap-20'>
+            <div className='xl:w-[90%] mx-auto py-4 hidden lg:flex justify-between gap-20'>
                 <div className='w-[300px] flex flex-col gap-3'>
                     {automate_services.map(data => (
                         <button
@@ -67,8 +69,59 @@ function AiAutomateMuntane() {
                                 </Typography>
                             ))}
                         </div>
-
                     </div>
+                </div>
+            </div>
+            <div className='lg:hidden block w-full mx-auto py-4 '>
+                <div className=''>
+                    <Accordion
+                        type="single"
+                        collapsible
+                        className="w-full"
+                        defaultValue="item-1"
+                        onValueChange={(value) => setSelectedService(value)}
+                    >
+                        {
+                            automate_services.map((data, index) => (
+                                <AccordionItem
+                                    key={data.id}
+                                    value={`item-${index+1}`}
+                                    className={`w-full flex gap-2 xs:px-6 px-3 py-2 border-0 ${
+                                        selectedService === `item-${index+1}` ? 'bg-[#F7EFE1] rounded-xl' : 'w-full'
+                                    }`}
+                                >
+                                <div className='w-full flex gap-5'>
+                                    <div className='flex-1'>
+                                    <AccordionTrigger
+                                        className='xs:text-xl text-lg font-semibold'
+                                    >{data.title}</AccordionTrigger>
+                                    <AccordionContent className="w-full flex flex-col gap-4 text-balance">
+                                        <p className='w-full text-base'>
+                                            {data.contents.map(content => (
+                                                <Typography
+                                                    key={content}
+                                                    typo="body-medium-medium"
+                                                >
+                                                    {content}
+                                                </Typography>
+                                            ))}
+                                        </p>
+                                        <div className='lg:hidden block w-full h-full sm:max-h-[400px] xs:max-h-[300px] max-h-[250px] overflow-hidden shadow-sm'>
+                                            <Image
+                                                src={data.img}
+                                                alt='Industry Image'
+                                                className='w-full h-full object-cover'
+                                                
+                                            />
+                                        </div>
+                                    </AccordionContent>
+                                    </div>
+                                </div>
+                                </AccordionItem>
+
+                            ))
+                        }
+                    </Accordion>
                 </div>
             </div>
         </section>

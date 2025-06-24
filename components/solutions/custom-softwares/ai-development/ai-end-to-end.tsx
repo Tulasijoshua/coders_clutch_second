@@ -6,7 +6,7 @@ import React from 'react'
 
 function AiEndtoEnd() {
   return (
-    <div className='w-full py-12'>
+    <div className='w-full sm:py-12 py-6'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-12 pb-6 flex flex-col gap-2'>
                 <Typography
@@ -21,7 +21,7 @@ function AiEndtoEnd() {
                     From Strategy to Scalable Innovation
                 </Typography>
             </div>  
-            <div className='w-full grid grid-cols-3 gap-8'>
+            <div className='w-full grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-8 gap-4'>
                 {ai_innovations.map((data) => (
                     <Card
                         key={data.id} 
