@@ -1,6 +1,6 @@
 'use client';
 import Typography from '@/components/shared/typography'
-import { mobilities, reason_saas } from '@/constant'
+import { mobilities } from '@/constant'
 import Image from 'next/image'
 import React from 'react'
 

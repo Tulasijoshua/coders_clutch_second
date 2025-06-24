@@ -2,7 +2,7 @@
 import Typography from '@/components/shared/typography';
 import { Button } from '@/components/ui/button';
 import { connected_vehicles } from '@/constant';
-import { CircleCheck, MousePointer2 } from 'lucide-react';
+import { CircleCheck } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react'
 

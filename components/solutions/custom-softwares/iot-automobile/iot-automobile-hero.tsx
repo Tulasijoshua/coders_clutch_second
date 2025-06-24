@@ -1,8 +1,6 @@
 'use client'
-import StarRating from '@/components/reusable/star-rating'
 import Typography from '@/components/shared/typography'
 import { Button } from '@/components/ui/button'
-import { team_members } from '@/constant'
 import { ArrowRight, CircleCheckBig } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
