@@ -3,7 +3,7 @@ import Typography from '@/components/shared/typography';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { industry_specifics } from '@/constant';
-import { CircleCheck, CornerDownRight } from 'lucide-react';
+import { CornerDownRight } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
@@ -53,7 +53,7 @@ function AiIndustrySpecific() {
                         </CardHeader>
                         <CardContent className='flex flex-col gap-4'>
                             {currentSpecific?.contents.map(content => (
-                                <div className='flex gap-3'>
+                                <div key={content.id} className='flex gap-3'>
                                     <CornerDownRight color='#178450' />
                                     <div className='flex flex-col gap-2'>
                                         <Typography
