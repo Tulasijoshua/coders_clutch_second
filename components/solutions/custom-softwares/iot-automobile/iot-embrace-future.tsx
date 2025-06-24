@@ -6,7 +6,7 @@ import React from 'react'
 
 function IotEmbraceFuture() {
   return (
-    <div className='w-full py-12 bg-[#F8F8F8]'>
+    <div className='w-full py-16 bg-[#F8F8F8]'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='inter xl:pb-10 pb-4 flex flex-col gap-2'>
                 <Typography
@@ -23,7 +23,7 @@ function IotEmbraceFuture() {
             </div>
             <div className='w-full mx-auto grid lg:grid-cols-4 sm:grid-cols-2 xl:gap-12 gap-4'>
                 {mobilities.map((data, index) => (
-                    <div key={data.id} className='md:p-4 sm:p-3 p-4 flex flex-col gap-7 md:shadow-none shadow-md md:rounded-none rounded-md'>
+                    <div key={data.id} className='md:p-4 sm:p-3 p-4 flex flex-col gap-8 md:shadow-none shadow-md md:rounded-none rounded-md'>
                         <div className='sm:w-[70px] w-10 h-fit rounded-md'>
                             <Image
                                 src={data.icon}
