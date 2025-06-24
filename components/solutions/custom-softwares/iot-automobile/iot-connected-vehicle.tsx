@@ -48,7 +48,7 @@ function IotConnectedVehicle() {
                             />
                         )}
                     </div>
-                    <div className='xl:flex-1 w-full xs:px-12 px-4 flex flex-col gap-3 text-white'>
+                    <div className='xl:flex-1 w-full sm:px-12 px-4 flex flex-col gap-3 text-white'>
                         <div className='flex flex-col gap-2'>
                             <Typography
                                 typo="header-4-semibold"

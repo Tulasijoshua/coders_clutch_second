@@ -45,7 +45,7 @@ function IotOneGrand() {
                                         activeItem === `item-${index+1}` ? '' : 'w-full'
                                     }`}
                                 >
-                                <div className={`w-full px-8 pb-4 flex flex-col gap-5 ${activeItem === `item-${index+1}` ? "text-gray-100 rounded-xl" : "text-gray-400"} ${data.id !== "5" ? "border-b " : ""} border-gray-600`}>
+                                <div className={`w-full sm:px-8 px-3 pb-4 flex flex-col gap-5 ${activeItem === `item-${index+1}` ? "text-gray-100 rounded-xl" : "text-gray-400"} ${data.id !== "5" ? "border-b " : ""} border-gray-600`}>
                                     <AccordionTrigger
                                         className={`xs:text-xl text-lg font-semibold ${activeItem === `item-${index+1}` ? "text-app-yellow rounded-xl" : "text-gray-400"}`}
                                     >{data.title}</AccordionTrigger>

@@ -42,11 +42,11 @@ function IotDeliverPersonalized() {
                                 <AccordionItem
                                     key={data.id}
                                     value={`item-${index+1}`}
-                                    className={`w-full flex xs:p-3 px-3 py-2 border-0 ${
+                                    className={`w-full flex xs:p-3 py-2 border-0 ${
                                         activeItem === `item-${index+1}` ? '' : 'w-full'
                                     }`}
                                 >
-                                <div className={`w-full px-8 pb-4 flex flex-col gap-5 ${activeItem === `item-${index+1}` ? "text-black bg-[#F7EFE1] rounded-xl" : "text-white"} ${data.id !== "4" ? "border-b " : ""} border-gray-600`}>
+                                <div className={`w-full sm:px-8 px-3 pb-4 flex flex-col gap-5 ${activeItem === `item-${index+1}` ? "text-black bg-[#F7EFE1] rounded-xl" : "text-white"} ${data.id !== "4" ? "border-b " : ""} border-gray-600`}>
                                     <AccordionTrigger
                                         className='xs:text-xl text-lg font-semibold'
                                     >{data.title}</AccordionTrigger>

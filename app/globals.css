@@ -293,6 +293,18 @@ body {
   /* background-attachment: fixed; */
 }
 
+@media screen and (max-width: 640px) {
+  .e-vehicle-bg {
+    background: url('/assets/images/solutions/iot-automobile/iot_e-vechile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    /* background-attachment: fixed; */
+  }
+  
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;

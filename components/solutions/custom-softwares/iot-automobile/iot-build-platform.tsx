@@ -26,7 +26,7 @@ function IotBuildPlatform() {
                 {build_platforms.map((data, index) => (
                     data.id === "2" ? (
                         <Card key={data.id} className='e-vehicle-bg md:col-span-2 lg:py-0 py-10 flex justify-between items-end gap-6 bg-white'>
-                            <div className='w-[47%] flex flex-col gap-3'>
+                            <div className='md:w-[47%] xs:w-[60%] flex flex-col gap-3'>
                                 <CardContent className='flex flex-col gap-2'>
                                     <Typography
                                         typo="header-6-semibold"
@@ -53,11 +53,11 @@ function IotBuildPlatform() {
                         </Card>
                     ) : (
                         <Card key={data.id} className='col-span-1 px-3 pt-8 pb-4 flex flex-col justify-between bg-white'>
-                            <CardHeader className='pb-5'>
+                            <CardHeader className='pb-5 md:w-full w-[70%] mx-auto h-fit'>
                                 <Image 
                                     src={data.img}
                                     alt={`Vehicle ${index+1}`}
-                                    className='w-full h-fit'
+                                    className='w-full h-full'
                                 />
                             </CardHeader>
                             <div>
