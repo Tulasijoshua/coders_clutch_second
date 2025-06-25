@@ -130,7 +130,7 @@ const nav_links = [
             id: "2",
             title: "Website Design",
             description: "Beautiful, functional digital experiences that convert",
-            href: "/"
+            href: "/solutions/digital-solutions/website-design"
           },
           {
             id: "3",

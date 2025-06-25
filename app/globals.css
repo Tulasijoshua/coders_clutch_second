@@ -305,6 +305,15 @@ body {
   
 }
 
+.our-agent-bg {
+  background: url('/assets/images/digital-solutions/our-agent.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-attachment: fixed;
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
@@ -312,6 +321,10 @@ body {
 
 .plusJak {
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.rale {
+  font-family: 'Raleway', sans-serif;
 }
 
 .inter {
