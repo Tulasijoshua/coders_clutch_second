@@ -35,6 +35,7 @@ function WebsiteFeatures() {
             <div className='rale max-container 2xl:w-[75%] lg:w-[85%] w-[90%] mx-auto grid md:grid-cols-3 xs:grid-cols-2 gap-2'>
                 {website_features.map(data => (
                     <Typography
+                        key={data}
                         typo="body-large-semibold"
                     >
                         {data}
