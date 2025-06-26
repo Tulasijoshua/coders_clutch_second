@@ -136,7 +136,7 @@ const nav_links = [
             id: "3",
             title: "Ecommerce solutions",
             description: "Complete online store solutions for all business sizes",
-            href: "/"
+            href: "/solutions/digital-solutions/ecommerce-solutions"
           },
           {
             id: "4",
@@ -172,7 +172,7 @@ const nav_links = [
             id: "1",
             title: "iOS Apps",
             description: "Premium native applications for Apple ecosystem",
-            href: "/"
+            href: "/solutions/mobile-applications"
           },
           {
             id: "2",

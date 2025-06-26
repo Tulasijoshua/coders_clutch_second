@@ -314,6 +314,23 @@ body {
   background-attachment: fixed;
 }
 
+.commerce-responsive-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url('/assets/images/digital-solutions/responsive_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-attachment: fixed;
+}
+
+.commerce-whychoose-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url('/assets/images/digital-solutions/commerce_whychoose_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+}
+
 .max-container {
   max-width: 80rem;
   margin: 0 auto;
