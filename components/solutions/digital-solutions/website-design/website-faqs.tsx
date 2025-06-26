@@ -6,27 +6,22 @@ import React from 'react'
 const product_faqs = [
     {
         id: "1",
-        question: `How much does it cost to outsource software development?`,
-        answer: `The cost of IT outsourcing varies widely depending on your project's scope, complexity, and duration. 
-                    Factors like team size, expertise needed, and location of the software development outsourcing company 
-                    all play a role. To get an accurate estimate for your project, it's best to reach out for a personalized 
-                    quote.`,
+        question: `How much does a Website Development cost?`,
+        answer: `At Coders Clutch, one-page website cost starts at $600 . This price highly depends on your specifications.`,
     },
     {
         id: "2",
-        question: `Why work with a software outsourcing company?`,
-        answer: `Partnering with a software outsourcing company offers several advantages. You gain access to a pool of 
-                    skilled professionals without the hassle of hiring and training. This flexibility allows you to scale 
-                    your team up or down as needed. Plus, you can often get your project done faster and more efficiently, 
-                    saving time and money in the long run.`,
+        question: `How Long will it take to develop a website`,
+        answer: `The standard timeframe is a minimum of 7-14 working days (2 weeks) to build your professional website. 
+                    However, this can be longer depending on your requirements as we do not compromise on the quality of our 
+                    work while meeting your needs.`,
     },
     {
         id: "3",
-        question: `How is an outsourcing development team managed?`,
-        answer: `Managing an outsourced team involves clear communication and well-defined processes. Typically, 
-                    you'll have a dedicated project manager as your main contact point. They oversee the team, track 
-                    progress, and ensure deadlines are met. Regular check-ins, progress reports, and collaborative tools 
-                    help keep everyone on the same page.`,
+        question: `What are the types of websites and which one is best`,
+        answer: `We have the “no-code” website builder which you can build yourself using any available CMS platform or a 
+                    website built from scratch with code, which can be accomplished by contacting a professional developer 
+                    to get your website up and running.`,
     },
     {
         id: "4",

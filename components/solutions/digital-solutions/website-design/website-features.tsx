@@ -1,9 +1,27 @@
 'use client';
 import Typography from '@/components/shared/typography'
 import { website_features } from '@/constant';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function WebsiteFeatures() {
+    const [featureText, setFeatureText] = useState('What you get');
+    const featureOptions = ['online shop', 'portfolio', 'landing', 'magazine'];
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setIsVisible(false);
+          
+          setTimeout(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % featureOptions.length);
+            setFeatureText(featureOptions[currentIndex]);
+            setIsVisible(true);
+          }, 500);
+        }, 2000);
+    
+        return () => clearInterval(interval);
+    }, [currentIndex, featureOptions.length]);
   return (
     <div className='w-full'>
         <section className='rale w-full py-12 flex flex-col justify-center items-center gap-6 text-white bg-app-primary-deep'>
@@ -17,9 +35,9 @@ function WebsiteFeatures() {
                     </Typography>
                     <Typography
                         typo="header-1-semibold"
-                        className='!font-bold'
+                        className={`!font-bold transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
                     >
-                        What you get 
+                        {featureText}
                     </Typography> 
                 </div>
                 <Typography
