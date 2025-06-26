@@ -14,7 +14,7 @@ const projects = [project1, project2, project1, project2, project1, project2]
 
 function EcommerceProjects() {
   return (
-    <div className='w-full py-12 flex flex-col lg:gap-0 gap-16 bg-app-primary-deep'>
+    <div className='w-full py-20 flex flex-col lg:gap-0 gap-16 bg-app-primary-deep'>
         <Carousel 
             opts={{
                 align: "start",

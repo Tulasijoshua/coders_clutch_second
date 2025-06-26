@@ -8,13 +8,13 @@ import { commerce_services } from '@/constant';
 
 function EcommerceServices() {
   return (
-    <div className='w-full py-12'>
+    <div className='w-full py-16'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col'>
             <Typography 
                 className='text-center'
                 typo="header-3-semibold"
             >Our E-commerce Services</Typography>
-            <div className='w-full pt-6 flex md:flex-row flex-col justify-between items-stretch xl:gap-32 lg:gap-16 gap-8'>
+            <div className='w-full pt-12 flex md:flex-row flex-col justify-between items-stretch xl:gap-32 lg:gap-16 gap-8'>
                 <Card className='flex-1 lg:py-10 py-6 lg:px-24 px-6 flex flex-col gap-8 rounded-none border-none bg-[#EAEAEA]'>
                     <CardHeader className='pb-0'>
                         <Image 
