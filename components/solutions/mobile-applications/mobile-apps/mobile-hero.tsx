@@ -12,12 +12,18 @@ const digital_services = ["Seamless hiring process", "Get 2X Faster Delivery", "
 
 function MobileHero() {
   return (
-    <div className='sourcing-bg w-full md:py-12 py-8 '>
+    <div className='mobile-apps-bg w-full md:py-12 py-8 '>
         <div className='max-container lg:w-[85%] w-[95%] mx-auto'>
             <section className='2xl:w-[80%] xl:w-[90%] mx-auto flex flex-col justify-center gap-3 text-white'>
                 <Typography
                     typo="header-6-semibold"
-                    className='text-center text-app-green'
+                    className='sm:block hidden text-center text-app-green'
+                >
+                    We design & develop quality and secure Mobile App.
+                </Typography>
+                <Typography
+                    typo="body-large-semibold"
+                    className='sm:hidden text-center text-app-green'
                 >
                     We design & develop quality and secure Mobile App.
                 </Typography>
@@ -41,7 +47,7 @@ function MobileHero() {
                 >
                     Best Android & IOS Mobile Application Development Company - Accra, Ghana & Banjul, The Gambia
                 </Typography>
-                <div className='lg:w-[90%] mx-auto flex flex-col py-3 text-center'>
+                <div className='hidden lg:w-[90%] mx-auto md:flex flex-col py-3 text-center'>
                     <Typography
                         typo="body-large-semibold"
                         className='text-center !leading-relaxed'
