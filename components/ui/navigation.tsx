@@ -411,7 +411,7 @@ const nav_links = [
           {
             id: "1",
             title: "License Procurement",
-            href: "/",
+            href: "/solutions/licensing-renewals",
             description: "Strategic software acquisition and management"
           },
           {
