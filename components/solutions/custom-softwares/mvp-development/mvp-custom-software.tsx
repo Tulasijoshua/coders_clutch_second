@@ -3,7 +3,7 @@ import Typography from '@/components/shared/typography';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import React from 'react'
-import { custom_softwares, design_services } from '@/constant';
+import { custom_softwares } from '@/constant';
 
 
 function MvpCustomSoftware() {

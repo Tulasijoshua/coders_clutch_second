@@ -1,10 +1,6 @@
 'use client';
 import Typography from '@/components/shared/typography';
 import React from 'react'
-import discoveryIcon from "@/public/assets/icons/solution/saas/product_discovery_icon.png";
-import designIcon from "@/public/assets/icons/solution/saas/product_design_icon.png";
-import devIcon from "@/public/assets/icons/solution/saas/development_icon.png";
-import supportIcon from "@/public/assets/icons/solution/saas/support_icon.png";
 import ideationIcon from "@/public/assets/icons/solution/mvp-dev/ideation_icon.png"
 import prototypingIcon from "@/public/assets/icons/solution/mvp-dev/prototyping_icon.png"
 import agileIcon from "@/public/assets/icons/solution/mvp-dev/agile_icon.png"
