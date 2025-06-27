@@ -1,5 +1,4 @@
 import Hereforyou from '@/components/home/hereforyou'
-import DigitalBrands from '@/components/solutions/digital-transformation/digital-main/digital-brands'
 import LicensingHero from '@/components/solutions/licensing-renewal/licensing-hero'
 import LicensingOutcome from '@/components/solutions/licensing-renewal/licensing-outcome'
 import LicensingService from '@/components/solutions/licensing-renewal/licensing-services'
@@ -11,7 +10,6 @@ function LicensingRenewalPage() {
   return (
     <div>
         <LicensingHero />
-        {/* <DigitalBrands /> */}
         <LicensingService />
         <LicensingOutcome />
         <WhyLicensingRenewals />

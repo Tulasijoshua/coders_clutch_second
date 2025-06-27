@@ -375,7 +375,7 @@ const nav_links = [
           {
             id: "1",
             title: "IT Infrastructure Management",
-            href: "/",
+            href: "/solutions/managed-it-services",
             description: "End-to-end management of your IT environment"
           },
           {
