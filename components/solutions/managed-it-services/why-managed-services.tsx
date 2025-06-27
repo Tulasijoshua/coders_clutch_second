@@ -4,8 +4,6 @@ import React from 'react'
 import licenseIcon from "@/public/assets/icons/solution/licensing/license_icon.png"
 import costIcon from "@/public/assets/icons/solution/licensing/cost_icon.png"
 import complianceIcon from "@/public/assets/icons/solution/licensing/compliance_icon.png"
-import visibilityIcon from "@/public/assets/icons/solution/licensing/visibility_icon.png"
-import partnershipIcon from "@/public/assets/icons/solution/licensing/partnership_icon.png"
 import scalableIcon from "@/public/assets/icons/solution/licensing/scalable_icon.png"
 import customizeIcon from "@/public/assets/icons/solution/licensing/customized_icon.png"
 import Image from 'next/image';
