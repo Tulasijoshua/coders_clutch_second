@@ -212,6 +212,14 @@ body {
   /* background-attachment: fixed; */
 }
 
+.managed-it-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url('/assets/images/solutions/managed-it/managed-it-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
 .train_bg {
   background: url('/assets/images/solutions/ai-agent/train-tune-bg.png');
   background-position: center;

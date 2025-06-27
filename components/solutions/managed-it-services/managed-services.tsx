@@ -2,15 +2,15 @@
 import Typography from '@/components/shared/typography';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { licensing_services } from '@/constant';
+import { managed_services } from '@/constant';
 import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import Image from 'next/image';
 import React, { useState } from 'react'
 
-function LicensingService() {
+function ManagedServices() {
     const [showAll, setShowAll] = useState(false);
-    const displayedServices = showAll ? licensing_services : licensing_services.slice(0, 3);
-    const hasMoreServices = licensing_services.length > 3;
+    const displayedServices = showAll ? managed_services : managed_services.slice(0, 3);
+    const hasMoreServices = managed_services.length > 3;
 
   return (
     <div className='w-full py-12 bg-app-gray-bg'>
@@ -63,7 +63,7 @@ function LicensingService() {
                         </div>
                     </Card>
                 ))}
-            </div> 
+            </div>
             {hasMoreServices && (
                 <div className='w-full flex justify-center mt-4'>
                     <Button 
@@ -81,4 +81,4 @@ function LicensingService() {
   )
 }
 
-export default LicensingService
+export default ManagedServices
