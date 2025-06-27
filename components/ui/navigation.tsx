@@ -246,6 +246,12 @@ const nav_links = [
             description: "Real-time Access to Vehicles.",
             href: "/solutions/custom-softwares/iot-automobile"
           },
+          {
+            id: "9",
+            title: "MVP Development",
+            description: "Get market-ready MVP in weeks.",
+            href: "/solutions/custom-softwares/mvp-development"
+          },
         ]
       },
       {
@@ -370,6 +376,7 @@ const nav_links = [
       },
       {
         id: "6",
+        href: "/solutions/managed-it-services",
         title: "Managed IT Services",
         contents: [
           {
