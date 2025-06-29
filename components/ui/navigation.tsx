@@ -252,6 +252,12 @@ const nav_links = [
             description: "Get market-ready MVP in weeks.",
             href: "/solutions/custom-softwares/mvp-development"
           },
+          {
+            id: "10",
+            title: "Hire Remote Developers",
+            description: "On-Board Top 3% Talents Remotely.",
+            href: "/solutions/custom-softwares/hire-remote-developers"
+          },
         ]
       },
       {
