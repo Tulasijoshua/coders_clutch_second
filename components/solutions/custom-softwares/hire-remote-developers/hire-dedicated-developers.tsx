@@ -1,10 +1,6 @@
 'use client';
 import Typography from '@/components/shared/typography'
 import React from 'react'
-import talentImg from "@/public/assets/images/solutions/outsourcing/talent_pool.png"
-import partnershipImg from "@/public/assets/images/solutions/outsourcing/partnership.png"
-import recruitImg from "@/public/assets/images/solutions/outsourcing/recruitment.png"
-import securityImg from "@/public/assets/images/solutions/outsourcing/security.png"
 import talentIcon from "@/public/assets/icons/solution/outsourcing/talent_pool_icon.png"
 import partnershipIcon from "@/public/assets/icons/solution/outsourcing/partnership_icon.png"
 import recruitIcon from "@/public/assets/icons/solution/outsourcing/recruit_icon.png"
