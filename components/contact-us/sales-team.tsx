@@ -1,15 +1,6 @@
 'use client';
 import React, { useState } from 'react'
-import { Button } from '../ui/button'
 import Typography from '../shared/typography'
-import mediaImg from "@/public/assets/images/solutions/saas-product/media_img.png";
-import iotImg from "@/public/assets/images/solutions/saas-product/iotImg.png";
-import retailImg from "@/public/assets/images/solutions/saas-product/retailImg.png";
-import educationImg from "@/public/assets/images/solutions/saas-product/educationImg.png";
-import enterpriseImg from "@/public/assets/images/solutions/saas-product/enterpriseImg.png";
-import crmImg from "@/public/assets/images/solutions/saas-product/crmImg.png";
-import { ArrowRight } from 'lucide-react'
-import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 
 type DescriptionItem = {
@@ -23,7 +14,6 @@ type DescriptionItem = {
   type SolutionItem = {
     id: string;
     title: string;
-    img: any;
     description: DescriptionItem[];
   };
 
@@ -31,7 +21,6 @@ const solutions: SolutionItem[] = [
     {
         id: "1",
         title: "Rest of Africa",
-        img: mediaImg,
         description: [
             {
                 id: "1",
@@ -44,7 +33,6 @@ const solutions: SolutionItem[] = [
     {
         id: "2",
         title: "North America",
-        img: iotImg,
         description: [
             {
                 id: "1",
@@ -69,7 +57,6 @@ const solutions: SolutionItem[] = [
     {
         id: "3",
         title: "Asia-Pacific",
-        img: retailImg,
         description: [
             {
                 id: "1",
@@ -80,7 +67,6 @@ const solutions: SolutionItem[] = [
     {
         id: "4",
         title: "Africa",
-        img: educationImg,
         description: [
             {
                 id: "1",
@@ -91,7 +77,6 @@ const solutions: SolutionItem[] = [
     {
         id: "5",
         title: "Europe",
-        img: enterpriseImg,
         description: [
             {
                 id: "1",
@@ -127,7 +112,7 @@ function SalesTeam() {
                     <Typography
                         typo="body-large-medium"
                     >
-                        From questions about pricing to one-on-one personalized demos, we'd love to connect and help get you started.
+                        From questions about pricing to one-on-one personalized demos, we&apos;d love to connect and help get you started.
                     </Typography>
                 </div>
             </div>
@@ -144,7 +129,9 @@ function SalesTeam() {
                             <AccordionItem
                                 key={data.id}
                                 value={`item-${index+1}`}
-                                className={`w-full flex flex-col gap-2 xs:px-6 px-3`}
+                                className={`w-full  flex flex-col gap-2 xs:px-6 px-3 ${
+                                    activeItem === `item-${index+1}` ? 'bg-[#fff]' : 'w-full'
+                                }`}
                             >
                                 <AccordionTrigger
                                     className='text-sm font-semibold'

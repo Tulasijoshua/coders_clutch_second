@@ -46,7 +46,7 @@ function ContactHero() {
                 <Typography
                     typo="body-large-medium"
                 >
-                    We're here to help.
+                    We&apos;re here to help.
                 </Typography>
                 <div className='w-12 h-[2px] bg-app-yellow'></div>
             </div>

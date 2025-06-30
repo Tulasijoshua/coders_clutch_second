@@ -38,7 +38,7 @@ function ContactIntouch() {
                     <Typography
                         typo="body-large-medium"
                     >
-                        Not sure which Ecosoft product is the right fit for your company? No worries. We'll work with you to determine what solutions will best suit your business.
+                        Not sure which Ecosoft product is the right fit for your company? No worries. We&apos;ll work with you to determine what solutions will best suit your business.
                     </Typography>
                     <Button
                         variant="primary"

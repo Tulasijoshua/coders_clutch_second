@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, X, Youtube } from 'lucide-react';
 import Link from 'next/link';
 
 const platforms = [
