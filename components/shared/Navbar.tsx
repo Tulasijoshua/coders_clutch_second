@@ -17,10 +17,12 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenu
 import { languages } from "@/constant";
 import Typography from "./typography";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { useRouter } from "next/navigation";
 
 
 export default function Navbar() {
     const [position, setPosition] = React.useState("EN")
+    const router = useRouter()
     return (
         <header className="sticky top-0 z-50 px-4 py-2 border-b border-gray-300 bg-white">
             <div className="fade-bottom absolute left-0 w-full bg-background/15 backdrop-blur-lg"></div>
@@ -44,6 +46,7 @@ export default function Navbar() {
                     <NavbarRight>
                         <Button
                             variant="primary"
+                            onClick={() => router.push("/contact-us")}
                         >
                             Get In Touch
                         </Button>
