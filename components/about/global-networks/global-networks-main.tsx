@@ -7,7 +7,7 @@ import React from 'react'
 
 function GlobalNetworksMain() {
   return (
-    <div className='w-full py-12 bg-[#F0FAFC]'>
+    <div className='w-full py-12 bg-app-gray-bg'>
         <section className='max-container 2xl:w-[80%] w-[90%] mx-auto'>
             <div className='flex flex-col justify-center items-center gap-'>
                 <Typography
