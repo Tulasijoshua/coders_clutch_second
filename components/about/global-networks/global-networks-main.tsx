@@ -1,6 +1,5 @@
 'use client'
 import Typography from '@/components/shared/typography'
-import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { brands } from '@/constant'
 import Image from 'next/image'
