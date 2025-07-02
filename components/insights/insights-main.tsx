@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react'
 import Typography from '../shared/typography'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import { insights_events } from '@/constant';
 import Image from 'next/image';
@@ -13,9 +13,10 @@ import Reports from './reports';
 import Blog from './blog';
 import Events from './events';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { EmblaCarouselType } from 'embla-carousel';
 
 function InsightsMain() {
-    const [api, setApi] = useState<any>();
+    const [api, setApi] = useState<CarouselApi>();
     const [current, setCurrent] = useState(0);
     const [count, setCount] = useState(0);
     const [activeTab, setActiveTab] = useState('case-studies');
@@ -36,8 +37,14 @@ function InsightsMain() {
         setCurrent(api.selectedScrollSnap());
 
         api.on("select", () => {
-        setCurrent(api.selectedScrollSnap());
+            setCurrent(api.selectedScrollSnap());
         });
+
+        return () => {
+            api.off("select", () => {
+                setCurrent(api.selectedScrollSnap());
+            });
+        };
     }, [api]);
 
     const handleTabChange = (value: string) => {
