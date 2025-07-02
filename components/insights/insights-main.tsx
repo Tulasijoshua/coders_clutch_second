@@ -13,7 +13,6 @@ import Reports from './reports';
 import Blog from './blog';
 import Events from './events';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { EmblaCarouselType } from 'embla-carousel';
 
 function InsightsMain() {
     const [api, setApi] = useState<CarouselApi>();
