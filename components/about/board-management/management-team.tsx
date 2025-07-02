@@ -1,3 +1,4 @@
+'use client'
 import Typography from '@/components/shared/typography'
 import Image from 'next/image'
 import React from 'react';

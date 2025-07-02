@@ -19,7 +19,7 @@ const nav_links = [
   {
     id: "1",
     nav_name: "Who we are",
-    href: "/we-are",
+    href: "/about/overview",
     title: "About US",
     sub_title: "Know our story",
     description: "A collective of innovation-driven tech specialists",
@@ -610,34 +610,34 @@ const nav_links = [
   {
     id: "5",
     nav_name: "Insight",
-    href: "/insight",
+    href: "/insights",
     title: "Insight",
     sub_title: "Products by Grade Level",
     description: "Teaching solutions to drive better student outcomes",
     contents: [
       {
         id: "1",
-        title: "Blog",
-        description: "A modal dialog that interrupts the user with important content and expects a response.",
-        href: "/"
+        title: "Case Studies",
+        description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        href: "/insights?tab=case-studies"
       },
       {
         id: "2",
-        title: "Events",
-        description: "For sighted users to preview content available behind a link.",
-        href: "/"
+        title: "Blog",
+        description: "A modal dialog that interrupts the user with important content and expects a response.",
+        href: "/insights?tab=blog"
       },
       {
         id: "3",
-        title: "Case Studies",
-        description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-        href: "/"
+        title: "Events",
+        description: "For sighted users to preview content available behind a link.",
+        href: "/insights?tab=events"
       },
       {
         id: "4",
         title: "Report",
         description: "Visually or semantically separates content.",
-        href: "/"
+        href: "/insights?tab=reports"
       },
     ]
   },
@@ -656,7 +656,14 @@ export default function Navigation() {
         
         {nav_links.map((link) => (
           <NavigationMenuItem key={link.id}>
-            <NavigationMenuTrigger>{link.nav_name}</NavigationMenuTrigger>
+            <NavigationMenuTrigger
+            >
+              <Link
+                href={link.href}
+              >
+                {link.nav_name}
+              </Link>
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
                 <ul className="w-fit h-full pb-4 flex items-stretch gap-3 p-4 ">
                     <li className="w-[230px] min-h-full bg-gray-50">
@@ -692,7 +699,9 @@ export default function Navigation() {
                                   key={sub_link.id}
                                   onMouseEnter={() => setSelectedSubLink(sub_link.id)}
                                   className={`w-full px-1 !py-2 text-sm justify-start text-wrap text-left !leading-5 ${selectedSubLink === sub_link.id ? "!text-blue-900 bg-blue-100" : ""} hover:!text-blue-900 border-gray-300 hover:bg-blue-100 rounded-lg`}
-                                >{sub_link.title}</Button>
+                                >
+                                  {sub_link.title}
+                                </Button>
                               ))
                             ) : (
                               <Typography

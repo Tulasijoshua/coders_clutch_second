@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs-t
 
 function BoardManagementMain() {
   return (
-    <div className='w-full py-12'>
+    <div className='w-full py-20'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
             <div className='pops w-[500px] flex flex-col gap-4'>
                 <Typography
