@@ -9,7 +9,6 @@ import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs-team';
 import CaseStudies from './case-studies';
-import PressRelease from './reports';
 import Reports from './reports';
 import Blog from './blog';
 import Events from './events';

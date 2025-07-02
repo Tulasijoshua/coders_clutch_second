@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
+import React from 'react'
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
 import { insights_events } from '@/constant';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Typography from '../shared/typography';

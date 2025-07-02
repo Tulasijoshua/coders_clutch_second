@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
 import { insights_events } from '@/constant';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Typography from '../shared/typography';
@@ -9,20 +9,6 @@ import Image from 'next/image';
 import Autoplay from 'embla-carousel-autoplay';
 
 function Events() {
-    const [api, setApi] = useState<any>();
-    const [current, setCurrent] = useState(0);
-    const [count, setCount] = useState(0);
-
-    React.useEffect(() => {
-        if (!api) return;
-
-        setCount(api.scrollSnapList().length);
-        setCurrent(api.selectedScrollSnap());
-
-        api.on("select", () => {
-        setCurrent(api.selectedScrollSnap());
-        });
-    }, [api]);
 
   return (
     <div className='w-full py-6'>
