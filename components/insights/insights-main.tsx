@@ -70,7 +70,7 @@ function InsightsMain() {
   return (
     <div className='w-full py-12 bg-app-gray-bg'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-6'>
-            <div className='w-[600px] mx-auto flex flex-col items-center gap-4'>
+            <div className='md:w-[600px] w-full mx-auto flex flex-col items-center gap-4'>
                 <Typography
                     typo="header-3-semibold"
                     className='text-center text-[#53565A]'
@@ -93,13 +93,13 @@ function InsightsMain() {
                     <CarouselContent className="flex gap-44">
                         {insights_events.map((data, index) => (
                             data.header === "Latest blog" && (
-                                <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/2">
+                                <CarouselItem key={index} className="pl-1 lg:basis-1/2">
                                     <div className="p-1">
                                         <Card
-                                            className='w-[800px] p-2 flex justify-between items-stretch gap-3 bg-white'
+                                            className='xl:w-[800px] w-[650px] p-2 flex justify-between items-stretch gap-3 bg-white'
                                         >
                                             <div className='rale flex flex-col gap-3'>
-                                                <CardHeader className='flex flex-col gap-1'>
+                                                <CardHeader className='xl:pb-6 pb-3 flex flex-col gap-1'>
                                                     <span className='text-[13px] font-normal text-red-600'>{data.header}</span>
                                                     <Typography
                                                         typo="header-4-semibold"
@@ -108,7 +108,7 @@ function InsightsMain() {
                                                         {data.title}
                                                     </Typography>
                                                 </CardHeader>
-                                                <CardContent className="flex flex-col gap-6">
+                                                <CardContent className="flex flex-col xl:gap-6 gap-3">
                                                     <Typography
                                                         typo="body-small-regular"
                                                         className='pops !font-light !leading-normal line-clamp-3'
@@ -124,7 +124,7 @@ function InsightsMain() {
                                                     </Button>
                                                 </CardContent>
                                             </div>
-                                            <div className='min-w-[47%] h-[350px]'>
+                                            <div className='min-w-[47%] xl:h-[350px] h-[300px]'>
                                                 <Image 
                                                     src={data.img}
                                                     alt={`Insights ${index+1}`}
@@ -167,20 +167,23 @@ function InsightsMain() {
                     defaultValue="case-studies"
                     className='pt-8'
                 >
-                    <TabsList>
-                        <TabsTrigger
-                            value="case-studies"
-                        >Case studies</TabsTrigger>
-                        <TabsTrigger
-                            value="blog"
-                        >Blog</TabsTrigger>
-                        <TabsTrigger
-                            value="events"
-                        >Events</TabsTrigger>
-                        <TabsTrigger 
-                            value="reports"
-                        >Reports</TabsTrigger>
+                    <TabsList className='w-full overflow-auto'>
+                        <div className='flex flex-nowrap gap-2'>
+                            <TabsTrigger
+                                value="case-studies"
+                            >Case studies</TabsTrigger>
+                            <TabsTrigger
+                                value="blog"
+                            >Blog</TabsTrigger>
+                            <TabsTrigger
+                                value="events"
+                            >Events</TabsTrigger>
+                            <TabsTrigger 
+                                value="reports"
+                            >Reports</TabsTrigger>
+                        </div>
                     </TabsList>
+
                     <TabsContent value="case-studies">
                         <CaseStudies />
                     </TabsContent>

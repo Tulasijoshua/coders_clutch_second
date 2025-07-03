@@ -21,7 +21,7 @@ function CaseStudies() {
             ]}
         >
             <div className="relative">
-                <CarouselContent className="flex gap-16">
+                <CarouselContent className="flex xl:gap-16 gap-60">
                     {insights_events.map((data, index) => (
                         data.header === "Financial Sector" && (
                             <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/2">
