@@ -286,7 +286,7 @@ const nav_links = [
             id: "4",
             title: "Digital Forensics",
             description: "Investigate and analyze digital evidence.",
-            href: "/"
+            href: "/solutions/security-cloud/digital-forensics"
           },
           {
             id: "5",
