@@ -55,7 +55,7 @@ function OurCulture() {
                     </Typography>
                 </div>
                 
-                <div className='w-full grid grid-cols-8 gap-4'>
+                <div className='w-full grid grid-cols-10 gap-4'>
                     <AnimatePresence initial={false}>
                     {home_culture.map((data) => (
                         <motion.div
@@ -74,7 +74,7 @@ function OurCulture() {
                                 },
                                 opacity: { duration: 0.7 }
                             }}
-                            className={`${selectedCulture === data.id ? "col-span-3" : "col-span-1"} h-[450px]`}
+                            className={`${selectedCulture === data.id ? "col-span-4" : "col-span-1"} h-[450px]`}
                             onClick={() => {
                                 if (!isAnimating) {
                                     setIsAnimating(true);

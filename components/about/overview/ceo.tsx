@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import ceoImg from "@/public/assets/images/about/ceo.png";
+import ceoImg from "@/public/assets/images/about/ceo.jpg";
 import Image from 'next/image';
 import Typography from '@/components/shared/typography';
 
@@ -8,15 +8,7 @@ function CeoSection() {
   return (
     <div className='max-w-[90rem] mx-auto ceobg w-full py-16'>
         <section className='max-container 2xl:w-[75%] xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex md:flex-row flex-col justify-between items-center md:gap-8 gap-4 bg-white shadow-md'>
-            <div className='md:w-[40%] w-full'>
-                <div className='w-full h-full '>
-                    <Image 
-                        src={ceoImg}
-                        alt='CEO image'
-                        className='w-full h-full'
-                    />
-                </div>
-            </div>
+            
             <div className='flex-1 2xl:p-12 xl:p-8 p-4 flex flex-col xl:gap-12 md:gap-8 gap-4'>
                 <div>
                     <Typography
@@ -38,6 +30,15 @@ function CeoSection() {
                     >
                         Chief Executive Officer
                     </Typography>
+                </div>
+            </div>
+            <div className='md:w-[40%] w-full'>
+                <div className='w-full h-full '>
+                    <Image 
+                        src={ceoImg}
+                        alt='CEO image'
+                        className='w-full h-full'
+                    />
                 </div>
             </div>
         </section>

@@ -1,19 +1,28 @@
 'use client';
 import Typography from '@/components/shared/typography'
 import React from 'react'
-import team1 from "@/public/assets/images/about/our-team1.png";
-import team2 from "@/public/assets/images/about/our-team2.png";
-import team3 from "@/public/assets/images/about/our-team3.png";
-import team4 from "@/public/assets/images/about/our-team4.png";
-import team5 from "@/public/assets/images/about/our-team5.png";
-import team6 from "@/public/assets/images/about/our-team6.png";
-import team7 from "@/public/assets/images/about/our-team7.png";
-import team8 from "@/public/assets/images/about/our-team8.png";
-import team9 from "@/public/assets/images/about/our-team9.png";
-import team10 from "@/public/assets/images/about/our-team10.png";
+import team1 from "@/public/assets/images/about/our-team1.jpg";
+import team2 from "@/public/assets/images/about/our-team2.jpg";
+import team3 from "@/public/assets/images/about/our-team3.jpg";
+import team4 from "@/public/assets/images/about/our-team4.jpg";
+import team5 from "@/public/assets/images/about/our-team5.jpg";
+import team6 from "@/public/assets/images/about/our-team6.jpg";
+import team7 from "@/public/assets/images/about/our-team7.jpg";
+import team8 from "@/public/assets/images/about/our-team8.jpg";
+import team9 from "@/public/assets/images/about/our-team9.jpg";
+import team10 from "@/public/assets/images/about/our-team10.jpg";
+import team11 from "@/public/assets/images/about/our-team11.jpg";
+import team12 from "@/public/assets/images/about/our-team12.jpg";
+import team13 from "@/public/assets/images/about/our-team13.jpg";
+import team14 from "@/public/assets/images/about/our-team14.jpg";
+import team15 from "@/public/assets/images/about/our-team15.jpg";
+import team16 from "@/public/assets/images/about/our-team16.jpg";
+import team17 from "@/public/assets/images/about/our-team17.jpg";
+import team18 from "@/public/assets/images/about/our-team18.jpg";
+import team19 from "@/public/assets/images/about/our-team19.jpg";
 import Image from 'next/image';
 
-const teams = [team1, team2, team3, team4, team5, team6, team7, team8, team9, team10]
+const teams = [team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, team11, team12, team13, team14, team15, team16, team17, team18, team19]
 
 function Lifeat() {
   return (

@@ -66,12 +66,14 @@ import pressRelease1 from "@/public/assets/images/insights/press_release1.png"
 import pressRelease2 from "@/public/assets/images/insights/press_release2.png"
 import pressRelease3 from "@/public/assets/images/insights/press_release3.png"
 
-import culture1 from "@/public/assets/images/solutions/ecommerce.png"
-import culture2 from "@/public/assets/images/solutions/education.png"
-import culture3 from "@/public/assets/images/solutions/enterprise.png"
-import culture4 from "@/public/assets/images/solutions/entertainment.png"
-import culture5 from "@/public/assets/images/solutions/fintech.png"
-import culture6 from "@/public/assets/images/solutions/healthcare.png"
+import culture1 from "@/public/assets/images/home_culture/culture_1.jpg"
+import culture2 from "@/public/assets/images/home_culture/culture_2.jpg"
+import culture3 from "@/public/assets/images/home_culture/culture_3.jpg"
+import culture4 from "@/public/assets/images/home_culture/culture_4.jpg"
+import culture5 from "@/public/assets/images/home_culture/culture_5.jpg"
+import culture6 from "@/public/assets/images/home_culture/culture_6.jpg"
+import culture7 from "@/public/assets/images/home_culture/culture_7.jpg"
+
 
 export const home_culture = [
     {
@@ -97,6 +99,10 @@ export const home_culture = [
     {
         id: 6,
         img: culture6,
+    },
+    {
+        id: 7,
+        img: culture7,
     },
 ]
 
