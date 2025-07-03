@@ -66,6 +66,40 @@ import pressRelease1 from "@/public/assets/images/insights/press_release1.png"
 import pressRelease2 from "@/public/assets/images/insights/press_release2.png"
 import pressRelease3 from "@/public/assets/images/insights/press_release3.png"
 
+import culture1 from "@/public/assets/images/solutions/ecommerce.png"
+import culture2 from "@/public/assets/images/solutions/education.png"
+import culture3 from "@/public/assets/images/solutions/enterprise.png"
+import culture4 from "@/public/assets/images/solutions/entertainment.png"
+import culture5 from "@/public/assets/images/solutions/fintech.png"
+import culture6 from "@/public/assets/images/solutions/healthcare.png"
+
+export const home_culture = [
+    {
+        id: 1,
+        img: culture1,
+    },
+    {
+        id: 2,
+        img: culture2,
+    },
+    {
+        id: 3,
+        img: culture3,
+    },
+    {
+        id: 4,
+        img: culture4,
+    },
+    {
+        id: 5,
+        img: culture5,
+    },
+    {
+        id: 6,
+        img: culture6,
+    },
+]
+
 export const insights_events = [
     {
         id: "1",

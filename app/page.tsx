@@ -7,9 +7,9 @@ import AlliancesSection from "@/components/home/alliances";
 import ExpertTeam from "@/components/home/expert-team";
 import TopTierSection from "@/components/home/top-tier";
 import Partnership from "@/components/home/partnership";
-import CultureSection from "@/components/home/culture";
 import Hereforyou from "@/components/home/hereforyou";
 import LatestProjects from "@/components/home/latest-projects";
+import OurCulture from "@/components/home/our-culture";
 
 export default function Home() {
   return (
@@ -25,7 +25,8 @@ export default function Home() {
           <ExpertTeam />
           <TopTierSection />
           <Partnership />
-          <CultureSection />
+          {/* <CultureSection /> */}
+          <OurCulture />
           <Hereforyou />
       </div>
     </>
