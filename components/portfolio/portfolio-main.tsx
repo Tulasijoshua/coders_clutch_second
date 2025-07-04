@@ -16,16 +16,24 @@ function PortfolioMain() {
         ? clients_project 
         : clients_project.filter(project => project.category === selectedCategory);
   return (
-    <div className='w-full py-16'>
+    <div className='w-full py-8'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
-            <div className='pb-6 flex flex-col gap-3 text-center'>
+            {/* <div className='pb-6 flex flex-col gap-3 text-center'>
                 <Typography
                     typo="header-4-semibold"
-                >Latest Projects</Typography>
+                >20+ Latest Projects</Typography>
                 <Typography>
                     We have delivered a vast range of solutions that have made a significant difference in our clients&apos;
                     businesses. Here are some of our latest projects.
                 </Typography>
+            </div> */}
+            <div className='pb-3 flex flex-col items-center gap-3'>
+                <Typography
+                    typo="header-4-semibold"
+                >
+                    20+ Latest Projects
+                </Typography>
+                <div className='w-20 h-[3px] bg-app-primary-deep'></div>
             </div>
             <div className='pt-8'>
                 <div className='w-full overflow-auto'>

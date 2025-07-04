@@ -1,50 +1,82 @@
 'use client';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Typography from '../shared/typography'
 import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
-import { ArrowRight, ArrowUp } from 'lucide-react';
+import { ArrowDown, ArrowRight, ArrowUp } from 'lucide-react';
 import { Button } from '../ui/button';
 import { customer_growth, reasons_global } from '@/constant';
 
 
 function CustomerSuccess() {
+    const [showAllReasons, setShowAllReasons] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkIfMobile = () => {
+          setIsMobile(window.innerWidth < 768); // 768px is typically the breakpoint for md in Tailwind
+        };
+    
+        // Check on mount
+        checkIfMobile();
+    
+        // Add event listener for window resize
+        window.addEventListener('resize', checkIfMobile);
+    
+        // Clean up
+        return () => window.removeEventListener('resize', checkIfMobile);
+    }, []);
+
+    const displayedReasons = (!isMobile || showAllReasons) 
+    ? reasons_global 
+    : reasons_global.slice(0, 2);
+
+  const toggleReasons = () => {
+    setShowAllReasons(!showAllReasons);
+  };
   return (
     <div className='inter w-full py-12 bg-app-primary-light'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex xl:flex-row flex-col justify-between items-center 2xl:gap-24 gap-12'>
-            <Card className='flex-1 sm:p-8 xs:p-4 p-2 bg-white rounded-none'>
-                <CardHeader className='flex flex-col'>
+            <Card className='flex-1 sm:p-8 xs:p-0 bg-white rounded-none'>
+                <CardHeader className=' sm:flex hidden flex-col'>
                     <Typography
                         typo="header-3-light"
+                        
                     >Top 6 Reasons</Typography>
-                    <Typography typo="header-3-semibold">
+                    <Typography typo="header-3-semibold" className='!leading-normal'>
                         Why Global Companies Choose CODERS CLUTCH
                     </Typography>
                 </CardHeader>
-                <CardContent className=''>
-                    {reasons_global.map((data) => (
-                        <div key={data.id} className='py-4 flex items-center gap-6 border-b'>
-                            <div className='flex items-center gap-2'>
-                                <ArrowUp color='#449358' />
-                                <Typography
-                                    typo="body-large-semibold"
-                                >{data.rate}</Typography>
-                            </div>
-                            <Typography
-                                typo="body-large-regular"
-                            >
-                                {data.title}
-                            </Typography>
+                <CardHeader className='px-3 flex sm:hidden flex-col'>
+                    <Typography typo="header-3-semibold" className='!leading-relaxed !text-[20px]'>
+                        Why Global Companies Choose CODERS CLUTCH
+                    </Typography>
+                </CardHeader>
+                
+                <CardContent className='xs:px-6 px-3'>
+                    {displayedReasons.map((data) => (
+                    <div key={data.id} className='py-4 flex items-center xs:gap-6 gap-3 border-b'>
+                        <div className='flex items-center gap-2'>
+                            <ArrowUp color='#449358' />
+                            <Typography typo="body-large-semibold">{data.rate}</Typography>
                         </div>
+                        <Typography typo="body-large-regular">
+                        {data.title}
+                        </Typography>
+                    </div>
                     ))}
                 </CardContent>
-                <CardFooter className='w-fit mx-auto'>
+                {isMobile && (
+                    <CardFooter className='w-fit mx-auto'>
                     <Button
                         variant="default"
+                        onClick={toggleReasons}
+                        className='flex items-center gap-2'
                     >
-                        Explore More
-                        <ArrowRight />
+                        {showAllReasons ? 'See Less' : 'See More'}
+                        {showAllReasons ? <ArrowDown size={18} /> : <ArrowRight size={18} />}
                     </Button>
-                </CardFooter>
+                    </CardFooter>
+                )}
             </Card>
             <div className='md:flex-1 w-full space-y-3'>
                 <div className='w-full flex flex-col space-y- text-white'>
