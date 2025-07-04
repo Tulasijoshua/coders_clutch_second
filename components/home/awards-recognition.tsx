@@ -1,16 +1,12 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import awardsImg from "@/public/assets/images/awards.png";
-import globeImg from "@/public/assets/images/awards-bg-remove.png";
-import map_vid from "@/public/assets/images/global_map.gif";
-import Image from 'next/image';
 
 function AwardsRecognition() {
   return (
     <div className='award-bg w-full h-full xl:py-20 py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto '>
-            <div className='xl:pb- flex flex-col'>
+            <div className='xl:pb- flex flex-col gap-8'>
                 
                 <Typography
                     typo="header-3-semibold"
