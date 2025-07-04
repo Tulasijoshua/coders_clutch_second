@@ -11,7 +11,7 @@ function AwardsRecognition() {
                 <Typography
                     typo="header-3-semibold"
                 >
-                    A Gambian-Ghanaian Start-up
+                    Gambian-Ghanaian Start-up
                 </Typography>
                 <Typography
                     typo="header-3-light"
