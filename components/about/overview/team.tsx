@@ -8,10 +8,6 @@ import saravanaImg from "@/public/assets/images/about/team/saravana-kumar.png"
 import vijayImg from "@/public/assets/images/about/team/vijaykumar-rk.png"
 import arunaImg from "@/public/assets/images/about/team/arunachalam.png"
 import shankarImg from "@/public/assets/images/about/team/shankar.png"
-import rajagoImg from "@/public/assets/images/about/team/rajagopal.png"
-import venkateshImg from "@/public/assets/images/about/team/venkatesh.png"
-import selvaImg from "@/public/assets/images/about/team/selvakumar.png"
-import nirmalImg from "@/public/assets/images/about/team/nirmal-kumar.png"
 import Typography from '@/components/shared/typography'
 import Image from 'next/image';
 import { TeamDetailModal } from './team-modal';

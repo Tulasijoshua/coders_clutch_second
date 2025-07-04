@@ -1,10 +1,6 @@
 'use client'
 import Typography from "@/components/shared/typography"
-import { Button } from "@/components/ui/button"
-import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { TeamMember } from "@/type"
 import Image from "next/image"
 
@@ -46,6 +42,7 @@ export function TeamDetailModal({open, setOpen, member}: ModalProp) {
             <div className="dm-sans flex flex-col gap-2">
                 {member?.description.map(data => (
                     <Typography
+                        key={data}
                         typo="body-small-regular"
                         className="!font-extralight !text-base tracking-wider"
                     >
