@@ -43,9 +43,7 @@ function Lifeat() {
                 </Typography>
             </div>
             
-            {/* Masonry Layout */}
             <div className='w-full py-12'>
-                {/* Desktop and Tablet: CSS Columns */}
                 <div className='hidden sm:block columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4'>
                     {teams.map((team, index) => (
                         <div key={`Team ${index+1}`} className='break-inside-avoid mb-4'>

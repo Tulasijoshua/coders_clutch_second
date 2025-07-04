@@ -1,13 +1,19 @@
 import Hereforyou from '@/components/home/hereforyou'
+import CaseStudies from '@/components/portfolio/case-studies'
 import PortfolioHero from '@/components/portfolio/portfolio-hero'
+import PortfolioHero2 from '@/components/portfolio/portfolio-hero2'
 import PortfolioMain from '@/components/portfolio/portfolio-main'
+import SuccessStory from '@/components/portfolio/success-story'
 import React from 'react'
 
 function PortfolioPage() {
   return (
     <div>
-        <PortfolioHero />
-        <PortfolioMain />
+        {/* <PortfolioHero /> */}
+        <PortfolioHero2 />
+        {/* <CaseStudies /> */}
+        {/* <PortfolioMain /> */}
+        <SuccessStory />
         <Hereforyou />
     </div>
   )
