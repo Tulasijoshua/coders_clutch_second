@@ -32,15 +32,15 @@ const nav_links = [
       },
       {
         id: "2",
-        title: "The Board",
-        description: "For sighted users to preview content available behind a link.",
+        title: "Our Management",
+        description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
         href: "/about/board-management"
       },
       {
         id: "3",
-        title: "Management",
-        description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-        href: "/about/board-management"
+        title: "Global Networks",
+        description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+        href: "/about/global-networks"
       },
       {
         id: "4",
@@ -48,19 +48,11 @@ const nav_links = [
         description: "Visually or semantically separates content.",
         href: "/about/careers"
       },
-      
       {
         id: "5",
         title: "Social Responsibilities",
         description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
         href: "/"
-      },
-      
-      {
-        id: "6",
-        title: "Global Networks",
-        description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-        href: "/about/global-networks"
       },
     ]
   },
