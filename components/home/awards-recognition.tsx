@@ -2,34 +2,47 @@
 import React from 'react'
 import Typography from '../shared/typography'
 import awardsImg from "@/public/assets/images/awards.png";
+import globeImg from "@/public/assets/images/awards-bg-remove.png";
+import map_vid from "@/public/assets/images/global_map.gif";
 import Image from 'next/image';
 
 function AwardsRecognition() {
   return (
     <div className='award-bg w-full h-full xl:py-20 py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto '>
-            <div className='xl:pb-16 pb-10 flex flex-col'>
-                <Typography
-                    typo="header-3-light"
-                >
-                    Awards and Recognition
-                </Typography>
+            <div className='xl:pb- flex flex-col'>
+                
                 <Typography
                     typo="header-3-semibold"
                 >
-                    from Industry Leaders
+                    A Gambian-Ghanaian Start-up
+                </Typography>
+                <Typography
+                    typo="header-3-light"
+                >
+                    Delivering Global Solutions.    
                 </Typography>
             </div>
 
-            <div className='xl:block hidden w-full h-fit'>
-                <Image 
-                    src={awardsImg}
+            <div className='relative w-[40%] mx-auto h-fit md:mb-8'>
+                {/* <Image 
+                    src={globeImg}
                     alt='Awards Image'
-                    className='w-full h-full'
-                />
+                    className='absolute inset-0 w-full h-full'
+                /> */}
+                <video
+                    width="100%"
+                    height="auto"
+                    autoPlay={true}
+                    muted={true}
+                    poster="/assets/images/security-cloud/circle.webm"
+                >
+                    <source src="/assets/images/global_map_cropped.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
-            <div className='xl:hidden w-full overflow-hidden relative'>
+            {/* <div className='xl:hidden w-full overflow-hidden relative'>
                 <div className='flex animate-slide whitespace-nowrap'>
                     {[...Array(1)].map((_, i) => (
                         <div key={i} className='inline-block px-2'>
@@ -42,7 +55,7 @@ function AwardsRecognition() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     </div>
   )
