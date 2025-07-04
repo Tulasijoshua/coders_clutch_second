@@ -11,6 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "./navigation-menu";
 import Typography from "../shared/typography";
 import { Button } from "./button";
@@ -514,56 +515,6 @@ const nav_links = [
     title: "Portfolio",
     sub_title: "Products by Grade Level",
     description: "Teaching solutions to drive better student outcomes",
-    contents: [
-      {
-        id: "1",
-        title: "Fintech",
-        description: "A modal dialog that interrupts the user with important content and expects a response.",
-        href: "/"
-      },
-      {
-        id: "2",
-        title: "Health Care",
-        description: "For sighted users to preview content available behind a link.",
-        href: "/"
-      },
-      {
-        id: "3",
-        title: "EdTech",
-        description: "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-        href: "/"
-      },
-      {
-        id: "4",
-        title: "Construction",
-        description: "Visually or semantically separates content.",
-        href: "/"
-      },
-      {
-        id: "5",
-        title: "Energy & Climate",
-        description: "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-        href: "/"
-      },
-      {
-        id: "6",
-        title: "Insurance & Mortgage",
-        description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-        href: "/"
-      },
-      {
-        id: "7",
-        title: "Logistics & Transportation",
-        description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-        href: "/"
-      },
-      {
-        id: "8",
-        title: "Travel & Hospitality",
-        description: "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-        href: "/"
-      },
-    ]
   },
   {
     id: "4",
@@ -647,93 +598,109 @@ export default function Navigation() {
       <NavigationMenuList>
         
         {nav_links.map((link) => (
-          <NavigationMenuItem key={link.id}>
-            <NavigationMenuTrigger
-            >
-              <Link
-                href={link.href}
+          link.contents ? (
+            <NavigationMenuItem key={link.id}>
+              <NavigationMenuTrigger
               >
-                {link.nav_name}
-              </Link>
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-                <ul className="w-fit h-full pb-4 flex items-stretch gap-3 p-4 ">
-                    <li className="w-[230px] min-h-full bg-gray-50">
-                      <NavigationMenuLink asChild>
-                        <div
-                          className="flex h-full w-full select-none flex-col gap-6 rounded-md p-3 no-underline outline-none focus:shadow-md "
-                          
-                        >
-                          <Link 
-                            className="flex flex-col gap-4"
-                            href={link.href}
-                          >
-                            <Typography 
-                              className="text-blue-900"
-                              typo="header-5-semibold"
-                            >
-                              {link.title}
-                            </Typography>
-                            <Typography
-                              typo="body-medium-regular"
-                              className="text-gray-600 leading-normal"
-                            >
-                              {link.description}
-                            </Typography>
-                          </Link>
+                <Link
+                  href={link.href}
+                >
+                  {link.nav_name}
+                </Link>
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                  <ul className="w-fit h-full pb-4 flex items-stretch gap-3 p-4 ">
+                      <li className="w-[230px] min-h-full bg-gray-50">
+                        <NavigationMenuLink asChild>
                           <div
-                            className="space-y-2"
+                            className="flex h-full w-full select-none flex-col gap-6 rounded-md p-3 no-underline outline-none focus:shadow-md "
+                            
                           >
-                            {link.main_contents ? (
-                              link.main_contents.map((sub_link) => (
-                                <Button
-                                  variant="outline"
-                                  key={sub_link.id}
-                                  onMouseEnter={() => setSelectedSubLink(sub_link.id)}
-                                  className={`w-full px-1 !py-2 text-sm justify-start text-wrap text-left !leading-5 ${selectedSubLink === sub_link.id ? "!text-blue-900 bg-blue-100" : ""} hover:!text-blue-900 border-gray-300 hover:bg-blue-100 rounded-lg`}
-                                >
-                                  {sub_link.title}
-                                </Button>
-                              ))
-                            ) : (
+                            <Link 
+                              className="flex flex-col gap-4"
+                              href={link.href}
+                            >
+                              <Typography 
+                                className="text-blue-900"
+                                typo="header-5-semibold"
+                              >
+                                {link.title}
+                              </Typography>
                               <Typography
-                                typo="body-medium-medium"
-                                className=""
-                              >{link.sub_title}</Typography>
-                            )}
+                                typo="body-medium-regular"
+                                className="text-gray-600 leading-normal"
+                              >
+                                {link.description}
+                              </Typography>
+                            </Link>
+                            <div
+                              className="space-y-2"
+                            >
+                              {link.main_contents ? (
+                                link.main_contents.map((sub_link) => (
+                                  <Button
+                                    variant="outline"
+                                    key={sub_link.id}
+                                    onMouseEnter={() => setSelectedSubLink(sub_link.id)}
+                                    className={`w-full px-1 !py-2 text-sm justify-start text-wrap text-left !leading-5 ${selectedSubLink === sub_link.id ? "!text-blue-900 bg-blue-100" : ""} hover:!text-blue-900 border-gray-300 hover:bg-blue-100 rounded-lg`}
+                                  >
+                                    {sub_link.title}
+                                  </Button>
+                                ))
+                              ) : (
+                                <Typography
+                                  typo="body-medium-medium"
+                                  className=""
+                                >{link.sub_title}</Typography>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                      </NavigationMenuLink>
-                    </li>
-                    
-                    {link.main_contents ? (
-                      <div className="w-[750px] grid grid-cols-2 ">
-                        {currentSubLink?.contents?.map((link) => (
-                        <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
-                          <ListItem href={link?.href} title={link.title}>
-                            {link.description}
-                          </ListItem>
-                          
-                        </div>
-                        ))}
+                        </NavigationMenuLink>
+                      </li>
                       
-                      </div>
-                    ) : (
-                      <div className="w-[750px] grid grid-cols-3 ">
-                        {link.contents?.map((link) => (
-                        <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
-                          <ListItem href={link.href} title={link.title}>
-                            {link.description}
-                          </ListItem>
-                          
+                      {link.main_contents ? (
+                        <div className="w-[750px] grid grid-cols-2 ">
+                          {currentSubLink?.contents?.map((link) => (
+                          <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
+                            <ListItem href={link?.href} title={link.title}>
+                              {link.description}
+                            </ListItem>
+                            
+                          </div>
+                          ))}
+                        
                         </div>
-                        ))}
-                      
-                      </div>
-                    )}
-                </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+                      ) : (
+                        <div className="w-[750px] grid grid-cols-3 ">
+                          {link.contents?.map((link) => (
+                          <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
+                            <ListItem href={link.href} title={link.title}>
+                              {link.description}
+                            </ListItem>
+                            
+                          </div>
+                          ))}
+                        
+                        </div>
+                      )}
+                  </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          ): (
+            <NavigationMenuItem 
+              key={link.href}
+              className="px-4"
+            >
+              <Link href={link.href} legacyBehavior passHref>
+                <NavigationMenuLink 
+                  className={navigationMenuTriggerStyle()} 
+                  title={link.description}
+                >
+                  {link.title}
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          )
         ))}
       </NavigationMenuList>
     </NavigationMenu>
