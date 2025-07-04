@@ -1,11 +1,18 @@
 'use client';
 import Typography from '@/components/shared/typography';
-import React from 'react'
+import React, { useState } from 'react'
 import myGate from "@/public/assets/images/security-cloud/mygate_logo.png"; 
+import myGate_screen from "@/public/assets/images/security-cloud/mygate_screen.png"; 
+import mobile_bg from "@/public/assets/images/security-cloud/mobile-bg.png"; 
 import Image from 'next/image';
+import { achievements } from '@/constant/devops';
+
 
 
 function LeadingCompanies() {
+    const [selectedBusiness, setSelectedBusiness] = useState(achievements[0].id)
+
+    const currentBusiness = achievements.find(business => business.id === selectedBusiness)
   return (
     <div className='w-full py-12'>
         <section className='2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
@@ -26,47 +33,29 @@ function LeadingCompanies() {
                 <div className='flex-1 flex flex-col gap-6'>
                     <div className='w-40 h-fit '>
                         <Image 
-                            src={myGate}
+                            src={currentBusiness?.logo || achievements[0].logo}
                             alt='My gate image'
                             className='w-full h-full'
                         />
                     </div>
-                    <div className='flex flex-col gap-1'>
-                        <Typography 
-                            typo="header-6-semibold"
-                        >
-                            About
-                        </Typography>
-                        <Typography
-                            typo="body-medium-medium"
-                        >
-                            India’s most downloaded (5M+ downloads) Security, ERP & accounting app for housing societies  
-                        </Typography>
-                    </div>
-                    <div className='flex flex-col gap-1'>
-                        <Typography 
-                            typo="header-6-semibold"
-                        >
-                            Solutions
-                        </Typography>
-                        <Typography
-                            typo="body-medium-medium"
-                        >
-                            Replaced token-based validation systems with in-app chat, video, and voice-based verification 
-                            processes across Android, iOS, and the web.
-                        </Typography>
-                    </div>
+                    {currentBusiness?.contents.map(data => (
+                        <div key={data.id} className='flex flex-col gap-1'>
+                            <Typography 
+                                typo="header-6-semibold"
+                            >
+                                {data.title}
+                            </Typography>
+                            <Typography
+                                typo="body-medium-medium"
+                            >
+                                {data.description}
+                            </Typography>
+                        </div>
+                    ))}
 
                 </div>
-                <div className='w-[550px] h-full flex flex-col relative border'>
-                    <div className='mobile_bg w-full h-full absolute top-0  mobile_bg'>
-                        {/* <Image 
-                            src={myGate_screen}
-                            alt='Mygate'
-                            className='w-full mx-auto h-full'
-                        /> */}
-                    </div>
-                    <div className='w-full'>
+                <div className='relative w-[500px] h-[550px] flex flex-col justify-center items-center'>
+                    <div className='w-[80%] h-fit'>
                         <video
                             width="100%"
                             height="auto"
@@ -78,9 +67,20 @@ function LeadingCompanies() {
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    {/* <div className='w-full h-full'>
-                        
-                    </div> */}
+                    <div className='w-full h-fit absolute top-0'>
+                        <Image 
+                            src={mobile_bg}
+                            alt='Mygate'
+                            className='w-full mx-auto h-full'
+                        />
+                    </div>
+                    <div className='w-[62%] h-fit absolute top-1 right-[83px]'>
+                        <Image 
+                            src={currentBusiness?.screen || achievements[0].screen}
+                            alt='Mygate'
+                            className='w-full mx-auto h-full'
+                        />
+                    </div>
                 </div>
                 <div className='inter flex-1 flex flex-col gap-3'>
                     <Typography
@@ -89,61 +89,36 @@ function LeadingCompanies() {
                     >
                         Business Impact
                     </Typography>
-                    <div className='flex flex-col gap-3'>
-                        <div className='flex items-center gap-2'>
-                            <Typography
-                                className='text-[#178450]'
-                                typo="header-2-semibold"
-                            >
-                                3.5M+
-                            </Typography>
-                            <Typography
-                                typo="body-large-regular"
-                            >
-                                Homes Connected
-                            </Typography>
+                    {currentBusiness?.business.map(data => (
+                        <div key={data.id} className='flex flex-col gap-3'>
+                            <div className='flex items-center gap-2'>
+                                <Typography
+                                    className='text-[#178450]'
+                                    typo="header-2-semibold"
+                                >
+                                   {data.rate}
+                                </Typography>
+                                <Typography
+                                    typo="body-large-regular"
+                                >
+                                    {data.title}
+                                </Typography>
+                            </div>
+                            <div 
+                                className='w-[70%] border-[2px] border-gray-400 border-dashed'
+                            />
                         </div>
-                        <div 
-                            className='w-[70%] border-[2px] border-dashed'
-                        />
-                    </div>
-                    <div className='flex flex-col gap-3'>
-                        <div className='flex items-center gap-2'>
-                            <Typography
-                                className='text-[#178450]'
-                                typo="header-2-semibold"
-                            >
-                                150+
-                            </Typography>
-                            <Typography
-                                typo="body-large-regular"
-                            >
-                                Real-Time Features
-                            </Typography>
-                        </div>
-                        <div 
-                            className='w-[70%] border-[2px] border-dashed'
-                        />
-                    </div>
-                    <div className='flex flex-col gap-4'>
-                        <div className='flex items-center gap-2'>
-                            <Typography
-                                className='text-[#178450]'
-                                typo="header-2-semibold"
-                            >
-                                2M+
-                            </Typography>
-                            <Typography
-                                typo="body-large-regular"
-                            >
-                                Check-in requests Handled
-                            </Typography>
-                        </div>
-                        <div 
-                            className='w-[70%] border-[2px] border-dashed'
-                        />
-                    </div>
+                    ))}
                 </div>
+            </div>
+            <div className='w-full flex justify-end items-center gap-3'>
+                {achievements.map(data => (
+                    <button 
+                        key={data.id} 
+                        onClick={() => setSelectedBusiness(data.id)}
+                        className={`w-4 h-4 rounded-full ${selectedBusiness === data.id ? "bg-gray-600" : "bg-gray-200"} `}
+                    ></button>
+                ))}
             </div>
         </section>
     </div>

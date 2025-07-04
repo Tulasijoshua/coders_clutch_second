@@ -79,7 +79,7 @@ function ExpertDriven() {
                 {expert_driven.map((data, index) => (
                     <Card 
                         key={data.id}
-                        className={`mb-8 xs:py-5 py-4 xs:px-6 px-2 ${index % 2 === 0 ? "md:rounded-none md:rounded-l-xl" : "md:rounded-xl"}  border-none`}
+                        className={`mb-8 xs:py-6 py-4 xs:px-6 px-2 ${index % 2 === 0 ? "md:rounded-none md:rounded-l-2xl -mr-4" : "md:rounded-[1.2rem]"}  border-none`}
                         style={{ 
                             backgroundColor: data.color ? data.color : 'white' 
                         }}

@@ -8,6 +8,7 @@ import ExpertDriven from '@/components/solutions/security-cloud/devops-services/
 import FlexibleHiring from '@/components/solutions/security-cloud/devops-services/flexible-hiring'
 import FutureReady from '@/components/solutions/security-cloud/devops-services/future-ready'
 import HereforDevops from '@/components/solutions/security-cloud/devops-services/herefordevops'
+import LeadingCompanies from '@/components/solutions/security-cloud/devops-services/leading-companies'
 import OperationStrategy from '@/components/solutions/security-cloud/devops-services/operation-strategy'
 import ReadyInterview from '@/components/solutions/security-cloud/devops-services/ready-interview'
 import SuccessfulBusinesses from '@/components/solutions/security-cloud/devops-services/successful-businesses'
@@ -23,7 +24,7 @@ function DevopsServicesPage() {
         <ExpertDriven />
         <FutureReady />
         <BuildSmart />
-        {/* <LeadingCompanies /> */}
+        <LeadingCompanies />
         <AwardsRecognition />
         {/* <LeverageEssential /> */}
         <OperationStrategy />
