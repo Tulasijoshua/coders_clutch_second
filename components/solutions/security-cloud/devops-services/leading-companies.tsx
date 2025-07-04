@@ -1,8 +1,6 @@
 'use client';
 import Typography from '@/components/shared/typography';
 import React, { useState } from 'react'
-import myGate from "@/public/assets/images/security-cloud/mygate_logo.png"; 
-import myGate_screen from "@/public/assets/images/security-cloud/mygate_screen.png"; 
 import mobile_bg from "@/public/assets/images/security-cloud/mobile-bg.png"; 
 import Image from 'next/image';
 import { achievements } from '@/constant/devops';
