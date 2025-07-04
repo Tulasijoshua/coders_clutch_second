@@ -6,12 +6,12 @@ function AwardsRecognition() {
   return (
     <div className='award-bg w-full h-full xl:py-20 py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto '>
-            <div className='xl:pb- flex flex-col gap-3'>
+            <div className=' hidden sm:pb-0 pb-4 xs:flex flex-col sm:gap-3 gap-1'>
                 
                 <Typography
                     typo="header-3-semibold"
                 >
-                    Gambian-Ghanaian Start-up
+                    Gambian-Ghanaian <span className='font-light'>Start-up</span> 
                 </Typography>
                 <Typography
                     typo="header-3-light"
@@ -19,8 +19,24 @@ function AwardsRecognition() {
                     Delivering Global Solutions.    
                 </Typography>
             </div>
+            <div className='xs:hidden sm:pb-0 pb-4 flex flex-col sm:gap-3 gap-1'>
+                
+                <Typography
+                    typo="header-4-semibold"
+                    className='!text-2xl'
+                >
+                    Gambian-Ghanaian <span className='font-light'>Start-up</span> 
+                </Typography>
+                <Typography
+                    typo="header-3-light"
+                    className='!text-2xl'
 
-            <div className='relative w-[40%] mx-auto h-fit md:mb-8'>
+                >
+                    Delivering Global Solutions.    
+                </Typography>
+            </div>
+
+            <div className='relative xs:w-[40%] w-[45%] mx-auto h-fit md:mb-8'>
                 {/* <Image 
                     src={globeImg}
                     alt='Awards Image'
