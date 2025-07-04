@@ -72,7 +72,7 @@ function PortfolioHero2() {
                         className='pb-4 !leading-relaxed'
                     >
                         From eliminating inefficiencies and leveraging automation to streamlining workflows and enhancing digital 
-                        capabilities, we've helped at least 100 companies boost their bottom line.
+                        capabilities, we&apos;ve helped at least 100 companies boost their bottom line.
                     </Typography>
                     <Button
                         variant="primary"
