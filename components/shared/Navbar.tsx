@@ -47,6 +47,7 @@ export default function Navbar() {
                         <Button
                             variant="primary"
                             onClick={() => router.push("/contact-us")}
+                            className="sm:block hidden"
                         >
                             Get In Touch
                         </Button>

@@ -36,7 +36,7 @@ function AwardsRecognition() {
                 </Typography>
             </div>
 
-            <div className='relative xs:w-[40%] w-[70%] mx-auto h-fit md:mb-8'>
+            <div className='relative sm:w-[40%] w-[70%] mx-auto h-fit md:mb-8 xs:mb-4'>
                 {/* <Image 
                     src={globeImg}
                     alt='Awards Image'
