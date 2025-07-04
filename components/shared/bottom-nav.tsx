@@ -12,6 +12,7 @@ function BottomNav() {
         <Button
             variant="primary"
             size="lg"
+            onClick={() => router.push("/contact-us")}
             className='w-full py-3'
         >
             Get In Touch
