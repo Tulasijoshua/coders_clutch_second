@@ -71,7 +71,7 @@ import culture3 from "@/public/assets/images/home_culture/culture_3.jpg"
 import culture4 from "@/public/assets/images/home_culture/culture_4.jpg"
 import culture5 from "@/public/assets/images/home_culture/culture_5.jpg"
 import culture6 from "@/public/assets/images/home_culture/culture_6.jpg"
-import culture7 from "@/public/assets/images/home_culture/culture_7.jpg"
+// import culture7 from "@/public/assets/images/home_culture/culture_7.jpg"
 
 export const digital_services = [
     {
@@ -150,10 +150,10 @@ export const home_culture = [
         id: 6,
         img: culture6,
     },
-    {
-        id: 7,
-        img: culture7,
-    },
+    // {
+    //     id: 7,
+    //     img: culture7,
+    // },
 ]
 
 export const insights_events = [

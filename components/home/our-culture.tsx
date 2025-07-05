@@ -55,7 +55,7 @@ function OurCulture() {
                     </Typography>
                 </div>
                 
-                <div className='w-full grid grid-cols-10 gap-4'>
+                <div className='w-full grid grid-cols-9 gap-4'>
                     <AnimatePresence initial={false}>
                     {home_culture.map((data) => (
                         <motion.div
