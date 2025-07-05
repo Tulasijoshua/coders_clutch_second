@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import futuresImg from "@/public/assets/images/futures.png";
-import careerImg from "@/public/assets/images/careers-image.png";
 import Image from 'next/image';
 import Typography from '@/components/shared/typography';
 import { career_heros, home_culture } from '@/constant';

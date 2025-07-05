@@ -35,7 +35,7 @@ const life_ats = [
 
 function Lifeatcoders() {
   return (
-    <div className='w-full py-12 flex md:flex-row flex-col items-center justify-between gap-16'>
+    <div className='max-w-[100rem] mx-auto w-full py-12 flex md:flex-row flex-col items-center justify-between gap-16'>
         <div className='md:hidden w-fit pb-4 flex flex-col gap-2'>
             <Typography
                 typo="header-4-semibold"
@@ -45,11 +45,11 @@ function Lifeatcoders() {
             <div className='w-12 mx-auto h-[1px] bg-black'></div>
         </div>
         <section className='flex-1'>
-            <div className='w-full h-[650px] bg-white'>
+            <div className='w-full md:block hidden h-[650px] bg-white'>
                 <Image 
                     src={lifeatcoders}
                     alt='Life at coders image'
-                    className='w-full h-full object-cover rounded-r-[6.5rem]'
+                    className='w-full h-full object-cover md:rounded-r-[6.5rem] rounded-xl'
                 />
             </div>
         </section>
