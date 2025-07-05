@@ -127,6 +127,7 @@ function SalesTeam() {
                                                 {content.content && (
                                                     content.content.map(data => (
                                                         <Typography
+                                                            key={data}
                                                             typo="body-small-regular"
                                                             className='font-extralight'
                                                         >{data}</Typography>
