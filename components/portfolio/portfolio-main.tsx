@@ -5,6 +5,7 @@ import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import Image from 'next/image';
 import { clients_project } from '@/constant';
+import { Plus } from 'lucide-react';
 
 
 function PortfolioMain() {
@@ -45,19 +46,17 @@ function PortfolioMain() {
 
                 <div className='w-full py-6 grid md:grid-cols-3 xs:grid-cols-2 gap-8'>
                     {filteredProjects.map((data, index) => (
-                        <Card key={data.id} className='rounded-xl'>
+                        <Card key={data.id} className='rounded-none border-none shadow-none'>
                             <div className='relative group'>
-                                <div className='w-full xl:h-[350px] lg:h-[300px] sm:h-[250px] xs:h-[200px] h-[300px] overflow-hidden  rounded-xl'>
+                                <div className='w-full xl:h-[320px] lg:h-[300px] sm:h-[250px] xs:h-[200px] h-[300px] overflow-hidden  rounded-none'>
                                     <Image
                                         src={data.img}
                                         alt={`Project ${index+1}`}
-                                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'
+                                        className='w-full h-full object-fill group-hover:scale-105 transition-transform duration-300'
                                     />
                                 </div>
-                                <div className='absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center p-4 transition-all duration-300 opacity-0 group-hover:opacity-100  rounded-xl'>
-                                    <Typography className='text-white text-center leading-relaxed'>
-                                        {data.description}
-                                    </Typography>
+                                <div className='absolute inset-0 bg-[#24AA86] bg-opacity-0 group-hover:bg-opacity-80 flex items-center justify-center p-4 transition-all duration-300 opacity-0 group-hover:opacity-100  rounded-none'>
+                                    <Plus color='#fff' />
                                 </div>
                             </div>
                             <CardContent className='py-4 text-center'>

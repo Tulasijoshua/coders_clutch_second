@@ -269,18 +269,18 @@ const nav_links = [
             description: "Comprehensive protection for cloud environments",
             href: "/"
           },
-          {
-            id: "3",
-            title: "Penetration Testing",
-            description: "Identify vulnerabilities before attackers do.",
-            href: "/"
-          },
-          {
-            id: "4",
-            title: "Digital Forensics",
-            description: "Investigate and analyze digital evidence.",
-            href: "/solutions/security-cloud/digital-forensics"
-          },
+          // {
+          //   id: "3",
+          //   title: "Penetration Testing",
+          //   description: "Identify vulnerabilities before attackers do.",
+          //   href: "/"
+          // },
+          // {
+          //   id: "4",
+          //   title: "Digital Forensics",
+          //   description: "Investigate and analyze digital evidence.",
+          //   href: "/solutions/security-cloud/digital-forensics"
+          // },
           {
             id: "5",
             title: "Infrastructure and configuration management",

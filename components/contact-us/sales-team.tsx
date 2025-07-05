@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '..
 
 type DescriptionItem = {
     id: string;
-    content: string;
+    content: string[];
     title?: string;
     tele?: string[];
     email?: string;
@@ -20,69 +20,47 @@ type DescriptionItem = {
 const solutions: SolutionItem[] = [
     {
         id: "1",
-        title: "Rest of Africa",
+        title: "Ghana",
         description: [
             {
                 id: "1",
-                content: "Monday to Friday EET (09:00 AM to 6:00 PM)",
-                tele: ["+27 214268086"],
+                content: [
+                    "Tema, 5th Avenue Road – Greater Accra Region, Ghana",
+                    "Monday to Friday GMT (09:00 AM to 6:00 PM)",
+                ],
+                tele: ["+233 53 371 5072"],
                 email: "sales@zohocorp.com"
             }
         ],
     },
     {
         id: "2",
-        title: "North America",
+        title: "Gambia",
         description: [
             {
                 id: "1",
-                title: "Canada",
-                content: "Monday to Friday EST (09:00 AM to 6:00 PM)",
-                tele: ["+1 (833) 957-3953"],
+                title: "Gambia",
+                content: [
+                    "MSJ Plaza Office 07, Brusubi TurnTable - After AfricMed",
+                    "Monday to Friday GMT (09:00 AM to 6:00 PM)",
+                ],
+                tele: ["+220 515 4308"],
             },
-            {
-                id: "2",
-                title: "Mexico",
-                content: "Monday to Friday CDT (07:00 AM - 6:00 PM)",
-                tele: ["+52 5550912446", "+52 8002720326"],
-            },
-            {
-                id: "3",
-                title: "USA",
-                content: "Monday to Friday PDT (05:00 AM to 6:00 PM)",
-                tele: ["+1 877 834 4428", "+1 844 584 2497", "+1 833 968 1705", "+1 (888) 900 9646 (Support)"],
-            }
         ],    
     },
     {
         id: "3",
-        title: "Asia-Pacific",
+        title: "USA",
         description: [
             {
                 id: "1",
-                content: "Contact information coming soon.",
+                content: [
+                    "849 SW Curtis St, Port Saint Lucie FL 34983 – Florida USA.",
+                    "Monday to Friday GMT (09:00 AM to 6:00 PM)",
+                ],
+                tele: ["+1 (954) 803-3132"],
             }
         ],
-    },
-    {
-        id: "4",
-        title: "Africa",
-        description: [
-            {
-                id: "1",
-                content: "Contact information coming soon.",
-            }
-        ],        
-    },
-    {
-        id: "5",
-        title: "Europe",
-        description: [
-            {
-                id: "1",
-                content: "Contact information coming soon.",
-            }
-        ],      
     },
 ]
   
@@ -145,10 +123,16 @@ function SalesTeam() {
                                                 >{content?.title}</Typography>
 
                                             )}
-                                            <Typography
-                                                typo="body-small-regular"
-                                                className='font-extralight'
-                                            >{content.content}</Typography>
+                                            <div className='py-2 flex flex-col gap-2'>
+                                                {content.content && (
+                                                    content.content.map(data => (
+                                                        <Typography
+                                                            typo="body-small-regular"
+                                                            className='font-extralight'
+                                                        >{data}</Typography>
+                                                    ))
+                                                )}
+                                            </div>
                                             {content.tele && (
                                                 <div className='flex flex-col gap-1'>
                                                     {content?.tele?.map(num => (

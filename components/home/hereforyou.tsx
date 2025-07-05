@@ -3,8 +3,8 @@ import React from 'react'
 import Typography from '../shared/typography'
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
-import indiaImg from "@/public/assets/images/india.svg"
-import americaImg from "@/public/assets/images/america.svg"
+import ghanaImg from "@/public/assets/images/Flag_of_Ghana.png"
+import gambia from "@/public/assets/images/Flag_of_The_Gambia.png"
 import Image from 'next/image';
 import { social_icons } from '@/constant';
 
@@ -37,32 +37,30 @@ function Hereforyou() {
             <div className='flex-1 flex flex-col gap-7 text-white'>
                 <Typography
                     typo="body-large-medium"
-                >We are located in India and USA</Typography>
+                >We are located in Ghana and Gambia</Typography>
                 <div className='flex justify-between gap-10'>
                     <div className='flex-1 flex flex-col gap-2'>
                         <Image 
-                            src={indiaImg}
+                            src={ghanaImg}
                             alt='India Flag'
                             className='w-10 h-fit'
                         />
                         <Typography
                             className='text-sm text-gray-300 leading-relaxed'
                         >
-                            Willow Square, 8th Floor, Plot No. 8,9 & 10, 1st Street, Thiru Vi Ka Industrial Estate, Guindy, 
-                            Tamil Nadu - 600 032
+                            Ghana - Tema, 5th Avenue Road – Greater Accra Region, Ghana
                         </Typography>
                     </div>
                     <div className='flex-1 flex flex-col gap-2'>
                         <Image 
-                            src={americaImg}
+                            src={gambia}
                             alt='India Flag'
                             className='w-10 h-fit'
                         />
                         <Typography
                             className='text-sm text-gray-300 leading-relaxed'
                         >
-                            4701 Patrick Henry Drive.
-                            Building 3, Santa Clara, CA- 95054, USA
+                            Gambia - MSJ Plaza Office 07, Brusubi TurnTable - After AfricMed
                         </Typography>
                     </div>
                 </div>
