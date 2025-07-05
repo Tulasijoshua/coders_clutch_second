@@ -1,4 +1,3 @@
-import { CloudSunRain, DatabaseZap, HardDriveDownload, Rocket, ShieldCheck } from "lucide-react";
 
 import tataIcon from "@/public/assets/icons/success/tata.svg";
 import versaIcon from "@/public/assets/icons/success/versa.png";

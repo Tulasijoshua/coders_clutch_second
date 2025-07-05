@@ -4,7 +4,7 @@ import Typography from '../shared/typography';
 import { digital_services } from '@/constant';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import { Button } from '../ui/button';
-import { ArrowDown, ArrowLeft, ArrowRight, LaptopMinimal } from 'lucide-react';
+import { ArrowLeft, ArrowRight, LaptopMinimal } from 'lucide-react';
 import Image from 'next/image';
 import clsx from 'clsx';
 
