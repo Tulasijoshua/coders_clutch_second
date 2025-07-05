@@ -4,11 +4,16 @@ import futuresImg from "@/public/assets/images/futures.png";
 import careerImg from "@/public/assets/images/careers-image.png";
 import Image from 'next/image';
 import Typography from '@/components/shared/typography';
+import { career_heros, home_culture } from '@/constant';
+import career4 from "@/public/assets/images/about/career_4.jpg"
+import career5 from "@/public/assets/images/about/career_5.jpg"
+import career6 from "@/public/assets/images/about/our-team15.jpg"
+import { Button } from '@/components/ui/button';
 
 function CareerHero() {
   return (
     <div className='w-full py-12'>
-        <section className='pops max-container 2xl:w-[85%] w-[95%] mx-auto flex sm:flex-row flex-col justify-between items-center lg:gap-12 gap-8'>
+        <section className='pops max-container 2xl:w-[85%] w-[95%] mx-auto flex md:flex-row flex-col justify-between items-center lg:gap-12 gap-8'>
             <div className='flex-1 flex flex-col gap-6'>
                 <h1 className=' flex flex-col sm:items-start items-center sm:text-left text-center lg:text-6xl text-4xl font-semibold leading-8'>
                     <span>We</span>
@@ -31,14 +36,81 @@ function CareerHero() {
                     your place in a dynamic environment where passion meets purpose.
                 </Typography>
             </div>
-            <div className='flex-1'>
-                <div className='w-full h-full'>
+            <div className='flex-1 flex flex-col gap-3'>
+                <div className='w-full flex gap-4 items-end'>  {/* Changed to items-end */}
+                    {career_heros.slice(0, 3).map((data, index) => (
+                        <div 
+                            className='relative h-full'
+                            key={data.id}
+                        >
+                            <Image 
+                                src={data.img}
+                                alt={`Career ${index+1}`}
+                                className='object-cover w-full h-auto rounded-md' 
+                                width={500} 
+                                height={500} 
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div className='flex justify-between gap-4'>
+                    <div className='w-[30%] h-fit'>
+                        <Image 
+                            src={career6}
+                            alt='Career 6'
+                            className='w-full h-full rounded-md'
+                        />
+                    </div>
+                    <div className='flex-1 flex flex-col gap-4'>
+                        <div className='w-full h-fit px-6 py-3 flex justify-between items-center gap-2 shadow-md'>
+                            <div className='py-2 flex flex-col xl:gap-2 gap-1'>
+                                <Typography
+                                    className='!text-sm font-semibold'
+                                >Want to join us</Typography>
+                                <Button
+                                    variant="default"
+                                    className='!p-0 flex xl:!text-sm !text-[12px] text-blue-700'
+                                >
+                                    View Open roles {">"}
+                                </Button>
+                            </div>
+                            <div className='flex justify-start items-center'>
+                                {home_culture.slice(0, 3).map((data, index) => (
+                                    <div key={data.id}
+                                        className={`xl:w-10 w-8 xl:h-10 h-8 -mr-5`}
+                                    >
+                                        <Image 
+                                            src={data.img}
+                                            alt={`profile ${index+1}`}
+                                            className='w-full h-full object-cover rounded-full'
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className='w-full max-h-[150px] h-fit'>
+                            <Image 
+                                src={career4}
+                                alt='Career 4'
+                                className='w-full h-full object-cover rounded-lg'
+                            />
+                        </div>
+                    </div>
+                    <div className='w-[35%] h-fit'>
+                        <Image 
+                            src={career5}
+                            alt='Career 6'
+                            className='w-full h-full rounded-md'
+                        />
+                    </div>
+                </div>
+                {/* <div className='w-full h-full'>
                     <Image
                         src={careerImg}
                         alt='Career Image'
                         className='w-full h-full'
                     />
-                </div>
+                </div> */}
             </div>
         </section>
     </div>

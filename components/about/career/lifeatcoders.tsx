@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import lifeatcoders from "@/public/assets/images/LifeatCoders.png";
+import lifeatcoders from "@/public/assets/images/lifeatImg.jpg";
 import Image from 'next/image';
 import Typography from '@/components/shared/typography';
 import diversifyIcon from "@/public/assets/icons/career_icons/culture_icon.png";
@@ -35,7 +35,7 @@ const life_ats = [
 
 function Lifeatcoders() {
   return (
-    <div className='w-full py-12 flex md:flex-row flex-col items-center justify-between gap-6'>
+    <div className='w-full py-12 flex md:flex-row flex-col items-center justify-between gap-16'>
         <div className='md:hidden w-fit pb-4 flex flex-col gap-2'>
             <Typography
                 typo="header-4-semibold"
@@ -45,11 +45,11 @@ function Lifeatcoders() {
             <div className='w-12 mx-auto h-[1px] bg-black'></div>
         </div>
         <section className='flex-1'>
-            <div className='w-full h-fit'>
+            <div className='w-full h-[650px] bg-white'>
                 <Image 
                     src={lifeatcoders}
                     alt='Life at coders image'
-                    className='w-full h-full'
+                    className='w-full h-full object-cover rounded-r-[6.5rem]'
                 />
             </div>
         </section>

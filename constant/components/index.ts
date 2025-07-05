@@ -73,6 +73,35 @@ import culture5 from "@/public/assets/images/home_culture/culture_5.jpg"
 import culture6 from "@/public/assets/images/home_culture/culture_6.jpg"
 // import culture7 from "@/public/assets/images/home_culture/culture_7.jpg"
 
+import career1 from "@/public/assets/images/about/career_1.jpg"
+import career2 from "@/public/assets/images/about/career_2.jpg"
+import career3 from "@/public/assets/images/about/career_3.jpg"
+import career4 from "@/public/assets/images/about/career_4.jpg"
+import career5 from "@/public/assets/images/about/career_5.jpg"
+
+export const career_heros = [
+    {
+        id: "1",
+        img: career1
+    },
+    {
+        id: "2",
+        img: career2
+    },
+    {
+        id: "3",
+        img: career3
+    },
+    {
+        id: "4",
+        img: career4
+    },
+    {
+        id: "5",
+        img: career5
+    },
+]
+
 export const digital_services = [
     {
         id: "1",
