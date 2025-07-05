@@ -12,6 +12,15 @@ body {
   display: none;
 }
 
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
