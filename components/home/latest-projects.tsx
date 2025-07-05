@@ -5,6 +5,7 @@ import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import Image from 'next/image';
 import { clients_project } from '@/constant';
+import { Plus } from 'lucide-react';
 
 
 function LatestProjects() {
@@ -18,14 +19,13 @@ function LatestProjects() {
   return (
     <div className='w-full py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
-            <div className='pb-6 flex flex-col gap-3 text-center'>
+            <div className='pb-3 flex flex-col items-center gap-3'>
                 <Typography
                     typo="header-4-semibold"
-                >Latest Projects</Typography>
-                <Typography>
-                    We have delivered a vast range of solutions that have made a significant difference in our clients&apos;
-                    businesses. Here are some of our latest projects.
+                >
+                    20+ Latest Projects
                 </Typography>
+                <div className='w-20 h-[3px] bg-app-primary-deep'></div>
             </div>
             <div className='pt-8'>
                 <div className='w-full overflow-auto'>
@@ -46,19 +46,17 @@ function LatestProjects() {
 
                 <div className='w-full py-6 grid md:grid-cols-3 xs:grid-cols-2 gap-8'>
                     {filteredProjects.map((data, index) => (
-                        <Card key={data.id} className='rounded-xl'>
+                        <Card key={data.id} className='rounded-none border-none shadow-none'>
                             <div className='relative group'>
-                                <div className='w-full xl:h-[350px] lg:h-[300px] sm:h-[250px] xs:h-[200px] h-[300px] overflow-hidden  rounded-xl'>
+                                <div className='w-full xl:h-[320px] lg:h-[300px] sm:h-[250px] xs:h-[200px] h-[300px] overflow-hidden  rounded-none'>
                                     <Image
                                         src={data.img}
                                         alt={`Project ${index+1}`}
-                                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'
+                                        className='w-full h-full object-fill group-hover:scale-105 transition-transform duration-300'
                                     />
                                 </div>
-                                <div className='absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center p-4 transition-all duration-300 opacity-0 group-hover:opacity-100  rounded-xl'>
-                                    <Typography className='text-white text-center leading-relaxed'>
-                                        {data.description}
-                                    </Typography>
+                                <div className='absolute inset-0 bg-[#24AA86] bg-opacity-0 group-hover:bg-opacity-80 flex items-center justify-center p-4 transition-all duration-300 opacity-0 group-hover:opacity-100  rounded-none'>
+                                    <Plus color='#fff' />
                                 </div>
                             </div>
                             <CardContent className='py-4 text-center'>

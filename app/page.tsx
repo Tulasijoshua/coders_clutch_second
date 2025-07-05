@@ -10,6 +10,8 @@ import Partnership from "@/components/home/partnership";
 import Hereforyou from "@/components/home/hereforyou";
 import LatestProjects from "@/components/home/latest-projects";
 import OurCulture from "@/components/home/our-culture";
+import DigitalService from "@/components/home/digital-service";
+import ReadyResults from "@/components/home/ready-results";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
           <Hero />
           <CustomerSuccess />
           <AwardsRecognition />
+          <DigitalService />
+          <ReadyResults />
           <ServicesSection />
           <LatestProjects />
           <DigitalSolutions />

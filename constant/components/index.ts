@@ -74,6 +74,57 @@ import culture5 from "@/public/assets/images/home_culture/culture_5.jpg"
 import culture6 from "@/public/assets/images/home_culture/culture_6.jpg"
 import culture7 from "@/public/assets/images/home_culture/culture_7.jpg"
 
+export const digital_services = [
+    {
+        id: "1",
+        img: pressRelease1,
+        title: "Business Transformation & Consulting",
+        sub_title: "Redefining Business Success with Digital-First Strategies",
+        description:
+            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+    },
+    {
+        id: "2",
+        img: pressRelease2,
+        title: "Mobile Apps",
+        sub_title: `Empowering Your IT Infrastructure with Scalable, Secure, and Reliable Solutions`,
+        description:            
+            `At Heirs Technologies, we provide comprehensive managed IT services designed to optimise, secure, and scale your IT operations seamlessly.`,
+    },
+    {
+        id: "3",
+        img: pressRelease3,
+        title: "Custom Softwares and AI",
+        sub_title: `Simplifying License Management for Maximum Efficiency and Compliance`,
+        description:
+            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+    },
+    {
+        id: "4",
+        img: pressRelease3,
+        title: "IT & Security",
+        sub_title: `Simplifying License Management for Maximum Efficiency and Compliance`,
+        description:
+            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+    },
+    {
+        id: "5",
+        img: pressRelease1,
+        title: "Digital Transformation",
+        sub_title: `Simplifying License Management for Maximum Efficiency and Compliance`,
+        description:
+            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+    },
+    {
+        id: "6",
+        img: pressRelease2,
+        title: "Government & Utility Sector Solutions",
+        sub_title: `Simplifying License Management for Maximum Efficiency and Compliance`,
+        description:
+            `Transform your operations, unlock efficiency, and achieve measurable outcomes with our bespoke consulting solutions.`,
+    },
+]
+
 
 export const home_culture = [
     {
