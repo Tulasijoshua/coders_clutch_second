@@ -109,52 +109,44 @@ const nav_links = [
         contents: [
           {
             id: "1",
-            title: "UI/UX Design",
-            description: "Beautiful, functional digital experiences that convert",
-            href: "/solutions/digital-solutions/ui-ux-design"
-          },
-          {
-            id: "7",
-            title: "Product Development",
-            description: "Beautiful, functional digital experiences that convert",
-            href: "/solutions/digital-solutions/product-development"
-          },
-          {
-            id: "2",
             title: "Website Design",
             description: "Beautiful, functional digital experiences that convert",
             href: "/solutions/digital-solutions/website-design"
           },
           {
-            id: "3",
+            id: "2", 
             title: "Ecommerce solutions",
             description: "Complete online store solutions for all business sizes",
             href: "/solutions/digital-solutions/ecommerce-solutions"
           },
           {
-            id: "4",
-            title: "Digital Marketing",
-            description: "Data-driven strategies to grow your online presence.",
-            href: "/"
+            id: "3",
+            title: "UI/UX Design",
+            description: "Beautiful, functional digital experiences that convert",
+            href: "/solutions/digital-solutions/ui-ux-design"
           },
+          {
+            id: "4",
+            title: "Product Development",
+            description: "Beautiful, functional digital experiences that convert",
+            href: "/solutions/digital-solutions/product-development"
+          },
+          
+          
           {
             id: "5",
-            title: "Branding lab & PR",
-            description: "Crafting compelling brand narratives across channels.",
-            href: "/"
-          },
-          {
-            id: "6",
-            title: "Full Stack Development",
-            description: "Crafting compelling brand narratives across channels.",
-            href: "/solutions/digital-solutions/full-stack-development"
-          },
-          {
-            id: "8",
             title: "Software Outsourcing",
             description: "Crafting compelling brand narratives across channels.",
             href: "/solutions/digital-solutions/software-outsourcing"
           },
+          {
+            id: "6",
+            title: "Branding lab & PR",
+            description: "Crafting compelling brand narratives across channels.",
+            href: "/"
+          },
+          
+          
         ]
       },
       {
@@ -193,27 +185,27 @@ const nav_links = [
         contents: [
           {
             id: "1",
-            title: "ERP Solutions",
-            description: "Enterprise resource planning with integrated AI",
-            href: "/"
+            title: "MVP Development",
+            description: "Get market-ready MVP in weeks.",
+            href: "/solutions/custom-softwares/mvp-development"
           },
           {
             id: "2",
-            title: "DLT Solutions",
-            description: "Blockchain and web3 distributed ledger technology",
-            href: "/"
+            title: "Full Stack Development",
+            description: "Crafting compelling brand narratives across channels.",
+            href: "/solutions/digital-solutions/full-stack-development"
           },
           {
             id: "3",
-            title: "Digital Twins",
-            description: "Virtual replicas for automotive, property and more.",
-            href: "/"
+            title: "Saas Product Development",
+            description: "Design & Develop Customized SaaS Application.",
+            href: "/solutions/custom-softwares/saas-product-development"
           },
           {
             id: "4",
-            title: "Web Applications",
-            description: "Complex platforms and digital brand destinations.",
-            href: "/"
+            title: "AI Development",
+            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
+            href: "/solutions/custom-softwares/ai-development"
           },
           {
             id: "5",
@@ -223,46 +215,31 @@ const nav_links = [
           },
           {
             id: "6",
-            title: "AI Development",
-            description: "Generative AI, Chatbot, custom LLMs and machine learning.",
-            href: "/solutions/custom-softwares/ai-development"
-          },
-          {
-            id: "7",
-            title: "Saas Product Development",
-            description: "Design & Develop Customized SaaS Application.",
-            href: "/solutions/custom-softwares/saas-product-development"
-          },
-          {
-            id: "8",
-            title: "IoT for Automobile",
-            description: "Real-time Access to Vehicles.",
-            href: "/solutions/custom-softwares/iot-automobile"
-          },
-          {
-            id: "9",
-            title: "MVP Development",
-            description: "Get market-ready MVP in weeks.",
-            href: "/solutions/custom-softwares/mvp-development"
-          },
-          {
-            id: "10",
             title: "Hire Remote Developers",
             description: "On-Board Top 3% Talents Remotely.",
             href: "/solutions/custom-softwares/hire-remote-developers"
           },
+         
+         
+          // {
+          //   id: "8",
+          //   title: "ERP Solutions",
+          //   description: "Enterprise resource planning with integrated AI",
+          //   href: "/"
+          // },
+          // {
+          //   id: "9",
+          //   title: "DLT Solutions",
+          //   description: "Blockchain and web3 distributed ledger technology",
+          //   href: "/"
+          // },
         ]
       },
       {
         id: "4",
         title: "IT Security and cloud",
         contents: [
-          {
-            id: "1",
-            title: "Business Continuity",
-            description: "Ensure uninterrupted operations during disruptions",
-            href: "/"
-          },
+         
           {
             id: "2",
             title: "Cloud Monitoring",
@@ -363,12 +340,6 @@ const nav_links = [
             id: "8",
             title: "Training & Upskilling",
             description: "Develop digital capabilities across your organization",
-            href: "/"
-          },
-          {
-            id: "9",
-            title: "Industry Specific Solutions",
-            description: "Tailored digital transformation for your sector",
             href: "/"
           },
         ]
@@ -482,9 +453,9 @@ const nav_links = [
           },
           {
             id: "5",
-            title: "Smart Mobility",
-            href: "/",
-            description: "Intelligent transportation systems"
+            title: "Smart Mobility / IoT for Automobile",
+            description: "Real-time Access to Vehicles and Intelligent transportation systems",
+            href: "/solutions/custom-softwares/iot-automobile"
           },
           {
             id: "6",
