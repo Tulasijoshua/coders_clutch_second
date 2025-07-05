@@ -1,7 +1,6 @@
 import Hero from "@/components/home/Hero";
 import CustomerSuccess from "@/components/home/customer-success";
 import AwardsRecognition from "@/components/home/awards-recognition";
-import ServicesSection from "@/components/home/services";
 import DigitalSolutions from "@/components/home/digital-solutions";
 import AlliancesSection from "@/components/home/alliances";
 import ExpertTeam from "@/components/home/expert-team";
@@ -22,7 +21,7 @@ export default function Home() {
           <AwardsRecognition />
           <DigitalService />
           <ReadyResults />
-          <ServicesSection />
+          {/* <ServicesSection /> */}
           <LatestProjects />
           <DigitalSolutions />
           <AlliancesSection />
