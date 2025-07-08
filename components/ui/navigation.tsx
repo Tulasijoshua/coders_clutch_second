@@ -797,7 +797,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           {...props}
         >
-          <div className="pb-6 flex flex-col gap-4">
+          <div className="pb-6 flex flex-col gap-2">
             <div className="flex items-center gap-5">
               <div className="w-[2px] h-4 bg-app-green-text"></div>
               <div className="flex flex-col gap-4">
