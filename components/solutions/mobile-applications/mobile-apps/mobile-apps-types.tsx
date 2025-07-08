@@ -52,7 +52,7 @@ function MobileAppsTypes() {
                         className='xl:px-4 pt-2 pb-3 border-none bg-white'
                     >
                         <CardHeader className=''>
-                            <div className=''>
+                            <div className='text-app-primary-deep'>
                                 <data.icon size={35} />
                             </div>
                             <Typography
