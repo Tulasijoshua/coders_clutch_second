@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import startNowImg from "@/public/assets/images/digital-solutions/start-now.jpg";
+import startNowImg from "@/public/assets/images/digital-solutions/startnow_mobile.jpg";
 import Typography from '@/components/shared/typography';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
