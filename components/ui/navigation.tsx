@@ -125,7 +125,7 @@ export default function Navigation() {
                                   <Strategy className="w-5 h-5 text-gray-800" />
                                 </div>
                                 <Typography typo="header-6-semibold">
-                                  Let's Go Live
+                                  Let&apos;s Go Live
                                 </Typography>
                                 <Typography typo="body-medium-regular">
                                   Partner with us go live now! 
@@ -182,7 +182,6 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"div"> & { icon?: React.ComponentType<{ className?: string }> | null; href?: string; title?: string; }
 >(({ className, title, icon: Icon, children, href, ...props }, ref) => {
   const isBrandingLab = title === "Branding lab & PR";
-  const isMobile = title === "Mobile Applications";
   
   return (
     <li>
