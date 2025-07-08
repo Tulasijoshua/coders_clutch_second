@@ -15,7 +15,57 @@ import {
 } from "./navigation-menu";
 import Typography from "../shared/typography";
 import { Button } from "./button";
-import { Activity, BarChart, BookOpen, Box, Brain, BrainCircuit, Briefcase, Brush, Calculator, Calendar, Car, ClipboardList, ClipboardSignature, Cloud, Code2, Compass, Cpu, Database, Factory, FileCheck, FileText, Fingerprint, FlaskConical, FolderGit2, Gavel, GitMerge, Globe, GraduationCap, Handshake, Headset, HeartPulse, Landmark, Layers, Leaf, Lightbulb, MessageSquare, Network, Package, Paintbrush, Plane, RefreshCw, Rocket, Server, Settings, Shield, ShieldAlert, ShieldCheck, ShoppingCart, Smartphone, Smile, Trophy, Users, Wallet, Wifi } from "lucide-react";
+import {
+  BookOpen,
+  Users,
+  Share,
+  Briefcase,
+  Heart,
+  Compass,
+  Certificate,
+  Code,
+  ShoppingCart,
+  PencilLine,
+  Package,
+  Cpu,
+  DeviceMobile,
+  StackSimple,
+  Cloud,
+  ChatText,
+  Shield,
+  Gear,
+  ArrowsClockwise,
+  GitMerge,
+  ChartBar,
+  Clipboard,
+  LegoSmiley,
+  Database,
+  Pulse,
+  FileText,
+  File,
+  Folder,
+  Calendar,
+  CurrencyDollarSimple,
+  Monitor,
+  Truck,
+  WifiHigh,
+  Warning,
+  CheckCircle,
+  Headphones,
+  ChartPieSlice,
+  Browsers,
+  Lightning,
+  Drone,
+  Factory,
+  Strategy,
+  Megaphone,
+  Cube,
+  GraduationCap,
+  ChartLineUp,
+  Handshake,
+  Buildings,
+  Car
+} from "@phosphor-icons/react";
 
 const nav_links = [
   {
@@ -43,7 +93,7 @@ const nav_links = [
       {
         id: "3",
         title: "Global Networks",
-        icon: Network,
+        icon: Share,
         description: "Explore our international partnerships and global presence that enable us to ",
         href: "/about/global-networks"
       },
@@ -57,7 +107,7 @@ const nav_links = [
       {
         id: "5",
         title: "Social Responsibilities",
-        icon: HeartPulse,
+        icon: Heart,
         description: "Learn about our commitment to social impact through various initiatives ",
         href: "/"
       },
@@ -81,7 +131,7 @@ const nav_links = [
       {
         id: "2",
         title: "Our Approach",
-        icon: Lightbulb,
+        icon: Strategy,
         description: "Discover our methodology that combines strategic thinking with technical excellence to deliver measurable results and business impact.",
         href: "/insight"
       },
@@ -95,21 +145,21 @@ const nav_links = [
       {
         id: "4",
         title: "Technology Partners",
-        icon: Handshake,
+        icon: Drone,
         description: "See our strategic alliances with leading technology providers that enhance our solution offerings and service capabilities.",
         href: "/"
       },
       {
         id: "5",
         title: "Client Success Stories",
-        icon: Trophy,
+        icon: Certificate,
         description: "Read about how we've helped businesses achieve their digital transformation goals and overcome complex technological challenges.",
         href: "/"
       },
       {
         id: "6",
         title: "Innovation Lab",
-        icon: FlaskConical,
+        icon: Lightning,
         description: "Explore our R&D initiatives where we experiment with emerging technologies to develop next-generation solutions for our clients.",
         href: "/"
       },
@@ -118,12 +168,12 @@ const nav_links = [
       {
         id: "1",
         title: "Digital Solutions",
-        icon: Code2,
+        icon: Code,
         contents: [
           {
             id: "1",
             title: "Website Design",
-            icon: Globe,
+            icon: Browsers,
             description: "a dlk asldkfj sldfk sldkfjCustom website development that combines stunning aesthetics with seamless functionality to enhance user experience and drive conversions.",
             href: "/solutions/digital-solutions/website-design"
           },
@@ -137,28 +187,28 @@ const nav_links = [
           {
             id: "3",
             title: "UI/UX Design",
-            icon: Paintbrush,
+            icon: PencilLine,
             description: "Human-centered design solutions that create intuitive digital experiences, improving engagement and customer satisfaction.",
             href: "/solutions/digital-solutions/ui-ux-design"
           },
           {
             id: "4",
             title: "Product Development",
-            icon: Box,
+            icon: Package,
             description: "From concept to launch, we build scalable digital products that solve real problems and deliver measurable business value.",
             href: "/solutions/digital-solutions/product-development"
           },
           {
             id: "5",
             title: "Software Outsourcing",
-            icon: Code2,
+            icon: Code,
             description: "Leverage our global talent pool for dedicated development teams that seamlessly integrate with your business operations.",
             href: "/solutions/digital-solutions/software-outsourcing"
           },
           {
             id: "6",
             title: "Branding lab & PR",
-            icon: Brush,
+            icon: Megaphone,
             description: "Comprehensive branding strategies and digital PR services that elevate your market presence and connect with your audience.",
             href: "/"
           },
@@ -167,7 +217,7 @@ const nav_links = [
       {
         id: "2",
         title: "Mobile Applications",
-        icon: Smartphone,
+        icon: DeviceMobile,
         contents: [
           {
             id: "1",
@@ -179,7 +229,7 @@ const nav_links = [
           {
             id: "2",
             title: "Android Apps",
-            icon: Smartphone,
+            icon: DeviceMobile,
             description: "High-performance Android applications developed with Kotlin, optimized for diverse devices and screen sizes.",
             href: "/"
           },
@@ -193,7 +243,7 @@ const nav_links = [
           {
             id: "4",
             title: "Hybrid Apps",
-            icon: Network,
+            icon: Share,
             description: "Cross-platform solutions using React Native/Flutter that maintain native feel while reducing development costs.",
             href: "/"
           },
@@ -202,19 +252,19 @@ const nav_links = [
       {
         id: "3",
         title: "Custom Software",
-        icon: Code2,
+        icon: Code,
         contents: [
           {
             id: "1",
             title: "MVP Development",
-            icon: Rocket,
+            icon: Cube,
             description: "Rapid development of minimum viable products to validate your business idea quickly and cost-effectively in the market.",
             href: "/solutions/custom-softwares/mvp-development"
           },
           {
             id: "2",
             title: "Full Stack Development",
-            icon: Layers,
+            icon: StackSimple,
             description: "End-to-end custom software solutions with modern architectures that scale with your business growth and evolving needs.",
             href: "/solutions/digital-solutions/full-stack-development"
           },
@@ -228,14 +278,14 @@ const nav_links = [
           {
             id: "4",
             title: "AI Development",
-            icon: Brain,
+            icon: Cpu,
             description: "Custom AI solutions including machine learning models, predictive analytics, and intelligent automation for your business.",
             href: "/solutions/custom-softwares/ai-development"
           },
           {
             id: "5",
             title: "AI Agent and Chatbot",
-            icon: MessageSquare,
+            icon: ChatText,
             description: "Intelligent conversational agents powered by NLP that enhance customer service and automate routine interactions.",
             href: "/solutions/custom-softwares/ai-agent-development"
           },
@@ -256,35 +306,35 @@ const nav_links = [
           {
             id: "1",
             title: "Cloud Monitoring",
-            icon: Server,
+            icon: Database,
             description: "Comprehensive cloud infrastructure monitoring with real-time alerts, performance metrics, and security surveillance.",
             href: "/"
           },
           {
             id: "2",
             title: "Infrastructure and Configuration Management",
-            icon: Settings,
+            icon: Gear,
             description: "Automated infrastructure provisioning and configuration using IaC tools for consistency and compliance across environments.",
             href: "/"
           },
           {
             id: "3",
             title: "DevOps Consulting Services",
-            icon: Code2,
+            icon: Code,
             description: "End-to-end DevOps implementation including CI/CD pipelines, containerization, and infrastructure automation strategies.",
             href: "/"
           },
           {
             id: "4",
             title: "DevOps Implementation",
-            icon: Box,
+            icon: Package,
             description: "Complete DevOps transformation with container orchestration, microservices architecture, and automated deployment workflows.",
             href: "/"
           },
           {
             id: "5",
             title: "DevOps CI/CD Services",
-            icon: RefreshCw,
+            icon: ArrowsClockwise,
             description: "Continuous integration and delivery pipelines that accelerate release cycles while maintaining quality and stability.",
             href: "/solutions/security-cloud/devops-services"
           },
@@ -300,33 +350,33 @@ const nav_links = [
       {
         id: "5",
         title: "Digital Transformation",
-        icon: BarChart,
+        icon: ChartBar,
         contents: [
           {
             id: "1",
             title: "IT Strategy Development",
-            icon: ClipboardList,
+            icon: Clipboard,
             description: "Comprehensive technology roadmaps aligned with your business objectives to drive growth and competitive advantage.",
             href: "/solutions/digital-transformation/digital-main"
           },
           {
             id: "2",
             title: "IT Infrastructure Modernization",
-            icon: Server,
+            icon: Database,
             description: "Legacy system upgrades and cloud migrations that improve performance, security, and operational efficiency.",
             href: "/"
           },
           {
             id: "3",
             title: "Business Process Automation",
-            icon: Settings,
+            icon: Gear,
             description: "Intelligent automation solutions that eliminate manual tasks, reduce errors, and improve workflow efficiency.",
             href: "/"
           },
           {
             id: "4",
             title: "Customer Experience Transformation",
-            icon: Smile,
+            icon: LegoSmiley,
             description: "Omnichannel digital experiences that engage customers and build loyalty through personalized interactions.",
             href: "/"
           },
@@ -347,7 +397,7 @@ const nav_links = [
           {
             id: "7",
             title: "Proactive Monitoring",
-            icon: Activity,
+            icon: Pulse,
             description: "24/7 system monitoring with predictive analytics to prevent issues before they impact your business operations.",
             href: "/"
           },
@@ -364,12 +414,12 @@ const nav_links = [
         id: "6",
         href: "/solutions/managed-it-services",
         title: "Managed IT Services",
-        icon: Server,
+        icon: Database,
         contents: [
           {
             id: "1",
             title: "IT Infrastructure Management",
-            icon: Server,
+            icon: Database,
             href: "/solutions/managed-it-services",
             description: "End-to-end management of your IT environment including networks, servers, and endpoints with 24/7 monitoring and support."
           },
@@ -383,7 +433,7 @@ const nav_links = [
           {
             id: "3",
             title: "Institutional Cyber Security",
-            icon: ShieldCheck,
+            icon: CheckCircle,
             href: "/",
             description: "Enterprise-grade security solutions including threat detection, vulnerability management, and compliance monitoring."
           },
@@ -397,7 +447,7 @@ const nav_links = [
           {
             id: "5",
             title: "End-user Support",
-            icon: Headset,
+            icon: Headphones,
             href: "/",
             description: "Dedicated helpdesk services with multi-channel support to resolve technical issues and maintain productivity."
           },
@@ -411,42 +461,42 @@ const nav_links = [
           {
             id: "1",
             title: "License Procurement",
-            icon: ClipboardSignature,
+            icon: File,
             href: "/solutions/licensing-renewals",
             description: "Strategic software licensing acquisition with volume discounts and optimal configuration for your business needs."
           },
           {
             id: "2",
             title: "Renewals Management",
-            icon: RefreshCw,
+            icon: ArrowsClockwise,
             href: "/",
             description: "Automated tracking and processing of license renewals to ensure continuity and avoid compliance issues."
           },
           {
             id: "3",
             title: "Compliance Support",
-            icon: FileCheck,
+            icon: FileText,
             href: "/",
             description: "Comprehensive audits and documentation to ensure adherence to software licensing agreements and regulations."
           },
           {
             id: "4",
             title: "Software Asset Management",
-            icon: FolderGit2,
+            icon: Folder,
             href: "/",
             description: "Centralized management of software assets to optimize utilization, reduce costs, and maintain license compliance."
           },
           {
             id: "5",
             title: "Tillering Operations",
-            icon: Calculator,
+            icon: ChartLineUp,
             href: "/",
             description: "Specialized financial services for software asset management including budgeting, forecasting, and cost allocation."
           },
           {
             id: "6",
             title: "Advisory Services",
-            icon: Lightbulb,
+            icon: Handshake,
             href: "/",
             description: "Expert guidance on licensing strategies, contract negotiations, and technology procurement best practices."
           },
@@ -455,26 +505,26 @@ const nav_links = [
       {
         id: "8",
         title: "Government & Public Sector Solutions",
-        icon: Landmark,
+        icon: Buildings,
         contents: [
           {
             id: "1",
             title: "Digital Health",
-            icon: HeartPulse,
+            icon: Heart,
             href: "/",
             description: "Integrated healthcare systems including telemedicine platforms, EHR solutions, and public health monitoring tools."
           },
           {
             id: "2",
             title: "Smart Governance",
-            icon: Gavel,
+            icon: Certificate,
             href: "/",
             description: "E-government platforms that digitize public services, enhance transparency, and improve citizen engagement."
           },
           {
             id: "3",
             title: "Smart Infrastructure",
-            icon: Wifi,
+            icon: WifiHigh,
             href: "/",
             description: "IoT-enabled urban solutions for traffic management, utilities monitoring, and public space optimization."
           },
@@ -495,21 +545,21 @@ const nav_links = [
           {
             id: "6",
             title: "Public Safety",
-            icon: ShieldAlert,
+            icon: Warning,
             href: "/",
             description: "Integrated emergency response systems with real-time monitoring, dispatch coordination, and situational awareness."
           },
           {
             id: "7",
             title: "Environmental Sustainability",
-            icon: Leaf,
+            icon: null,
             href: "/",
             description: "Smart environmental monitoring solutions for air quality, water management, and energy efficiency tracking."
           },
           {
             id: "8",
             title: "Data & AI Management",
-            icon: BrainCircuit,
+            icon: ChartPieSlice,
             href: "/",
             description: "City-wide data platforms with AI analytics for urban planning, resource allocation, and policy decision support."
           },
@@ -536,28 +586,28 @@ const nav_links = [
       {
         id: "1",
         title: "Emiri Pay",
-        icon: Wallet,
+        icon: CurrencyDollarSimple,
         description: "Revolutionary payment platform enabling seamless cross-border transactions and ",
         href: "/"
       },
       {
         id: "2",
         title: "Verified 360",
-        icon: Fingerprint,
+        icon: Monitor,
         description: "Comprehensive identity verification solution that combines biometric ",
         href: "/"
       },
       {
         id: "3",
         title: "Ricia Care",
-        icon: HeartPulse,
+        icon: Heart,
         description: "Integrated healthcare management platform connecting patients ",
         href: "/"
       },
       {
         id: "4",
         title: "Tour Mate",
-        icon: Plane,
+        icon: Truck,
         description: "Intelligent travel companion app offering personalized itineraries, real-time navigation, ",
         href: "/"
       },
@@ -595,7 +645,7 @@ const nav_links = [
       {
         id: "4",
         title: "Report",
-        icon: ClipboardList,
+        icon: Clipboard,
         description: "Research papers and market analysis reports providing valuable insights ",
         href: "/insights?tab=reports"
       },
@@ -658,7 +708,7 @@ export default function Navigation() {
                                     variant="outline"
                                     key={sub_link.id}
                                     onMouseEnter={() => setSelectedSubLink(sub_link.id)}
-                                    className={`w-full px-1 !py-2 text-sm justify-start text-wrap text-left !leading-5 ${selectedSubLink === sub_link.id ? "!text-app-secondary/70 bg-app-secondary/10" : ""} hover:!text-app-secondary/70 border-gray-300 hover:bg-app-secondary/10 rounded-sm`}
+                                    className={`w-full px-1 !py-2 text-sm justify-start text-wrap text-left !leading-5 ${selectedSubLink === sub_link.id ? "!text-app-primary-deep/90 bg-app-primary-deep/10" : "text-black"} hover:!text-gray-700 border-gray-300 hover:bg-app-primary-deep/10 rounded-sm`}
                                   >
                                     {sub_link.title}
                                   </Button>
@@ -679,7 +729,7 @@ export default function Navigation() {
                       {link.main_contents ? (
                         <div className="w-[750px] h-fit grid grid-cols-2 ">
                           {currentSubLink?.contents?.map((link) => (
-                          <div key={link.id} className="min-w-[250px] h-fit flex flex-col text-black flex gap-16 border-l border-gray-300 border-dashed">
+                          <div key={link.id} className="min-w-[250px] h-fit text-black flex gap-16 border-l border-gray-300 border-dashed">
                             <ListItem 
                               href={link?.href} 
                               title={link.title}
@@ -696,7 +746,7 @@ export default function Navigation() {
                       ) : (
                         <div className="w-[750px] grid grid-cols-3 ">
                           {link.contents?.map((link) => (
-                          <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l">
+                          <div key={link.id} className="min-w-[250px] h-full flex gap-16 border-l border-gray-300 border-dashed">
                             <ListItem href={link.href} icon={link.icon} title={link.title}>
                               {link.description}
                             </ListItem>
@@ -732,7 +782,7 @@ export default function Navigation() {
 
 const ListItem = React.forwardRef<
   HTMLDivElement,
-  React.ComponentPropsWithoutRef<"div"> & { icon?: React.ComponentType<{ className?: string }>; href?: string; title?: string; }
+  React.ComponentPropsWithoutRef<"div"> & { icon?: React.ComponentType<{ className?: string }> | null; href?: string; title?: string; }
 >(({ className, title, icon: Icon, children, href, ...props }, ref) => {
   const isBrandingLab = title === "Branding lab & PR";
   
@@ -749,14 +799,14 @@ const ListItem = React.forwardRef<
         >
           <div className="pb-6 flex flex-col gap-4">
             <div className="flex items-center gap-5">
-              <div className="w-[2px] h-4 bg-app-secondary"></div>
+              <div className="w-[2px] h-4 bg-app-green-text"></div>
               <div className="flex flex-col gap-3">
                 {Icon && (
-                  <div className="w-fit p-1.5 border-2 border-black rounded-full">
-                    <Icon className="w-5 h-5 text-app-secondary" />
+                  <div className="w-fit p-1.5 border border-gray-400 rounded-full">
+                    <Icon className="w-5 h-5 text-gray-800" />
                   </div>
                 )}
-                <div className="pb-1 text-lg text-black font-semibold leading-none">{title}</div>
+                <div className="pb-1 text-lg text-black font-medium leading-none">{title}</div>
               </div>
             </div>
             <div className="px-5">
@@ -764,7 +814,7 @@ const ListItem = React.forwardRef<
                 {children}
                 {href && !isBrandingLab && (
                   <Link href={href} className="text-app-secondary ml-1 whitespace-nowrap">
-                    read more
+                    read more {">"}
                   </Link>
                 )}
               </p>
