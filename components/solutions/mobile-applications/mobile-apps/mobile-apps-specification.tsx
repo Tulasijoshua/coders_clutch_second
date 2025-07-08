@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import mobileAppImg from "@/public/assets/images/digital-solutions/mobileApp_img.png"
+import mobileAppImg from "@/public/assets/images/digital-solutions/mobile_app_img.png"
 import Image from 'next/image'
 import Typography from '@/components/shared/typography'
 import { Button } from '@/components/ui/button';
