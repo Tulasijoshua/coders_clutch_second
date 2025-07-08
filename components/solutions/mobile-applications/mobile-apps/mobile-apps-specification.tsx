@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import mobileAppImg from "@/public/assets/images/digital-solutions/mobileApp_img.png"
+import mobileAppImg from "@/public/assets/images/digital-solutions/mobile_img.jpg"
 import Image from 'next/image'
 import Typography from '@/components/shared/typography'
 import { Button } from '@/components/ui/button';
@@ -23,7 +23,7 @@ function MobileAppSpecification() {
                     >
                         We develop tailor-made digital products and solutions that solve your market needs and drive market 
                         differentiation; your concepts and our expertise are engineered to fit your project as you would like 
-                        it – perfectly.
+                        it - perfectly.
                     </Typography>
                     <Button
                         variant="primary"

@@ -112,7 +112,7 @@ export default function Navigation() {
                               
                           </div>
                           {currentSubLink?.title === "Mobile Applications" && (
-                            <div className="w-full p-4 grid grid-cols-2 gap-4 border-t border-gray-200 mt-4">
+                            <div className="w-full p-4 grid grid-cols-2 gap- border-t border-gray-200 mt-4">
                               <div className="w-[80%] mx-auto h-[200px]">
                                 <Image 
                                   src={mobileImg}
@@ -120,7 +120,7 @@ export default function Navigation() {
                                   className="w-full h-full object-cover rounded-lg"
                                 />
                               </div>
-                              <div className="pl-5 flex flex-col gap-1 border-l">
+                              <div className="pl-6 flex flex-col gap-1 border-l">
                                 <div className="w-fit p-1.5 border border-gray-400 rounded-full">
                                   <Strategy className="w-5 h-5 text-gray-800" />
                                 </div>

@@ -128,7 +128,10 @@ import {
   ChartLineUp,
   Handshake,
   Buildings,
-  Car
+  Car,
+  AppleLogo,
+  AndroidLogo,
+  Stack
 } from "@phosphor-icons/react";
 
 export const nav_links = [
@@ -286,30 +289,30 @@ export const nav_links = [
           {
             id: "1",
             title: "iOS Apps",
-            icon: Cpu,
+            icon: AppleLogo,
             description: "Premium native iOS applications built with Swift, delivering exceptional performance and seamless Apple ecosystem integration.",
             href: "/solutions/mobile-applications"
           },
           {
             id: "2",
             title: "Android Apps",
-            icon: DeviceMobile,
+            icon: AndroidLogo,
             description: "High-performance Android applications developed with Kotlin, optimized for diverse devices and screen sizes.",
-            href: "/"
+            href: "/solutions/mobile-applications"
           },
           {
             id: "3",
             title: "Native Apps",
             icon: Cpu,
             description: "Platform-specific applications that leverage device capabilities for maximum performance and superior user experience.",
-            href: "/"
+            href: "/solutions/mobile-applications"
           },
           {
             id: "4",
             title: "Hybrid Apps",
-            icon: Share,
+            icon: Stack,
             description: "Cross-platform solutions using React Native/Flutter that maintain native feel while reducing development costs.",
-            href: "/"
+            href: "/solutions/mobile-applications"
           },
         ]
       },
