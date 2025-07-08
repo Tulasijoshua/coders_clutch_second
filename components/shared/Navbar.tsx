@@ -107,6 +107,7 @@ export default function Navbar() {
                         <Button
                             variant="outline"
                             className="sm:flex hidden items-center gap-1"
+                            onClick={() => router.push("/login")}
                         >
                             <ArrowRight />
                             Login
