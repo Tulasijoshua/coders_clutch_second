@@ -16,7 +16,7 @@ const benefits = [
 function LicensingHero() {
   return (
     <div className='w-full'>
-        <div className='w-full lg:py-20 py-10 bg-app-primary-deep'>
+        <div className='w-full lg:py-12 py-10 flex flex-col items-center bg-app-primary-deep'>
             <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col justify-center lg:gap-6 gap-3'>
                 <Typography
                     typo="body-large-semibold"
@@ -87,14 +87,15 @@ function LicensingHero() {
                         </li>
                     ))}
                 </ul>
-                <Button
-                    variant="primary"
-                    size="lg"
-                >
-                    Let&apos;s Talk
-                    <ArrowRight />
-                </Button>
             </section>
+            <Button
+                variant="primary"
+                size="lg"
+                className='w-fit mx-auto mt-10'
+            >
+                Let&apos;s Talk
+                <ArrowRight />
+            </Button>
         </div>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto py-20'>
             <TrustBrands />

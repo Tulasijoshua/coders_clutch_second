@@ -131,7 +131,8 @@ import {
   Car,
   AppleLogo,
   AndroidLogo,
-  Stack
+  Stack,
+  Recycle
 } from "@phosphor-icons/react";
 
 export const nav_links = [
@@ -578,7 +579,7 @@ export const nav_links = [
             id: "1",
             title: "Digital Health",
             icon: Heart,
-            href: "/",
+            href: "/government-public-sector/digital-health",
             description: "Integrated healthcare systems including telemedicine platforms, EHR solutions, and public health monitoring tools."
           },
           {
@@ -619,7 +620,7 @@ export const nav_links = [
           {
             id: "7",
             title: "Environmental Sustainability",
-            icon: null,
+            icon: Recycle,
             href: "/",
             description: "Smart environmental monitoring solutions for air quality, water management, and energy efficiency tracking."
           },
