@@ -5,7 +5,6 @@ import inconsistentIcon from "@/public/assets/icons/design-gap/inconsistent.svg"
 import userIcon from "@/public/assets/icons/design-gap/user.svg"
 import crossIcon from "@/public/assets/icons/design-gap/cross-platform.svg"
 import designIcon from "@/public/assets/icons/design-gap/design.svg"
-import scopeIcon from "@/public/assets/icons/design-gap/scope-creep.svg"
 import Typography from '@/components/shared/typography'
 import Image from 'next/image';
 
