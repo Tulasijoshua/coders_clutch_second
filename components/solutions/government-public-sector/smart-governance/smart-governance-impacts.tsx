@@ -2,7 +2,7 @@
 import Typography from '@/components/shared/typography'
 import React from 'react'
 
-function DigitalHealthImpact() {
+function SmartGovernanceImpact() {
   return (
     <div className='w-full py-20 bg-app-primary-deep'>
         <section className='max-w-[700px] 2xl:w-[70%] xl:w-[80%] w-[90%] mx-auto flex flex-col items-center gap-8 text-white'>
@@ -16,24 +16,18 @@ function DigitalHealthImpact() {
                 typo="body-large-medium"
                 className='text-center'
             >
-                &pos;Coders Clutch helped us digitally transform over 150 public clinics, enabling <span className='text-app-yellow'>over 10,000
-                remote consultations</span>  within the first 90 days.&apos;
+                &apos;Coders Clutch&apos;s e-Government portal reduced our citizen processing queues by <span className='text-app-yellow'>65% in
+                under three months.</span>  We&apos;ve never had this level of engagement.&apos;
             </Typography>
-            {/* <Button
-                variant="primary"
-                className='w-fit sm:mt-3 mt-6 mx-auto 2xl:!py-3 sm:!py-3 2xl:!px-10 lg:!px-16 md:!px-10 !px-8 !text-lg font-semibold'
-            >
-                Let&apos;s Talk
-            </Button> */}
             <div className='w-full flex justify-end items-center'>
                 <Typography
                     typo="body-medium-regular"
                     className='text-gray-300'
-                >- Director of eHealth Initiatives, Ministry of Health</Typography>
+                >- Director of Digital Services, National Civic Agency</Typography>
             </div>
         </section>
     </div>
   )
 }
 
-export default DigitalHealthImpact
+export default SmartGovernanceImpact

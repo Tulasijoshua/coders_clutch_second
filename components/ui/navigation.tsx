@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import {
@@ -20,6 +19,7 @@ import { nav_links } from "@/constant";
 import { Strategy } from "@phosphor-icons/react";
 import mobileImg from "@/public/assets/images/mobileImg.jpg"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navigation() {
   const [selectedSubLink, setSelectedSubLink] = React.useState(nav_links[1]?.main_contents?.[0].id)

@@ -56,7 +56,7 @@ function SmartGovernanceHero() {
                         bureaucratic inefficiencies.
                     </Typography>
                 </div>
-                <div className='md:w-[70%] mx-auto flex flex-col items-center gap-10'>
+                <div className='lg:w-[80%] mx-auto flex flex-col items-center gap-10'>
                     <div className=' grid xs:grid-cols-2 gap-4'>
                         {
                             digital_services.map(data => (
