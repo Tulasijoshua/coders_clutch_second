@@ -586,21 +586,21 @@ export const nav_links = [
             id: "2",
             title: "Smart Governance",
             icon: Certificate,
-            href: "/",
+            href: "/solutions/government-public-sector/smart-governance",
             description: "E-government platforms that digitize public services, enhance transparency, and improve citizen engagement."
           },
           {
             id: "3",
             title: "Smart Infrastructure",
             icon: WifiHigh,
-            href: "/",
+            href: "/solutions/government-public-sector/smart-infrastructure",
             description: "IoT-enabled urban solutions for traffic management, utilities monitoring, and public space optimization."
           },
           {
             id: "4",
             title: "Smart Education",
             icon: BookOpen,
-            href: "/",
+            href: "/solutions/government-public-sector/smart-education",
             description: "Digital learning ecosystems with LMS platforms, virtual classrooms, and educational content management systems."
           },
           {
@@ -614,21 +614,21 @@ export const nav_links = [
             id: "6",
             title: "Public Safety",
             icon: Warning,
-            href: "/",
+            href: "/solutions/government-public-sector/public-safety",
             description: "Integrated emergency response systems with real-time monitoring, dispatch coordination, and situational awareness."
           },
           {
             id: "7",
             title: "Environmental Sustainability",
             icon: Recycle,
-            href: "/",
+            href: "/solutions/government-public-sector/environmental-sustainability",
             description: "Smart environmental monitoring solutions for air quality, water management, and energy efficiency tracking."
           },
           {
             id: "8",
             title: "Data & AI Management",
             icon: ChartPieSlice,
-            href: "/",
+            href: "/solutions/government-public-sector/data-ai-management",
             description: "City-wide data platforms with AI analytics for urban planning, resource allocation, and policy decision support."
           },
         ]

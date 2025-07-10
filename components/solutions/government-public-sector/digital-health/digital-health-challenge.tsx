@@ -41,11 +41,11 @@ function DigitalHealthChallenge() {
                 </div>
             </div>
             <div className='flex-1  '>
-                <div className='w-full sm:h-[500px] xs:h-[300px] h-[250px] '>
+                <div className='w-full xl:h-[500px] md:h-[400px] sm:h-[500px] xs:h-[400px] h-[300px]'>
                     <Image 
                         src={mobileAppImg}
                         alt='Mobile app image'
-                        className='w-full md:h-full object-cover object-top rounded-md'
+                        className='w-full h-full object-cover object-top rounded-md'
                     />
                 </div>
             </div>

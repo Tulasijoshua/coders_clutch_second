@@ -58,7 +58,7 @@ function DigitalHealthStacks() {
             </div>
             <div className='w-full py-8 flex flex-col space-y-16'>
                 <div className=' w-full flex flex-col items-center overflow-auto'>
-                    <div className='w-fit flex justify-center items-center gap-16 flex-nowrap border-b-2 border-gray-400'>
+                    <div className='w-fit flex justify-center items-center xl:gap-16 md:gap-12 gap-8 flex-nowrap border-b-2 border-gray-400'>
                         {experts_products.map(data => (
                             <button 
                                 key={data.id}

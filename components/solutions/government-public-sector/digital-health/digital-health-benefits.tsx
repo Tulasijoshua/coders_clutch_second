@@ -50,7 +50,7 @@ function DigitalHealthBenefits() {
             <div className='w-full md:py-8 grid lg:grid-cols-5 sm:grid-cols-2 md:gap-12 gap-6'>
                 {
                     product_services.map((data) => (
-                        <div key={data.id} className='flex flex-col justify-center gap-3'>
+                        <div key={data.id} className='sm:p-0 p-4 flex flex-col justify-center gap-3 sm:shadow-none shadow-md sm:rounded-none rounded-md'>
                             <div className='flex flex-col gap-3'>
                                 <Typography
                                     typo="header-6-semibold"

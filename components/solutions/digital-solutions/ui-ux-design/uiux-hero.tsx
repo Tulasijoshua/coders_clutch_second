@@ -10,7 +10,7 @@ const work_rate = ["Custom-Tailored UX Strategies", "Agile & Adaptive Design App
 function UiuxHero() {
   return (
     <div className='w-full'>
-        <div className='w-full flex flex-col items-center lg:py-20 py-10 bg-app-primary-deep'>
+        <div className='w-full flex flex-col items-center lg:py-12 py-10 bg-app-primary-deep'>
             <section className='max-container 2xl:w-[85%] w-[95%] mx-auto flex flex-col justify-center lg:gap-6 gap-3'>
                 <Typography
                     typo="body-large-semibold"
