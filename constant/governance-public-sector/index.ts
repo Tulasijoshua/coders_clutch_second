@@ -49,3 +49,26 @@ export const smart_infrastructure_stacks = [
         contents: ["End-to-End Encryption", "Device Access Control"]
     },
 ]
+
+export const smart_education_stacks = [
+    {
+        id: 1,
+        title: "LMS Platforms",
+        contents: ["Moodle", "Canvas", "Google Classroom"]
+    },
+    {
+        id: 2,
+        title: "Streaming & Collaboration",
+        contents: ["Jitsi", "Zoom SDK", "WebRTC"]
+    },
+    {
+        id: 3,
+        title: "Data & Analytics",
+        contents: ["Power BI", "Qlik", "Python ML Libraries"]
+    },
+    {
+        id: 4,
+        title: "Security",
+        contents: ["SSO", "FERPA", "GDPR compliance"]
+    },
+]
