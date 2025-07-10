@@ -79,7 +79,7 @@ function PublicSafetyHero() {
                 <ul className='flex flex-col gap-4'>
                     {public_safety_metrics.map(rate => (
                         <li key={rate} className='w-fit h-fit flex gap-2'>
-                            <div className='p-1 rounded-full bg-white'>
+                            <div className='h-fit p-1 rounded-full bg-white'>
                                 <Check color='#002523' size={12} />
                             </div>
                             <Typography

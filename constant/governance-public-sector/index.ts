@@ -72,3 +72,26 @@ export const smart_education_stacks = [
         contents: ["SSO", "FERPA", "GDPR compliance"]
     },
 ]
+
+export const public_safety_stacks = [
+    {
+        id: 1,
+        title: "Command Platforms",
+        contents: ["OpenMCT", "ArcGIS", "QGIS"]
+    },
+    {
+        id: 2,
+        title: "Data & AI",
+        contents: ["Python", "Scikit-learn", "RapidMiner"]
+    },
+    {
+        id: 3,
+        title: "Communication Tools",
+        contents: ["Twilio", "SIP", "Zello API"]
+    },
+    {
+        id: 4,
+        title: "Security",
+        contents: ["End-to-End Encryption", "Role-Based Access Control"]
+    },
+]
