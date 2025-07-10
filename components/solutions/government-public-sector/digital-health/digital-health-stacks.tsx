@@ -3,7 +3,6 @@ import Typography from '@/components/shared/typography'
 import React, { useState } from 'react'
 import frontendImg from "@/public/assets/images/solutions/product_development/fontend_product.png";
 import backendImg from "@/public/assets/images/solutions/product_development/backend_product.png";
-import managementImg from "@/public/assets/images/solutions/product_development/project_management_product.png";
 import testingImg from "@/public/assets/images/solutions/product_development/testing_product.png";
 import cloudImg from "@/public/assets/images/solutions/product_development/cloud_product.png";
 import databaseImg from "@/public/assets/images/solutions/product_development/database_product.png";

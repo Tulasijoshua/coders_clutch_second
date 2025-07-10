@@ -1,6 +1,5 @@
 'use client';
 import Typography from '@/components/shared/typography'
-import { Button } from '@/components/ui/button';
 import React from 'react'
 
 function DigitalHealthImpact() {
@@ -17,8 +16,8 @@ function DigitalHealthImpact() {
                 typo="body-large-medium"
                 className='text-center'
             >
-                "Coders Clutch helped us digitally transform over 150 public clinics, enabling <span className='text-app-secondary'>over 10,000
-                remote consultations</span>  within the first 90 days."
+                &pos;Coders Clutch helped us digitally transform over 150 public clinics, enabling <span className='text-app-secondary'>over 10,000
+                remote consultations</span>  within the first 90 days.&apos;
             </Typography>
             {/* <Button
                 variant="primary"
