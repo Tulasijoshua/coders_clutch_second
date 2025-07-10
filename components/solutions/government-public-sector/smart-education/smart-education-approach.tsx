@@ -6,7 +6,6 @@ import prototypingIcon from "@/public/assets/icons/solution/mvp-dev/prototyping_
 import agileIcon from "@/public/assets/icons/solution/mvp-dev/agile_icon.png"
 import testingIcon from "@/public/assets/icons/solution/mvp-dev/testing_icon.png"
 import deploymentIcon from "@/public/assets/icons/solution/mvp-dev/deployment_icon.png"
-import featureIcon from "@/public/assets/icons/solution/mvp-dev/feature_icon.png"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card';
 import Image from 'next/image';
 

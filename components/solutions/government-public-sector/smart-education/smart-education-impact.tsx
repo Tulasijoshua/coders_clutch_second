@@ -16,8 +16,8 @@ function SmartEducationImpact() {
                 typo="body-large-medium"
                 className='text-center'
             >
-                “Since implementing Coders Clutch's LMS, we’ve seen a <span className='text-app-yellow'>60% increase </span>  in student
-                engagement and significant improvement in national exam pass rates.”
+                &lsquo;Since implementing Coders Clutch&apos;s LMS, we&apos;ve seen a <span className='text-app-yellow'>60% increase </span>  in student
+                engagement and significant improvement in national exam pass rates.&rsquo;
             </Typography>
             <div className='w-full flex justify-end items-center'>
                 <Typography
