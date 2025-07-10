@@ -95,3 +95,26 @@ export const public_safety_stacks = [
         contents: ["End-to-End Encryption", "Role-Based Access Control"]
     },
 ]
+
+export const environmental_stacks = [
+    {
+        id: 1,
+        title: "Sensors & IoT",
+        contents: ["Libelium", "LoRaWAN", "Arduino", "Raspberry Pi"]
+    },
+    {
+        id: 2,
+        title: "Data Processing",
+        contents: ["InfluxDB", "Grafana", "Azure Stream Analytics"]
+    },
+    {
+        id: 3,
+        title: "AI Models",
+        contents: ["TensorFlow", "PyCaret", "Prophet"]
+    },
+    {
+        id: 4,
+        title: "Visualization",
+        contents: ["Power BI", "Tableau", "D3.js"]
+    },
+]
