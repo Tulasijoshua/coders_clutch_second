@@ -26,3 +26,26 @@ export const governance_tech_stacks = [
         contents: ["AWS", " Microsoft Azure", "S, Government Private Clouds"]
     },
 ]
+
+export const smart_infrastructure_stacks = [
+    {
+        id: 1,
+        title: "IoT Platforms",
+        contents: ["AWS IoT", "Azure IoT Hub", " Eclipse Mosquitto"]
+    },
+    {
+        id: 2,
+        title: "Data & AI",
+        contents: ["TensorFlow", "Grafana", "MQTT", "Apache Kafka"]
+    },
+    {
+        id: 3,
+        title: "Control Systems",
+        contents: ["SCADA", "Digital Twin Integrations"]
+    },
+    {
+        id: 4,
+        title: "Security",
+        contents: ["End-to-End Encryption", "Device Access Control"]
+    },
+]

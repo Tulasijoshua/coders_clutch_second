@@ -9,7 +9,12 @@ import Typography from '@/components/shared/typography';
 import { CircleCheckBig } from 'lucide-react';
 import StarRating from '@/components/reusable/star-rating';
 
-const digital_services = ["200+ Innovation Patents", "4X Faster Market Entry", "Dedicated Success Teams", "95% On-Time Delivery"]
+const smart_infrastructure_services = [
+    "Real-time Urban Monitoring", 
+    "30% Energy Savings", 
+    "AI-Powered Traffic Optimization", 
+    "95% System Uptime Guarantee"
+]
 
 const digital_rating = [
     {
@@ -29,7 +34,7 @@ const digital_rating = [
     },
 ]
 
-function ProductHero() {
+function SmartInfrastructureHero() {
   return (
     <div className='w-full md:py-12 py-8 bg-app-primary-deep'>
         <div className='max-container lg:w-[85%] w-[95%] mx-auto'>
@@ -38,42 +43,43 @@ function ProductHero() {
                     typo="header-6-semibold"
                     className='text-center text-app-green'
                 >
-                    From Concept To Product Launch
+                    Our Smart Infrastructure Solutions 
                 </Typography>
                 <div className='arial md:flex hidden flex-col lg:gap-3 text-white'>
                     <Typography
                         className='text-center '
                         typo="header-3-semibold"
                     >
-                        A Full-Cycle Product Development Company
+                        Building Intelligent Cities
                     </Typography>
                     <Typography
                         className='text-center '
                         typo="header-3-semibold"
                     >
-                        To Build Future-Ready Products
+                        with Connected Infrastructure
                     </Typography>
                 </div>
                 <Typography
                     typo="header-3-semibold"
                     className='md:hidden block md:pt-4 text-center text-white md:!leading-relaxed !leading-snug'
                 >
-                    A Full-Cycle Product Development Company To Build Future-Ready Products
+                    Building Intelligent Cities with Connected Infrastructure
                 </Typography>
                 <div className='lg:w-[90%] mx-auto flex flex-col py-3 text-center'>
                     <Typography
                         typo="body-large-semibold"
                         className='text-center !leading-relaxed'
                     >
-                        Transform your bold ideas into powerful digital realities with expert product development services. 
-                        We don&apos;t just build products—we create experiences that set industry standards. Backed by a proven 
-                        track record, our services accelerate time-to-market by 4X, delivering digital products users love.
+                        At Coders Clutch, we enable governments and municipalities to modernize urban systems using IoT,
+                        automation, and real-time monitoring. Our Smart Infrastructure platforms transform traffic, lighting,
+                        waste, and utilities into connected ecosystems—improving service delivery, reducing energy use, and
+                        elevating urban quality of life.
                     </Typography>
                 </div>
                 <div className='md:w-[70%] mx-auto flex flex-col items-center gap-2'>
                     <div className=' grid xs:grid-cols-2 gap-4'>
                         {
-                            digital_services.map(data => (
+                            smart_infrastructure_services.map(data => (
                                 <div key={data} className='flex items-center gap-3'>
                                     <CircleCheckBig size={20} />
                                     <Typography
@@ -115,7 +121,7 @@ function ProductHero() {
                         variant="primary"
                         className='w-fit mx-auto 2xl:!py-3 sm:!py-3 2xl:!px-12 lg:!px-16 md:!px-10 !px-8 !text-lg font-semibold rounded-none'
                     >
-                        Let&apos;s Talk
+                        Get a Free Consultation
                     </Button>
                 </div>
             </section>
@@ -124,4 +130,4 @@ function ProductHero() {
   )
 }
 
-export default ProductHero
+export default SmartInfrastructureHero
