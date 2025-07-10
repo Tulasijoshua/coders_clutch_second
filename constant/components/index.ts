@@ -579,7 +579,7 @@ export const nav_links = [
             id: "1",
             title: "Digital Health",
             icon: Heart,
-            href: "/government-public-sector/digital-health",
+            href: "/solutions/government-public-sector/digital-health",
             description: "Integrated healthcare systems including telemedicine platforms, EHR solutions, and public health monitoring tools."
           },
           {
