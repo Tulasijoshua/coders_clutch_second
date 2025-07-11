@@ -118,3 +118,26 @@ export const environmental_stacks = [
         contents: ["Power BI", "Tableau", "D3.js"]
     },
 ]
+
+export const data_management_stacks = [
+    {
+        id: 1,
+        title: "Data Infrastructure",
+        contents: ["Hadoop", "Azure Synapse", "Snowflake"]
+    },
+    {
+        id: 2,
+        title: "AI/ML Tools",
+        contents: ["Python", "Scikit-learn", "AutoML", "Google Vertex AI"]
+    },
+    {
+        id: 3,
+        title: "Visualization",
+        contents: ["Tableau", "Kibana", "Power BI"]
+    },
+    {
+        id: 4,
+        title: "Security & Access",
+        contents: ["OAuth 2.0", "RBAC", "Encryption at Rest"]
+    },
+]
