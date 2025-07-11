@@ -87,12 +87,12 @@ function SmartEducationApproach() {
                                 >
                                     {data.id}. {data.title}
                                 </Typography>
-                                {/* <Typography
+                                <Typography
                                     typo="header-5-semibold"
                                     className='!text-xl'
                                 >
                                     {data.sub_title}
-                                </Typography> */}
+                                </Typography>
                             </CardContent>
                             <CardFooter>
                                 <CardDescription
@@ -161,12 +161,12 @@ function SmartEducationApproach() {
                                 >
                                     {data.id}. {data.title}
                                 </Typography>
-                                {/* <Typography
+                                <Typography
                                     typo="header-5-semibold"
                                     className='!text-xl'
                                 >
                                     {data.sub_title}
-                                </Typography> */}
+                                </Typography>
                             </CardContent>
                             <CardFooter>
                                 <CardDescription
