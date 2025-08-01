@@ -24,7 +24,7 @@ const Hero = () => {
                             className="inter xl:text-4xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl font-extrabold text-center text-black"
                         >With Instant Agentic AI & AI Agents</Typography>
                     </div>
-                    <div className="w-full h-fit">
+                    <div className="w-[80%] mx-auto h-fit">
                         <Image 
                             src={mxpImg}
                             alt="Mxp"
