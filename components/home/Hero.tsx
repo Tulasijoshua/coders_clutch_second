@@ -24,11 +24,11 @@ const Hero = () => {
                             className="inter xl:text-4xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl font-extrabold text-center text-black"
                         >With Instant Agentic AI & AI Agents</Typography>
                     </div>
-                    <div className="w-[80%] mx-auto h-fit">
+                    <div className="w-full mx-auto h-[630px]">
                         <Image 
                             src={mxpImg}
                             alt="Mxp"
-                            className="w-full h-full"
+                            className="w-full h-full object-cover object-top"
                         />
                     </div>
                     <Typography
