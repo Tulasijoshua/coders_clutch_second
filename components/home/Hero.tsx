@@ -3,8 +3,6 @@
 import { ArrowRight } from "lucide-react";
 import Typography from "../shared/typography";
 import { Button } from "../ui/button";
-import ourClients from '@/public/assets/images/our-clients.svg';
-import ourClientsMobile from '@/public/assets/images/our-clients-mobile.png';
 import Image from "next/image";
 import mxpImg from "@/public/assets/images/Coders_Clutch_Mockup/Coders_Clutch_Mockup/MXP_Crypto.svg"
 import { clients_logos, home_services } from "@/constant";
