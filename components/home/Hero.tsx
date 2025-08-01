@@ -14,7 +14,7 @@ const Hero = () => {
       const tripleLogos = [...clients_logos, ...clients_logos, ...clients_logos];
 
     return (
-        <div className="w-full pt-8 pb-10 lg:space-y-20 space-y-10 bg-gradient-to-t from-[#D1FFFB] to-[#fff]">
+        <div className="w-full pt-8 pb-20 lg:space-y-20 space-y-10 bg-gradient-to-t from-[#D1FFFB] to-[#fff]">
             <section className="w-full">
                 <div className="max-container 2xl:w-[80%] w-[90%] mx-auto flex flex-col justify- items-center gap-6">
                     <div className=" flex flex-col justify-center items-center md:gap-3 gap-1">
@@ -33,7 +33,7 @@ const Hero = () => {
                         />
                         {/* <div className="h-2 w-5 absolute -top-1 right-0 bg-yellow-400"></div> */}
                     </div>
-                    <div className="w-full py-4 flex justify-between items-center gap-4">
+                    <div className="w-full py-10 flex justify-between items-center gap-4">
                         <Typography
                             typo="header-6-semibold"
                             className="w-fit px-6"
@@ -79,7 +79,7 @@ const Hero = () => {
                     <Button
                         variant="outline"
                         size="lg"
-                        className="rounded-full"
+                        className="rounded-full hover:bg-app-primary-deep hover:text-white"
                     >
                         Let&apos;s Talk
                         <ArrowRight />
