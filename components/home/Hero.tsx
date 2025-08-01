@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import ourClients from '@/public/assets/images/our-clients.svg';
 import ourClientsMobile from '@/public/assets/images/our-clients-mobile.png';
 import Image from "next/image";
+import mxpImg from "@/public/assets/images/Coders_Clutch_Mockup/Coders_Clutch_Mockup/MXP_Crypto.svg"
 import { home_services } from "@/constant";
 
 
@@ -20,8 +21,15 @@ const Hero = () => {
                             className="inter xl:text-5xl lg:text-4xl sm:text-3xl font-extrabold xs:text-3xl text-2xl text-center text-app-primary-light"
                         >Build Hi-Tech Products & Enterprise Apps</Typography>
                         <Typography
-                            className="inter xl:text-5xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl font-extrabold text-center text-black"
+                            className="inter xl:text-4xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl font-extrabold text-center text-black"
                         >With Instant Agentic AI & AI Agents</Typography>
+                    </div>
+                    <div className="w-full h-fit">
+                        <Image 
+                            src={mxpImg}
+                            alt="Mxp"
+                            className="w-full h-full"
+                        />
                     </div>
                     <Typography
                         typo="body-large-medium"
