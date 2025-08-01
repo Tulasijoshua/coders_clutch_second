@@ -26,6 +26,13 @@ import securedIcon from "@/public/assets/icons/home_icons/secured.svg"
 import stampIcon from "@/public/assets/icons/home_icons/stamp.svg"
 import developerIcon from "@/public/assets/icons/home_icons/developers.svg"
 import senaHomes from "@/public/assets/images/projects/SenaHomes-Portfolio-1-uai-1400x933.png";
+import oneworld from "@/public/assets/images/projects/oneworld.jpg";
+import powerconImg from "@/public/assets/images/projects/powercon.png";
+import solidImg from "@/public/assets/images/projects/solid_solution.jpg";
+import stem_gambiaImg from "@/public/assets/images/projects/stem_gambia.jpg";
+import anchoforallImg from "@/public/assets/images/projects/anchoforall.jpg";
+import bonfoImg from "@/public/assets/images/projects/bonfo_web.jpg";
+import casa_gambiaImg from "@/public/assets/images/projects/casa_gambia.jpg";
 import savingBox from "@/public/assets/images/projects/SavingsBox-Portolifo-1-uai-1400x933.png";
 import missluShopify from "@/public/assets/images/projects/Misslu-shopify-website-page-1-uai-1800x1200.png";
 import documentary from "@/public/assets/images/projects/documentary-warehouse-2-uai-840x560.png";
@@ -1279,15 +1286,71 @@ export const clients_project: ProjectProp[] = [
         id: "1",
         img: senaHomes,
         title: "Sena Homes",
-        category: "E-commerce",
+        category: "Websites",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
         id: "2",
-        img: savingBox,
-        title: "Saving Box",
-        category: "Mobile App Development",
+        img: oneworld,
+        title: "OneWorld",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "3",
+        img: bonfoImg,
+        title: "Bonfo Website",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "4",
+        img: stem_gambiaImg,
+        title: "Stem Gambia",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "5",
+        img: powerconImg,
+        title: "Powercon",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "6",
+        img: solidImg,
+        title: "Stem Gambia",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "6",
+        img: casa_gambiaImg,
+        title: "CASA Gambia",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "7",
+        img: anchoforallImg,
+        title: "Anchoforall Foundation",
+        category: "Websites",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+    {
+        id: "2",
+        img: stem_gambiaImg,
+        title: "Stem Gambia",
+        category: "Mobile App",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
@@ -1295,7 +1358,7 @@ export const clients_project: ProjectProp[] = [
         id: "3",
         img: mohisola,
         title: "RCC",
-        category: "Mobile App Development",
+        category: "Custom Softwares",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
@@ -1303,7 +1366,7 @@ export const clients_project: ProjectProp[] = [
         id: "4",
         img: missluShopify,
         title: "Vibes",
-        category: "Branding",
+        category: "E-Commerce",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
@@ -1311,7 +1374,7 @@ export const clients_project: ProjectProp[] = [
         id: "5",
         img: documentary,
         title: "SlakWorld",
-        category: "Web App",
+        category: "IoTs",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
 
@@ -1320,7 +1383,7 @@ export const clients_project: ProjectProp[] = [
         id: "6",
         img: woodentools,
         title: "SlakWorld",
-        category: "Website Design",
+        category: "Branding",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
 
