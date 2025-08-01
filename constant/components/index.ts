@@ -1281,16 +1281,9 @@ export const services = [
 ]
 
 export const clients_project: ProjectProp[] = [
-     {
-        id: "1",
-        img: savingBox,
-        title: "Saving Box",
-        category: "Mobile App",
-        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
-                    eveniet hic possimus numquam blanditiis est alias.`,
-    },
+
     {
-        id: "2",
+        id: "1",
         img: oneworld,
         title: "OneWorld",
         category: "Websites",
@@ -1298,7 +1291,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "3",
+        id: "2",
         img: bonfoImg,
         title: "Bonfo Website",
         category: "Websites",
@@ -1306,7 +1299,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "4",
+        id: "3",
         img: stem_gambiaImg,
         title: "Stem Gambia",
         category: "Websites",
@@ -1314,7 +1307,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "5",
+        id: "4",
         img: powerconImg,
         title: "Powercon",
         category: "Websites",
@@ -1322,7 +1315,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "6",
+        id: "5",
         img: solidImg,
         title: "Stem Gambia",
         category: "Websites",
@@ -1345,9 +1338,17 @@ export const clients_project: ProjectProp[] = [
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
-   
     {
         id: "8",
+        img: savingBox,
+        title: "Saving Box",
+        category: "Mobile App",
+        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
+                    eveniet hic possimus numquam blanditiis est alias.`,
+    },
+   
+    {
+        id: "9",
         img: mohisola,
         title: "RCC",
         category: "Custom Softwares",
@@ -1355,7 +1356,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "9",
+        id: "10",
         img: missluShopify,
         title: "Vibes",
         category: "E-Commerce",
@@ -1363,7 +1364,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "10",
+        id: "11",
         img: documentary,
         title: "SlakWorld",
         category: "IoTs",
@@ -1372,7 +1373,7 @@ export const clients_project: ProjectProp[] = [
 
     },
     {
-        id: "11",
+        id: "12",
         img: woodentools,
         title: "SlakWorld",
         category: "Branding",
