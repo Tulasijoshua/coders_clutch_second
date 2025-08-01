@@ -25,7 +25,6 @@ import storageIcon from "@/public/assets/icons/home_icons/storage.svg"
 import securedIcon from "@/public/assets/icons/home_icons/secured.svg"
 import stampIcon from "@/public/assets/icons/home_icons/stamp.svg"
 import developerIcon from "@/public/assets/icons/home_icons/developers.svg"
-import senaHomes from "@/public/assets/images/projects/SenaHomes-Portfolio-1-uai-1400x933.png";
 import oneworld from "@/public/assets/images/projects/oneworld.jpg";
 import powerconImg from "@/public/assets/images/projects/powercon.png";
 import solidImg from "@/public/assets/images/projects/solid_solution.jpg";
@@ -1282,11 +1281,11 @@ export const services = [
 ]
 
 export const clients_project: ProjectProp[] = [
-    {
+     {
         id: "1",
-        img: senaHomes,
-        title: "Sena Homes",
-        category: "Websites",
+        img: savingBox,
+        title: "Saving Box",
+        category: "Mobile App",
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
@@ -1346,16 +1345,9 @@ export const clients_project: ProjectProp[] = [
         description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
+   
     {
-        id: "2",
-        img: stem_gambiaImg,
-        title: "Stem Gambia",
-        category: "Mobile App",
-        description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio eum fugit necessitatibus dignissimos 
-                    eveniet hic possimus numquam blanditiis est alias.`,
-    },
-    {
-        id: "3",
+        id: "8",
         img: mohisola,
         title: "RCC",
         category: "Custom Softwares",
@@ -1363,7 +1355,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "4",
+        id: "9",
         img: missluShopify,
         title: "Vibes",
         category: "E-Commerce",
@@ -1371,7 +1363,7 @@ export const clients_project: ProjectProp[] = [
                     eveniet hic possimus numquam blanditiis est alias.`,
     },
     {
-        id: "5",
+        id: "10",
         img: documentary,
         title: "SlakWorld",
         category: "IoTs",
@@ -1380,7 +1372,7 @@ export const clients_project: ProjectProp[] = [
 
     },
     {
-        id: "6",
+        id: "11",
         img: woodentools,
         title: "SlakWorld",
         category: "Branding",
