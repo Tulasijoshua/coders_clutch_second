@@ -13,7 +13,7 @@ import { home_services } from "@/constant";
 const Hero = () => {
 
     return (
-        <div className="w-full pt-16 pb-10 lg:space-y-20 space-y-10 bg-gradient-to-t from-[#D1FFFB] to-[#fff]">
+        <div className="w-full pt-4 pb-10 lg:space-y-20 space-y-10 bg-gradient-to-t from-[#D1FFFB] to-[#fff]">
             <section className="w-full">
                 <div className="max-container 2xl:w-[80%] w-[90%] mx-auto flex flex-col justify-center items-center gap-6">
                     <div className="pb-4 flex flex-col justify-center items-center md:gap-3 gap-1">
