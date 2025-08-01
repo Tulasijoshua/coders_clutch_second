@@ -7,15 +7,19 @@ import ourClients from '@/public/assets/images/our-clients.svg';
 import ourClientsMobile from '@/public/assets/images/our-clients-mobile.png';
 import Image from "next/image";
 import mxpImg from "@/public/assets/images/Coders_Clutch_Mockup/Coders_Clutch_Mockup/MXP_Crypto.svg"
-import { home_services } from "@/constant";
+import { clients_logos, home_services } from "@/constant";
+import { motion } from "framer-motion";
+
 
 
 const Hero = () => {
+      const tripleLogos = [...clients_logos, ...clients_logos, ...clients_logos];
+
 
     return (
         <div className="w-full pt-8 pb-10 lg:space-y-20 space-y-10 bg-gradient-to-t from-[#D1FFFB] to-[#fff]">
             <section className="w-full">
-                <div className="max-container 2xl:w-[80%] w-[90%] mx-auto flex flex-col justify-center items-center gap-6">
+                <div className="max-container 2xl:w-[80%] w-[90%] mx-auto flex flex-col justify- items-center gap-6">
                     <div className=" flex flex-col justify-center items-center md:gap-3 gap-1">
                         <Typography
                             className="inter xl:text-5xl lg:text-4xl sm:text-3xl font-extrabold xs:text-3xl text-2xl text-center text-app-primary-light"
@@ -31,14 +35,32 @@ const Hero = () => {
                             className="w-full h-full object-cover object-top"
                         />
                     </div>
-                    <Typography
-                        typo="body-large-medium"
-                        className="max-w-2xl mx-auto text-center dark:text-black"
-                    >
-                        Join our global enterprise customers to build your AI-powered B2B, B2C and
-                        D2C products and platforms.
-                    </Typography>
-
+                    <div className="w-full py-4 flex justify-between items-center gap-4">
+                        <Typography
+                            typo="header-6-semibold"
+                            className="w-fit px-6"
+                        >
+                            Globally trusted by
+                        </Typography>
+                        <div className="flex-1 overflow-hidden">
+                            <motion.div
+                                className="flex space-x-16 w-max"
+                                animate={{ x: ["0", "-33.3333%"] }}
+                                transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+                                >
+                                {tripleLogos.map((logo, index) => (
+                                    <div key={index+1} className="lg:w-fit h-8 flex items-center md:justify-center ">
+                                    <Image 
+                                        src={logo}
+                                        alt={`Brand logo ${index}`}
+                                        className="w-full h-full "
+                                    />
+                                    </div>
+                                ))}
+                            </motion.div>
+                        </div>
+                    </div>
+                    
                     <div className="xl:w-[80%] mx-auto py-5 flex justify-center items-center lg:gap-6 gap-4  flex-wrap">
                         {home_services.map((service, index) => {
                             return (
@@ -65,34 +87,7 @@ const Hero = () => {
                     </Button>
                 </div>
             </section>
-            <section 
-                className="w-[80%] mx-auto text-center space-y-10"
-            >
-                <Typography
-                    className="text-center"
-                    typo="body-large-semibold"
-                >
-                    Trusted by Funded Startups to <span className="text-[#108B47]">Fortune 500+ Brands</span> in 12+ Countries
-                </Typography>
-                <div
-                    className="lg:block hidden lg:h-24 w-fit mx-auto"
-                >
-                    <Image
-                        src={ourClients}
-                        alt="Our Clients image"
-                        className="w-full h-full"
-                    />
-                </div>
-                <div
-                    className="lg:hidden block w-full h-fit mx-auto"
-                >
-                    <Image
-                        src={ourClientsMobile}
-                        alt="Our Clients image"
-                        className="w-full h-full"
-                    />
-                </div>
-            </section>
+            
         </div>
     );
 }

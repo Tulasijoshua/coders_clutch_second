@@ -135,6 +135,8 @@ import {
   Recycle
 } from "@phosphor-icons/react";
 
+export const clients_logos = [albalsamlogo, africell_logo, dk_telecom_logo, qcelllogo]
+
 export const nav_links = [
   {
     id: "1",
