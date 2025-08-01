@@ -13,7 +13,6 @@ import { motion } from "framer-motion";
 const Hero = () => {
       const tripleLogos = [...clients_logos, ...clients_logos, ...clients_logos];
 
-
     return (
         <div className="w-full pt-8 pb-10 lg:space-y-20 space-y-10 bg-gradient-to-t from-[#D1FFFB] to-[#fff]">
             <section className="w-full">
@@ -26,12 +25,13 @@ const Hero = () => {
                             className="inter xl:text-4xl lg:text-4xl sm:text-3xl xs:text-3xl text-2xl font-extrabold text-center text-black"
                         >With Instant Agentic AI & AI Agents</Typography>
                     </div>
-                    <div className="w-full mx-auto h-[600px]">
+                    <div className="w-full mx-auto h-[600px] ">
                         <Image 
                             src={mxpImg}
                             alt="Mxp"
-                            className="w-full h-full object-cover object-top"
+                            className="w-full h-full object-cover object-top rounded-2xl "
                         />
+                        {/* <div className="h-2 w-5 absolute -top-1 right-0 bg-yellow-400"></div> */}
                     </div>
                     <div className="w-full py-4 flex justify-between items-center gap-4">
                         <Typography
@@ -59,7 +59,7 @@ const Hero = () => {
                         </div>
                     </div>
                     
-                    <div className="xl:w-[80%] mx-auto py-5 flex justify-center items-center lg:gap-6 gap-4  flex-wrap">
+                    {/* <div className="xl:w-[80%] mx-auto py-5 flex justify-center items-center lg:gap-6 gap-4  flex-wrap">
                         {home_services.map((service, index) => {
                             return (
                                 <div key={service.id} className="md:w-fit w-[45%] lg:px-6 px-3 py-3.5 flex lg:justify-center  items-center sm:gap-2 gap-3 bg-app-primary-light rounded-md">
@@ -75,10 +75,11 @@ const Hero = () => {
                                 </div>
                             )
                         })}
-                    </div>
+                    </div> */}
                     <Button
-                        variant="primary"
+                        variant="outline"
                         size="lg"
+                        className="rounded-full"
                     >
                         Let&apos;s Talk
                         <ArrowRight />
