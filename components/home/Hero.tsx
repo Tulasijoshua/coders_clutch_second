@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 import Typography from "../shared/typography";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import mxpImg from "@/public/assets/images/Coders_Clutch_Mockup/Coders_Clutch_Mockup/MXP_Crypto.svg"
 import { clients_logos } from "@/constant";
 import { motion } from "framer-motion";
 import mxpmockupImg from "@/public/assets/images/Coders_Clutch_Mockup/MXP_Crypto.svg"
